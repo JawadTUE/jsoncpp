@@ -1,5 +1,3 @@
-
-
 #if !defined(JSON_IS_AMALGAMATION)
 #include "json_tool.h"
 #include <json/assertions.h>
