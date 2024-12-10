@@ -156,7 +156,7 @@ String valueToString(double value, bool useSpecialFloats,
 
   return buffer;
 }
-}
+} // namespace
 
 String valueToString(double value, unsigned int precision,
                      PrecisionType precisionType) {
@@ -329,7 +329,6 @@ String valueToQuotedString(const char* value, size_t length) {
 
 Writer::~Writer() = default;
 
-
 FastWriter::FastWriter()
 
     = default;
@@ -399,7 +398,6 @@ void FastWriter::writeValue(const Value& value) {
   } break;
   }
 }
-
 
 StyledWriter::StyledWriter() = default;
 
@@ -502,8 +500,7 @@ void StyledWriter::writeArrayValue(const Value& value) {
       }
       unindent();
       writeWithIndent("]");
-    } else
-    {
+    } else {
       assert(childValues_.size() == size);
       document_ += "[ ";
       for (size_t index = 0; index < size; ++index) {
@@ -525,8 +522,7 @@ bool StyledWriter::isMultilineArray(const Value& value) {
     isMultiLine = ((childValue.isArray() || childValue.isObject()) &&
                    !childValue.empty());
   }
-  if (!isMultiLine)
-  {
+  if (!isMultiLine) {
     childValues_.reserve(size);
     addChildValues_ = true;
     ArrayIndex lineLength = 4 + (size - 1) * 2;
@@ -607,7 +603,6 @@ bool StyledWriter::hasCommentForValue(const Value& value) {
          value.hasComment(commentAfterOnSameLine) ||
          value.hasComment(commentAfter);
 }
-
 
 StyledStreamWriter::StyledStreamWriter(String indentation)
     : document_(nullptr), indentation_(std::move(indentation)),
@@ -719,8 +714,7 @@ void StyledStreamWriter::writeArrayValue(const Value& value) {
       }
       unindent();
       writeWithIndent("]");
-    } else
-    {
+    } else {
       assert(childValues_.size() == size);
       *document_ << "[ ";
       for (unsigned index = 0; index < size; ++index) {
@@ -742,8 +736,7 @@ bool StyledStreamWriter::isMultilineArray(const Value& value) {
     isMultiLine = ((childValue.isArray() || childValue.isObject()) &&
                    !childValue.empty());
   }
-  if (!isMultiLine)
-  {
+  if (!isMultiLine) {
     childValues_.reserve(size);
     addChildValues_ = true;
     ArrayIndex lineLength = 4 + (size - 1) * 2;
@@ -767,9 +760,7 @@ void StyledStreamWriter::pushValue(const String& value) {
     *document_ << value;
 }
 
-void StyledStreamWriter::writeIndent() {
-  *document_ << '\n' << indentString_;
-}
+void StyledStreamWriter::writeIndent() { *document_ << '\n' << indentString_; }
 
 void StyledStreamWriter::writeWithIndent(const String& value) {
   if (!indented_)
@@ -819,13 +810,8 @@ bool StyledStreamWriter::hasCommentForValue(const Value& value) {
          value.hasComment(commentAfter);
 }
 
-
 struct CommentStyle {
-  enum Enum {
-    None,
-    Most,
-    All  
-  };
+  enum Enum { None, Most, All };
 };
 
 struct BuiltStyledStreamWriter : public StreamWriter {
@@ -985,8 +971,7 @@ void BuiltStyledStreamWriter::writeArrayValue(Value const& value) {
       }
       unindent();
       writeWithIndent("]");
-    } else
-    {
+    } else {
       assert(childValues_.size() == size);
       *sout_ << "[";
       if (!indentation_.empty())
@@ -1012,8 +997,7 @@ bool BuiltStyledStreamWriter::isMultilineArray(Value const& value) {
     isMultiLine = ((childValue.isArray() || childValue.isObject()) &&
                    !childValue.empty());
   }
-  if (!isMultiLine)
-  {
+  if (!isMultiLine) {
     childValues_.reserve(size);
     addChildValues_ = true;
     ArrayIndex lineLength = 4 + (size - 1) * 2;
@@ -1095,7 +1079,6 @@ bool BuiltStyledStreamWriter::hasCommentForValue(const Value& value) {
          value.hasComment(commentAfterOnSameLine) ||
          value.hasComment(commentAfter);
 }
-
 
 StreamWriter::StreamWriter() : sout_(nullptr) {}
 StreamWriter::~StreamWriter() = default;
@@ -1196,4 +1179,4 @@ OStream& operator<<(OStream& sout, Value const& root) {
   return sout;
 }
 
-}
+} // namespace Json

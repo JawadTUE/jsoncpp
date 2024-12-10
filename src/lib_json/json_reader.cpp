@@ -3,7 +3,7 @@
 #include <json/assertions.h>
 #include <json/reader.h>
 #include <json/value.h>
-#endif 
+#endif
 #include <algorithm>
 #include <cassert>
 #include <cmath>
@@ -23,13 +23,13 @@
 #define sscanf std::sscanf
 #endif
 
-#endif 
+#endif
 
 #if defined(_MSC_VER)
 #if !defined(_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES)
 #define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES 1
-#endif 
-#endif 
+#endif
+#endif
 
 #if defined(_MSC_VER)
 #pragma warning(disable : 4996)
@@ -39,8 +39,7 @@
 #define JSONCPP_DEPRECATED_STACK_LIMIT 1000
 #endif
 
-static size_t const stackLimit_g =
-    JSONCPP_DEPRECATED_STACK_LIMIT; 
+static size_t const stackLimit_g = JSONCPP_DEPRECATED_STACK_LIMIT;
 
 namespace Json {
 
@@ -49,7 +48,6 @@ using CharReaderPtr = std::unique_ptr<CharReader>;
 #else
 using CharReaderPtr = std::auto_ptr<CharReader>;
 #endif
-
 
 Features::Features() = default;
 
@@ -64,11 +62,9 @@ Features Features::strictMode() {
   return features;
 }
 
-
 bool Reader::containsNewLine(Reader::Location begin, Reader::Location end) {
   return std::any_of(begin, end, [](char b) { return b == '\n' || b == '\r'; });
 }
-
 
 Reader::Reader() : features_(Features::all()) {}
 
@@ -181,7 +177,7 @@ bool Reader::readValue() {
       currentValue().setOffsetStart(current_ - begin_ - 1);
       currentValue().setOffsetLimit(current_ - begin_);
       break;
-    } 
+    }
   default:
     currentValue().setOffsetStart(token.start_ - begin_);
     currentValue().setOffsetLimit(token.end_ - begin_);
@@ -375,7 +371,7 @@ bool Reader::readCppStyleComment() {
 
 void Reader::readNumber() {
   Location p = current_;
-  char c = '0'; 
+  char c = '0';
   while (c >= '0' && c <= '9')
     c = (current_ = p) < end_ ? *p++ : '\0';
   if (c == '.') {
@@ -411,7 +407,7 @@ bool Reader::readObject(Token& token) {
   currentValue().swapPayload(init);
   currentValue().setOffsetStart(token.start_ - begin_);
   while (readTokenSkippingComments(tokenName)) {
-    if (tokenName.type_ == tokenObjectEnd && name.empty()) 
+    if (tokenName.type_ == tokenObjectEnd && name.empty())
       return true;
     name.clear();
     if (tokenName.type_ == tokenString) {
@@ -435,7 +431,7 @@ bool Reader::readObject(Token& token) {
     nodes_.push(&value);
     bool ok = readValue();
     nodes_.pop();
-    if (!ok) 
+    if (!ok)
       return recoverFromError(tokenObjectEnd);
 
     Token comma;
@@ -456,8 +452,7 @@ bool Reader::readArray(Token& token) {
   currentValue().swapPayload(init);
   currentValue().setOffsetStart(token.start_ - begin_);
   skipSpaces();
-  if (current_ != end_ && *current_ == ']') 
-  {
+  if (current_ != end_ && *current_ == ']') {
     Token endArray;
     readToken(endArray);
     return true;
@@ -468,7 +463,7 @@ bool Reader::readArray(Token& token) {
     nodes_.push(&value);
     bool ok = readValue();
     nodes_.pop();
-    if (!ok) 
+    if (!ok)
       return recoverFromError(tokenArrayEnd);
 
     Token currentToken;
@@ -568,8 +563,8 @@ bool Reader::decodeString(Token& token) {
 
 bool Reader::decodeString(Token& token, String& decoded) {
   decoded.reserve(static_cast<size_t>(token.end_ - token.start_ - 2));
-  Location current = token.start_ + 1; 
-  Location end = token.end_ - 1;       
+  Location current = token.start_ + 1;
+  Location end = token.end_ - 1;
   while (current != end) {
     Char c = *current++;
     if (c == '"')
@@ -683,7 +678,7 @@ bool Reader::recoverFromError(TokenType skipUntilToken) {
   Token skip;
   for (;;) {
     if (!readToken(skip))
-      errors_.resize(errorCount); 
+      errors_.resize(errorCount);
     if (skip.type_ == skipUntilToken || skip.type_ == tokenEndOfStream)
       break;
   }
@@ -813,10 +808,9 @@ public:
   bool allowSpecialFloats_;
   bool skipBom_;
   size_t stackLimit_;
-}; 
+};
 
 OurFeatures OurFeatures::all() { return {}; }
-
 
 class OurReader {
 public:
@@ -830,8 +824,8 @@ public:
   std::vector<CharReader::StructuredError> getStructuredErrors() const;
 
 private:
-  OurReader(OurReader const&);      
-  void operator=(OurReader const&); 
+  OurReader(OurReader const&);
+  void operator=(OurReader const&);
 
   enum TokenType {
     tokenEndOfStream = 0,
@@ -923,8 +917,7 @@ private:
 
   OurFeatures const features_;
   bool collectComments_ = false;
-}; 
-
+};
 
 bool OurReader::containsNewLine(OurReader::Location begin,
                                 OurReader::Location end) {
@@ -1049,7 +1042,7 @@ bool OurReader::readValue() {
       currentValue().setOffsetStart(current_ - begin_ - 1);
       currentValue().setOffsetLimit(current_ - begin_);
       break;
-    } 
+    }
   default:
     currentValue().setOffsetStart(token.start_ - begin_);
     currentValue().setOffsetLimit(token.end_ - begin_);
@@ -1313,7 +1306,7 @@ bool OurReader::readNumber(bool checkInf) {
     current_ = ++p;
     return false;
   }
-  char c = '0'; 
+  char c = '0';
   while (c >= '0' && c <= '9')
     c = (current_ = p) < end_ ? *p++ : '\0';
   if (c == '.') {
@@ -1362,8 +1355,7 @@ bool OurReader::readObject(Token& token) {
   currentValue().setOffsetStart(token.start_ - begin_);
   while (readTokenSkippingComments(tokenName)) {
     if (tokenName.type_ == tokenObjectEnd &&
-        (name.empty() ||
-         features_.allowTrailingCommas_)) 
+        (name.empty() || features_.allowTrailingCommas_))
       return true;
     name.clear();
     if (tokenName.type_ == tokenString) {
@@ -1393,7 +1385,7 @@ bool OurReader::readObject(Token& token) {
     nodes_.push(&value);
     bool ok = readValue();
     nodes_.pop();
-    if (!ok) 
+    if (!ok)
       return recoverFromError(tokenObjectEnd);
 
     Token comma;
@@ -1417,10 +1409,8 @@ bool OurReader::readArray(Token& token) {
   for (;;) {
     skipSpaces();
     if (current_ != end_ && *current_ == ']' &&
-        (index == 0 ||
-         (features_.allowTrailingCommas_ &&
-          !features_.allowDroppedNullPlaceholders_))) 
-    {
+        (index == 0 || (features_.allowTrailingCommas_ &&
+                        !features_.allowDroppedNullPlaceholders_))) {
       Token endArray;
       readToken(endArray);
       return true;
@@ -1429,7 +1419,7 @@ bool OurReader::readArray(Token& token) {
     nodes_.push(&value);
     bool ok = readValue();
     nodes_.pop();
-    if (!ok) 
+    if (!ok)
       return recoverFromError(tokenArrayEnd);
 
     Token currentToken;
@@ -1554,8 +1544,8 @@ bool OurReader::decodeString(Token& token) {
 
 bool OurReader::decodeString(Token& token, String& decoded) {
   decoded.reserve(static_cast<size_t>(token.end_ - token.start_ - 2));
-  Location current = token.start_ + 1; 
-  Location end = token.end_ - 1;       
+  Location current = token.start_ + 1;
+  Location end = token.end_ - 1;
   while (current != end) {
     Char c = *current++;
     if (c == '"')
@@ -1669,7 +1659,7 @@ bool OurReader::recoverFromError(TokenType skipUntilToken) {
   Token skip;
   for (;;) {
     if (!readToken(skip))
-      errors_.resize(errorCount); 
+      errors_.resize(errorCount);
     if (skip.type_ == skipUntilToken || skip.type_ == tokenEndOfStream)
       break;
   }
@@ -1881,7 +1871,6 @@ bool CharReader::parse(char const* beginDoc, char const* endDoc, Value* root,
   return _impl->parse(beginDoc, endDoc, root, errs);
 }
 
-
 bool parseFromStream(CharReader::Factory const& fact, IStream& sin, Value* root,
                      String* errs) {
   OStringStream ssin;
@@ -1903,4 +1892,4 @@ IStream& operator>>(IStream& sin, Value& root) {
   return sin;
 }
 
-} 
+} // namespace Json

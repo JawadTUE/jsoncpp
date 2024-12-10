@@ -26,7 +26,6 @@ static inline char getDecimalPoint() {
 static inline String codePointToUTF8(unsigned int cp) {
   String result;
 
-
   if (cp <= 0x7f) {
     result.resize(1);
     result[0] = static_cast<char>(cp);
@@ -50,9 +49,7 @@ static inline String codePointToUTF8(unsigned int cp) {
   return result;
 }
 
-enum {
-  uintToStringBufferSize = 3 * sizeof(LargestUInt) + 1
-};
+enum { uintToStringBufferSize = 3 * sizeof(LargestUInt) + 1 };
 
 using UIntToStringBuffer = char[uintToStringBufferSize];
 
@@ -101,6 +98,6 @@ Iter fixZerosInTheEnd(Iter begin, Iter end, unsigned int precision) {
   return end;
 }
 
-} 
+} // namespace Json
 
-#endif 
+#endif

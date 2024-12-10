@@ -1,10 +1,8 @@
-
-
 #if !defined(JSON_IS_AMALGAMATION)
 #include <json/assertions.h>
 #include <json/value.h>
 #include <json/writer.h>
-#endif 
+#endif
 #include <algorithm>
 #include <cassert>
 #include <cmath>
@@ -75,7 +73,7 @@ static inline bool InRange(double d, T min, U max) {
   return d >= static_cast<double>(min) && d <= static_cast<double>(max) &&
          !(static_cast<U>(d) == min && d != static_cast<double>(min));
 }
-#else  
+#else
 static inline double integerToDouble(Json::UInt64 value) {
   return static_cast<double>(Int64(value / 2)) * 2.0 +
          static_cast<double>(Int64(value & 1));
@@ -90,7 +88,7 @@ static inline bool InRange(double d, T min, U max) {
   return d >= integerToDouble(min) && d <= integerToDouble(max) &&
          !(static_cast<U>(d) == min && d != integerToDouble(min));
 }
-#endif 
+#endif
 
 static inline char* duplicateStringValue(const char* value, size_t length) {
   if (length >= static_cast<size_t>(Value::maxInt))
@@ -120,8 +118,7 @@ static inline char* duplicateAndPrefixStringValue(const char* value,
   }
   *reinterpret_cast<unsigned*>(newString) = length;
   memcpy(newString + sizeof(unsigned), value, length);
-  newString[actualLength - 1U] =
-      0; 
+  newString[actualLength - 1U] = 0;
   return newString;
 }
 inline static void decodePrefixedString(bool isPrefixed, char const* prefixed,
@@ -148,17 +145,17 @@ static inline void releaseStringValue(char* value, unsigned length) {
   memset(value, 0, size);
   free(value);
 }
-#else  
+#else
 static inline void releasePrefixedStringValue(char* value) { free(value); }
 static inline void releaseStringValue(char* value, unsigned) { free(value); }
-#endif 
+#endif
 
-} 
+} // namespace Json
 
 #if !defined(JSON_IS_AMALGAMATION)
 
 #include "json_valueiterator.inl"
-#endif 
+#endif
 
 namespace Json {
 
@@ -174,7 +171,7 @@ JSONCPP_NORETURN void throwRuntimeError(String const& msg) {
 JSONCPP_NORETURN void throwLogicError(String const& msg) {
   throw LogicError(msg);
 }
-#else 
+#else
 JSONCPP_NORETURN void throwRuntimeError(String const& msg) {
   std::cerr << msg << std::endl;
   abort();
@@ -184,8 +181,6 @@ JSONCPP_NORETURN void throwLogicError(String const& msg) {
   abort();
 }
 #endif
-
-
 
 Value::CZString::CZString(ArrayIndex index) : cstr_(nullptr), index_(index) {}
 
@@ -219,8 +214,7 @@ Value::CZString::CZString(CZString&& other) noexcept
 
 Value::CZString::~CZString() {
   if (cstr_ && storage_.policy_ == duplicate) {
-    releaseStringValue(const_cast<char*>(cstr_),
-                       storage_.length_ + 1U); 
+    releaseStringValue(const_cast<char*>(cstr_), storage_.length_ + 1U);
   }
 }
 
@@ -277,7 +271,6 @@ bool Value::CZString::isStaticString() const {
   return storage_.policy_ == noDuplication;
 }
 
-
 Value::Value(ValueType type) {
   static char const emptyString[] = "";
   initBasic(type);
@@ -324,7 +317,7 @@ Value::Value(UInt64 value) {
   initBasic(uintValue);
   value_.uint_ = value;
 }
-#endif 
+#endif
 
 Value::Value(double value) {
   initBasic(realValue);
@@ -467,7 +460,7 @@ bool Value::operator<(const Value& other) const {
   default:
     JSON_ASSERT_UNREACHABLE;
   }
-  return false; 
+  return false;
 }
 
 bool Value::operator<=(const Value& other) const { return !(other < *this); }
@@ -515,7 +508,7 @@ bool Value::operator==(const Value& other) const {
   default:
     JSON_ASSERT_UNREACHABLE;
   }
-  return false; 
+  return false;
 }
 
 bool Value::operator!=(const Value& other) const { return !(*this == other); }
@@ -674,7 +667,7 @@ Value::UInt64 Value::asUInt64() const {
   }
   JSON_FAIL_MESSAGE("Value is not convertible to UInt64.");
 }
-#endif 
+#endif
 
 LargestInt Value::asLargestInt() const {
 #if defined(JSON_NO_INT64)
@@ -699,9 +692,9 @@ double Value::asDouble() const {
   case uintValue:
 #if !defined(JSON_USE_INT64_DOUBLE_CONVERSION)
     return static_cast<double>(value_.uint_);
-#else  
+#else
     return integerToDouble(value_.uint_);
-#endif 
+#endif
   case realValue:
     return value_.real_;
   case nullValue:
@@ -721,9 +714,9 @@ float Value::asFloat() const {
   case uintValue:
 #if !defined(JSON_USE_INT64_DOUBLE_CONVERSION)
     return static_cast<float>(value_.uint_);
-#else  
+#else
     return static_cast<float>(integerToDouble(value_.uint_));
-#endif 
+#endif
   case realValue:
     return static_cast<float>(value_.real_);
   case nullValue:
@@ -798,7 +791,7 @@ ArrayIndex Value::size() const {
   case booleanValue:
   case stringValue:
     return 0;
-  case arrayValue: 
+  case arrayValue:
     if (!value_.map_->empty()) {
       ObjectValues::const_iterator itLast = value_.map_->end();
       --itLast;
@@ -809,7 +802,7 @@ ArrayIndex Value::size() const {
     return ArrayIndex(value_.map_->size());
   }
   JSON_ASSERT_UNREACHABLE;
-  return 0; 
+  return 0;
 }
 
 bool Value::empty() const {
@@ -972,7 +965,7 @@ Value& Value::resolveReference(const char* key) {
   if (type() == nullValue)
     *this = Value(objectValue);
   CZString actualKey(key, static_cast<unsigned>(strlen(key)),
-                     CZString::noDuplication); 
+                     CZString::noDuplication);
   auto it = value_.map_->lower_bound(actualKey);
   if (it != value_.map_->end() && (*it).first == actualKey)
     return (*it).second;
@@ -1240,7 +1233,7 @@ bool Value::isInt64() const {
   default:
     break;
   }
-#endif 
+#endif
   return false;
 }
 
@@ -1257,7 +1250,7 @@ bool Value::isUInt64() const {
   default:
     break;
   }
-#endif 
+#endif
   return false;
 }
 
@@ -1273,7 +1266,7 @@ bool Value::isIntegral() const {
 #else
     return value_.real_ >= minInt && value_.real_ <= maxUInt &&
            IsIntegral(value_.real_);
-#endif 
+#endif
   default:
     break;
   }
@@ -1414,7 +1407,6 @@ Value::iterator Value::end() {
   return iterator();
 }
 
-
 PathArgument::PathArgument() = default;
 
 PathArgument::PathArgument(ArrayIndex index)
@@ -1423,7 +1415,6 @@ PathArgument::PathArgument(ArrayIndex index)
 PathArgument::PathArgument(const char* key) : key_(key), kind_(kindKey) {}
 
 PathArgument::PathArgument(String key) : key_(std::move(key)), kind_(kindKey) {}
-
 
 Path::Path(const String& path, const PathArgument& a1, const PathArgument& a2,
            const PathArgument& a3, const PathArgument& a4,
@@ -1479,8 +1470,7 @@ void Path::addPathInArg(const String&, const InArgs& in,
   }
 }
 
-void Path::invalidPath(const String&, int) {
-}
+void Path::invalidPath(const String&, int) {}
 
 const Value& Path::resolve(const Value& root) const {
   const Value* node = &root;
@@ -1537,4 +1527,4 @@ Value& Path::make(Value& root) const {
   return *node;
 }
 
-} 
+} // namespace Json

@@ -1,6 +1,5 @@
 namespace Json {
 
-
 ValueIteratorBase::ValueIteratorBase() : current_() {}
 
 ValueIteratorBase::ValueIteratorBase(
@@ -81,7 +80,6 @@ char const* ValueIteratorBase::memberName(char const** end) const {
   return cname;
 }
 
-
 ValueConstIterator::ValueConstIterator() = default;
 
 ValueConstIterator::ValueConstIterator(
@@ -91,12 +89,11 @@ ValueConstIterator::ValueConstIterator(
 ValueConstIterator::ValueConstIterator(ValueIterator const& other)
     : ValueIteratorBase(other) {}
 
-ValueConstIterator& ValueConstIterator::
-operator=(const ValueIteratorBase& other) {
+ValueConstIterator&
+ValueConstIterator::operator=(const ValueIteratorBase& other) {
   copy(other);
   return *this;
 }
-
 
 ValueIterator::ValueIterator() = default;
 
@@ -115,4 +112,4 @@ ValueIterator& ValueIterator::operator=(const SelfType& other) {
   return *this;
 }
 
-}
+} // namespace Json

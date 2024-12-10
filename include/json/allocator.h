@@ -1,8 +1,3 @@
-// Copyright 2007-2010 Baptiste Lepilleur and The JsonCpp Authors
-// Distributed under MIT license, or public domain if desired and
-// recognized in your jurisdiction.
-// See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
-
 #ifndef JSON_ALLOCATOR_H_INCLUDED
 #define JSON_ALLOCATOR_H_INCLUDED
 
@@ -16,7 +11,6 @@
 namespace Json {
 template <typename T> class SecureAllocator {
 public:
-  // Type definitions
   using value_type = T;
   using pointer = T*;
   using const_pointer = const T*;
@@ -25,22 +19,11 @@ public:
   using size_type = std::size_t;
   using difference_type = std::ptrdiff_t;
 
-  /**
-   * Allocate memory for N items using the standard allocator.
-   */
   pointer allocate(size_type n) {
-    // allocate using "global operator new"
     return static_cast<pointer>(::operator new(n * sizeof(T)));
   }
 
-  /**
-   * Release memory which was allocated for N items at pointer P.
-   *
-   * The memory block is filled with zeroes before being released.
-   */
   void deallocate(pointer p, size_type n) {
-    // These constructs will not be removed by the compiler during optimization,
-    // unlike memset.
 #if defined(HAVE_MEMSET_S)
     memset_s(p, n * sizeof(T), 0, n * sizeof(T));
 #elif defined(_WIN32)
@@ -49,15 +32,10 @@ public:
     std::fill_n(reinterpret_cast<volatile unsigned char*>(p), n, 0);
 #endif
 
-    // free using "global operator delete"
     ::operator delete(p);
   }
 
-  /**
-   * Construct an item in-place at pointer P.
-   */
   template <typename... Args> void construct(pointer p, Args&&... args) {
-    // construct using "placement new" and "perfect forwarding"
     ::new (static_cast<void*>(p)) T(std::forward<Args>(args)...);
   }
 
@@ -67,15 +45,8 @@ public:
 
   const_pointer address(const_reference x) const { return std::addressof(x); }
 
-  /**
-   * Destroy an item in-place at pointer P.
-   */
-  void destroy(pointer p) {
-    // destroy using "explicit destructor"
-    p->~T();
-  }
+  void destroy(pointer p) { p->~T(); }
 
-  // Boilerplate
   SecureAllocator() {}
   template <typename U> SecureAllocator(const SecureAllocator<U>&) {}
   template <typename U> struct rebind {
@@ -93,8 +64,8 @@ bool operator!=(const SecureAllocator<T>&, const SecureAllocator<U>&) {
   return false;
 }
 
-} // namespace Json
+}
 
 #pragma pack(pop)
 
-#endif // JSON_ALLOCATOR_H_INCLUDED
+#endif
