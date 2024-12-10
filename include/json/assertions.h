@@ -1,8 +1,3 @@
-// Copyright 2007-2010 Baptiste Lepilleur and The JsonCpp Authors
-// Distributed under MIT license, or public domain if desired and
-// recognized in your jurisdiction.
-// See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
-
 #ifndef JSON_ASSERTIONS_H_INCLUDED
 #define JSON_ASSERTIONS_H_INCLUDED
 
@@ -11,15 +6,10 @@
 
 #if !defined(JSON_IS_AMALGAMATION)
 #include "config.h"
-#endif // if !defined(JSON_IS_AMALGAMATION)
+#endif
 
-/** It should not be possible for a maliciously designed file to
- *  cause an abort() or seg-fault, so these macros are used only
- *  for pre-condition violations and internal logic errors.
- */
 #if JSON_USE_EXCEPTION
 
-// @todo <= add detail about condition in exception
 #define JSON_ASSERT(condition)                                                 \
   do {                                                                         \
     if (!(condition)) {                                                        \
@@ -35,12 +25,10 @@
     abort();                                                                   \
   } while (0)
 
-#else // JSON_USE_EXCEPTION
+#else
 
 #define JSON_ASSERT(condition) assert(condition)
 
-// The call to assert() will show the failure message in debug builds. In
-// release builds we abort, for a core-dump or debugger.
 #define JSON_FAIL_MESSAGE(message)                                             \
   {                                                                            \
     OStringStream oss;                                                         \
@@ -58,4 +46,4 @@
     }                                                                          \
   } while (0)
 
-#endif // JSON_ASSERTIONS_H_INCLUDED
+#endif
