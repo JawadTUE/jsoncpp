@@ -1,15 +1,11 @@
-// Copyright 2007-2011 Baptiste Lepilleur and The JsonCpp Authors
-// Copyright (C) 2016 InfoTeCS JSC. All rights reserved.
-// Distributed under MIT license, or public domain if desired and
-// recognized in your jurisdiction.
-// See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
+
 
 #if !defined(JSON_IS_AMALGAMATION)
 #include "json_tool.h"
 #include <json/assertions.h>
 #include <json/reader.h>
 #include <json/value.h>
-#endif // if !defined(JSON_IS_AMALGAMATION)
+#endif 
 #include <algorithm>
 #include <cassert>
 #include <cmath>
@@ -29,27 +25,24 @@
 #define sscanf std::sscanf
 #endif
 
-#endif //__cplusplus
+#endif 
 
 #if defined(_MSC_VER)
 #if !defined(_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES)
 #define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES 1
-#endif //_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES
-#endif //_MSC_VER
+#endif 
+#endif 
 
 #if defined(_MSC_VER)
-// Disable warning about strdup being deprecated.
 #pragma warning(disable : 4996)
 #endif
 
-// Define JSONCPP_DEPRECATED_STACK_LIMIT as an appropriate integer at compile
-// time to change the stack limit
 #if !defined(JSONCPP_DEPRECATED_STACK_LIMIT)
 #define JSONCPP_DEPRECATED_STACK_LIMIT 1000
 #endif
 
 static size_t const stackLimit_g =
-    JSONCPP_DEPRECATED_STACK_LIMIT; // see readValue()
+    JSONCPP_DEPRECATED_STACK_LIMIT; 
 
 namespace Json {
 
@@ -59,8 +52,6 @@ using CharReaderPtr = std::unique_ptr<CharReader>;
 using CharReaderPtr = std::auto_ptr<CharReader>;
 #endif
 
-// Implementation of class Features
-// ////////////////////////////////
 
 Features::Features() = default;
 
@@ -75,15 +66,11 @@ Features Features::strictMode() {
   return features;
 }
 
-// Implementation of class Reader
-// ////////////////////////////////
 
 bool Reader::containsNewLine(Reader::Location begin, Reader::Location end) {
   return std::any_of(begin, end, [](char b) { return b == '\n' || b == '\r'; });
 }
 
-// Class Reader
-// //////////////////////////////////////////////////////////////////
 
 Reader::Reader() : features_(Features::all()) {}
 
@@ -98,13 +85,7 @@ bool Reader::parse(const std::string& document, Value& root,
 }
 
 bool Reader::parse(std::istream& is, Value& root, bool collectComments) {
-  // std::istream_iterator<char> begin(is);
-  // std::istream_iterator<char> end;
-  // Those would allow streamed input from a file, if parse() were a
-  // template function.
 
-  // Since String is reference-counted, this at least does not
-  // create an extra copy.
   String doc(std::istreambuf_iterator<char>(is), {});
   return parse(doc.data(), doc.data() + doc.size(), root, collectComments);
 }
@@ -134,8 +115,6 @@ bool Reader::parse(const char* beginDoc, const char* endDoc, Value& root,
     root.setComment(commentsBefore_, commentAfter);
   if (features_.strictRoot_) {
     if (!root.isArray() && !root.isObject()) {
-      // Set error location to start of doc, ideally should be first token found
-      // in doc
       token.type_ = tokenError;
       token.start_ = beginDoc;
       token.end_ = endDoc;
@@ -149,10 +128,6 @@ bool Reader::parse(const char* beginDoc, const char* endDoc, Value& root,
 }
 
 bool Reader::readValue() {
-  // readValue() may call itself only if it calls readObject() or ReadArray().
-  // These methods execute nodes_.push() just before and nodes_.pop)() just
-  // after calling readValue(). parse() executes one nodes_.push(), so > instead
-  // of >=.
   if (nodes_.size() > stackLimit_g)
     throwRuntimeError("Exceeded stackLimit in readValue().");
 
@@ -202,15 +177,13 @@ bool Reader::readValue() {
   case tokenObjectEnd:
   case tokenArrayEnd:
     if (features_.allowDroppedNullPlaceholders_) {
-      // "Un-read" the current token and mark the current value as a null
-      // token.
       current_--;
       Value v;
       currentValue().swapPayload(v);
       currentValue().setOffsetStart(current_ - begin_ - 1);
       currentValue().setOffsetLimit(current_ - begin_);
       break;
-    } // Else, fall through...
+    } 
   default:
     currentValue().setOffsetStart(token.start_ - begin_);
     currentValue().setOffsetLimit(token.end_ - begin_);
@@ -358,9 +331,7 @@ String Reader::normalizeEOL(Reader::Location begin, Reader::Location end) {
     char c = *current++;
     if (c == '\r') {
       if (current != end && *current == '\n')
-        // convert dos EOL
         ++current;
-      // convert Mac EOL
       normalized += '\n';
     } else {
       normalized += c;
@@ -396,10 +367,8 @@ bool Reader::readCppStyleComment() {
     if (c == '\n')
       break;
     if (c == '\r') {
-      // Consume DOS EOL. It will be normalized in addComment.
       if (current_ != end_ && *current_ == '\n')
         getNextChar();
-      // Break on Moc OS 9 EOL.
       break;
     }
   }
@@ -408,17 +377,14 @@ bool Reader::readCppStyleComment() {
 
 void Reader::readNumber() {
   Location p = current_;
-  char c = '0'; // stopgap for already consumed character
-  // integral part
+  char c = '0'; 
   while (c >= '0' && c <= '9')
     c = (current_ = p) < end_ ? *p++ : '\0';
-  // fractional part
   if (c == '.') {
     c = (current_ = p) < end_ ? *p++ : '\0';
     while (c >= '0' && c <= '9')
       c = (current_ = p) < end_ ? *p++ : '\0';
   }
-  // exponential part
   if (c == 'e' || c == 'E') {
     c = (current_ = p) < end_ ? *p++ : '\0';
     if (c == '+' || c == '-')
@@ -447,7 +413,7 @@ bool Reader::readObject(Token& token) {
   currentValue().swapPayload(init);
   currentValue().setOffsetStart(token.start_ - begin_);
   while (readTokenSkippingComments(tokenName)) {
-    if (tokenName.type_ == tokenObjectEnd && name.empty()) // empty object
+    if (tokenName.type_ == tokenObjectEnd && name.empty()) 
       return true;
     name.clear();
     if (tokenName.type_ == tokenString) {
@@ -471,7 +437,7 @@ bool Reader::readObject(Token& token) {
     nodes_.push(&value);
     bool ok = readValue();
     nodes_.pop();
-    if (!ok) // error already set
+    if (!ok) 
       return recoverFromError(tokenObjectEnd);
 
     Token comma;
@@ -492,7 +458,7 @@ bool Reader::readArray(Token& token) {
   currentValue().swapPayload(init);
   currentValue().setOffsetStart(token.start_ - begin_);
   skipSpaces();
-  if (current_ != end_ && *current_ == ']') // empty array
+  if (current_ != end_ && *current_ == ']') 
   {
     Token endArray;
     readToken(endArray);
@@ -504,11 +470,10 @@ bool Reader::readArray(Token& token) {
     nodes_.push(&value);
     bool ok = readValue();
     nodes_.pop();
-    if (!ok) // error already set
+    if (!ok) 
       return recoverFromError(tokenArrayEnd);
 
     Token currentToken;
-    // Accept Comment after last item in the array.
     ok = readTokenSkippingComments(currentToken);
     bool badTokenType = (currentToken.type_ != tokenArraySeparator &&
                          currentToken.type_ != tokenArrayEnd);
@@ -533,15 +498,10 @@ bool Reader::decodeNumber(Token& token) {
 }
 
 bool Reader::decodeNumber(Token& token, Value& decoded) {
-  // Attempts to parse the number as an integer. If the number is
-  // larger than the maximum supported value of an integer then
-  // we decode the number as a double.
   Location current = token.start_;
   bool isNegative = *current == '-';
   if (isNegative)
     ++current;
-  // TODO: Help the compiler do the div and mod at compile time or get rid of
-  // them.
   Value::LargestUInt maxIntegerValue =
       isNegative ? Value::LargestUInt(Value::maxLargestInt) + 1
                  : Value::maxLargestUInt;
@@ -553,10 +513,6 @@ bool Reader::decodeNumber(Token& token, Value& decoded) {
       return decodeDouble(token, decoded);
     auto digit(static_cast<Value::UInt>(c - '0'));
     if (value >= threshold) {
-      // We've hit or exceeded the max value divided by 10 (rounded down). If
-      // a) we've only just touched the limit, b) this is the last digit, and
-      // c) it's small enough to fit in that rounding delta, we're okay.
-      // Otherwise treat this number as a double to avoid overflow.
       if (value > threshold || current != token.end_ ||
           digit > maxIntegerValue % 10) {
         return decodeDouble(token, decoded);
@@ -614,8 +570,8 @@ bool Reader::decodeString(Token& token) {
 
 bool Reader::decodeString(Token& token, String& decoded) {
   decoded.reserve(static_cast<size_t>(token.end_ - token.start_ - 2));
-  Location current = token.start_ + 1; // skip '"'
-  Location end = token.end_ - 1;       // do not include '"'
+  Location current = token.start_ + 1; 
+  Location end = token.end_ - 1;       
   while (current != end) {
     Char c = *current++;
     if (c == '"')
@@ -671,7 +627,6 @@ bool Reader::decodeUnicodeCodePoint(Token& token, Location& current,
   if (!decodeUnicodeEscapeSequence(token, current, end, unicode))
     return false;
   if (unicode >= 0xD800 && unicode <= 0xDBFF) {
-    // surrogate pairs
     if (end - current < 6)
       return addError(
           "additional six characters expected to parse unicode surrogate pair.",
@@ -730,7 +685,7 @@ bool Reader::recoverFromError(TokenType skipUntilToken) {
   Token skip;
   for (;;) {
     if (!readToken(skip))
-      errors_.resize(errorCount); // discard errors caused by recovery
+      errors_.resize(errorCount); 
     if (skip.type_ == skipUntilToken || skip.type_ == tokenEndOfStream)
       break;
   }
@@ -769,7 +724,6 @@ void Reader::getLocationLineAndColumn(Location location, int& line,
       ++line;
     }
   }
-  // column & line start at 1
   column = int(location - lastLineStart) + 1;
   ++line;
 }
@@ -782,7 +736,6 @@ String Reader::getLocationLineAndColumn(Location location) const {
   return buffer;
 }
 
-// Deprecated. Preserved for backward compatibility
 String Reader::getFormatedErrorMessages() const {
   return getFormattedErrorMessages();
 }
@@ -848,8 +801,6 @@ bool Reader::pushError(const Value& value, const String& message,
 
 bool Reader::good() const { return errors_.empty(); }
 
-// Originally copied from the Features class (now deprecated), used internally
-// for features implementation.
 class OurFeatures {
 public:
   static OurFeatures all();
@@ -864,15 +815,11 @@ public:
   bool allowSpecialFloats_;
   bool skipBom_;
   size_t stackLimit_;
-}; // OurFeatures
+}; 
 
 OurFeatures OurFeatures::all() { return {}; }
 
-// Implementation of class Reader
-// ////////////////////////////////
 
-// Originally copied from the Reader class (now deprecated), used internally
-// for implementing JSON reading.
 class OurReader {
 public:
   using Char = char;
@@ -885,8 +832,8 @@ public:
   std::vector<CharReader::StructuredError> getStructuredErrors() const;
 
 private:
-  OurReader(OurReader const&);      // no impl
-  void operator=(OurReader const&); // no impl
+  OurReader(OurReader const&);      
+  void operator=(OurReader const&); 
 
   enum TokenType {
     tokenEndOfStream = 0,
@@ -978,9 +925,8 @@ private:
 
   OurFeatures const features_;
   bool collectComments_ = false;
-}; // OurReader
+}; 
 
-// complete copy of Read impl, for OurReader
 
 bool OurReader::containsNewLine(OurReader::Location begin,
                                 OurReader::Location end) {
@@ -1007,7 +953,6 @@ bool OurReader::parse(const char* beginDoc, const char* endDoc, Value& root,
     nodes_.pop();
   nodes_.push(&root);
 
-  // skip byte order mark if it exists at the beginning of the UTF-8 text.
   skipBom(features_.skipBom_);
   bool successful = readValue();
   nodes_.pop();
@@ -1021,8 +966,6 @@ bool OurReader::parse(const char* beginDoc, const char* endDoc, Value& root,
     root.setComment(commentsBefore_, commentAfter);
   if (features_.strictRoot_) {
     if (!root.isArray() && !root.isObject()) {
-      // Set error location to start of doc, ideally should be first token found
-      // in doc
       token.type_ = tokenError;
       token.start_ = beginDoc;
       token.end_ = endDoc;
@@ -1036,7 +979,6 @@ bool OurReader::parse(const char* beginDoc, const char* endDoc, Value& root,
 }
 
 bool OurReader::readValue() {
-  //  To preserve the old behaviour we cast size_t to int.
   if (nodes_.size() > features_.stackLimit_)
     throwRuntimeError("Exceeded stackLimit in readValue().");
   Token token;
@@ -1103,15 +1045,13 @@ bool OurReader::readValue() {
   case tokenObjectEnd:
   case tokenArrayEnd:
     if (features_.allowDroppedNullPlaceholders_) {
-      // "Un-read" the current token and mark the current value as a null
-      // token.
       current_--;
       Value v;
       currentValue().swapPayload(v);
       currentValue().setOffsetStart(current_ - begin_ - 1);
       currentValue().setOffsetLimit(current_ - begin_);
       break;
-    } // else, fall through ...
+    } 
   default:
     currentValue().setOffsetStart(token.start_ - begin_);
     currentValue().setOffsetLimit(token.end_ - begin_);
@@ -1164,7 +1104,6 @@ bool OurReader::readToken(Token& token) {
       token.type_ = tokenString;
       ok = readStringSingleQuote();
     } else {
-      // If we don't allow single quotes, this is a failure case.
       ok = false;
     }
     break;
@@ -1259,7 +1198,6 @@ void OurReader::skipSpaces() {
 }
 
 void OurReader::skipBom(bool skipBom) {
-  // The default behavior is to skip BOM.
   if (skipBom) {
     if ((end_ - begin_) >= 3 && strncmp(begin_, "\xEF\xBB\xBF", 3) == 0) {
       begin_ += 3;
@@ -1322,9 +1260,7 @@ String OurReader::normalizeEOL(OurReader::Location begin,
     char c = *current++;
     if (c == '\r') {
       if (current != end && *current == '\n')
-        // convert dos EOL
         ++current;
-      // convert Mac EOL
       normalized += '\n';
     } else {
       normalized += c;
@@ -1365,10 +1301,8 @@ bool OurReader::readCppStyleComment() {
     if (c == '\n')
       break;
     if (c == '\r') {
-      // Consume DOS EOL. It will be normalized in addComment.
       if (current_ != end_ && *current_ == '\n')
         getNextChar();
-      // Break on Moc OS 9 EOL.
       break;
     }
   }
@@ -1381,17 +1315,14 @@ bool OurReader::readNumber(bool checkInf) {
     current_ = ++p;
     return false;
   }
-  char c = '0'; // stopgap for already consumed character
-  // integral part
+  char c = '0'; 
   while (c >= '0' && c <= '9')
     c = (current_ = p) < end_ ? *p++ : '\0';
-  // fractional part
   if (c == '.') {
     c = (current_ = p) < end_ ? *p++ : '\0';
     while (c >= '0' && c <= '9')
       c = (current_ = p) < end_ ? *p++ : '\0';
   }
-  // exponential part
   if (c == 'e' || c == 'E') {
     c = (current_ = p) < end_ ? *p++ : '\0';
     if (c == '+' || c == '-')
@@ -1434,7 +1365,7 @@ bool OurReader::readObject(Token& token) {
   while (readTokenSkippingComments(tokenName)) {
     if (tokenName.type_ == tokenObjectEnd &&
         (name.empty() ||
-         features_.allowTrailingCommas_)) // empty object or trailing comma
+         features_.allowTrailingCommas_)) 
       return true;
     name.clear();
     if (tokenName.type_ == tokenString) {
@@ -1464,7 +1395,7 @@ bool OurReader::readObject(Token& token) {
     nodes_.push(&value);
     bool ok = readValue();
     nodes_.pop();
-    if (!ok) // error already set
+    if (!ok) 
       return recoverFromError(tokenObjectEnd);
 
     Token comma;
@@ -1490,8 +1421,7 @@ bool OurReader::readArray(Token& token) {
     if (current_ != end_ && *current_ == ']' &&
         (index == 0 ||
          (features_.allowTrailingCommas_ &&
-          !features_.allowDroppedNullPlaceholders_))) // empty array or trailing
-                                                      // comma
+          !features_.allowDroppedNullPlaceholders_))) 
     {
       Token endArray;
       readToken(endArray);
@@ -1501,11 +1431,10 @@ bool OurReader::readArray(Token& token) {
     nodes_.push(&value);
     bool ok = readValue();
     nodes_.pop();
-    if (!ok) // error already set
+    if (!ok) 
       return recoverFromError(tokenArrayEnd);
 
     Token currentToken;
-    // Accept Comment after last item in the array.
     ok = readTokenSkippingComments(currentToken);
     bool badTokenType = (currentToken.type_ != tokenArraySeparator &&
                          currentToken.type_ != tokenArrayEnd);
@@ -1530,25 +1459,15 @@ bool OurReader::decodeNumber(Token& token) {
 }
 
 bool OurReader::decodeNumber(Token& token, Value& decoded) {
-  // Attempts to parse the number as an integer. If the number is
-  // larger than the maximum supported value of an integer then
-  // we decode the number as a double.
   Location current = token.start_;
   const bool isNegative = *current == '-';
   if (isNegative) {
     ++current;
   }
 
-  // We assume we can represent the largest and smallest integer types as
-  // unsigned integers with separate sign. This is only true if they can fit
-  // into an unsigned integer.
   static_assert(Value::maxLargestInt <= Value::maxLargestUInt,
                 "Int must be smaller than UInt");
 
-  // We need to convert minLargestInt into a positive number. The easiest way
-  // to do this conversion is to assume our "threshold" value of minLargestInt
-  // divided by 10 can fit in maxLargestInt when absolute valued. This should
-  // be a safe assumption.
   static_assert(Value::minLargestInt <= -Value::maxLargestInt,
                 "The absolute value of minLargestInt must be greater than or "
                 "equal to maxLargestInt");
@@ -1560,11 +1479,6 @@ bool OurReader::decodeNumber(Token& token, Value& decoded) {
       Value::maxLargestUInt / 10;
   static constexpr Value::UInt positive_last_digit = Value::maxLargestUInt % 10;
 
-  // For the negative values, we have to be more careful. Since typically
-  // -Value::minLargestInt will cause an overflow, we first divide by 10 and
-  // then take the inverse. This assumes that minLargestInt is only a single
-  // power of 10 different in magnitude, which we check above. For the last
-  // digit, we take the modulus before negating for the same reason.
   static constexpr auto negative_threshold =
       Value::LargestUInt(-(Value::minLargestInt / 10));
   static constexpr auto negative_last_digit =
@@ -1583,11 +1497,6 @@ bool OurReader::decodeNumber(Token& token, Value& decoded) {
 
     const auto digit(static_cast<Value::UInt>(c - '0'));
     if (value >= threshold) {
-      // We've hit or exceeded the max value divided by 10 (rounded down). If
-      // a) we've only just touched the limit, meaning value == threshold,
-      // b) this is the last digit, or
-      // c) it's small enough to fit in that rounding delta, we're okay.
-      // Otherwise treat this number as a double to avoid overflow.
       if (value > threshold || current != token.end_ ||
           digit > max_last_digit) {
         return decodeDouble(token, decoded);
@@ -1597,7 +1506,6 @@ bool OurReader::decodeNumber(Token& token, Value& decoded) {
   }
 
   if (isNegative) {
-    // We use the same magnitude assumption here, just in case.
     const auto last_digit = static_cast<Value::UInt>(value % 10);
     decoded = -Value::LargestInt(value / 10) * 10 - last_digit;
   } else if (value <= Value::LargestUInt(Value::maxLargestInt)) {
@@ -1648,8 +1556,8 @@ bool OurReader::decodeString(Token& token) {
 
 bool OurReader::decodeString(Token& token, String& decoded) {
   decoded.reserve(static_cast<size_t>(token.end_ - token.start_ - 2));
-  Location current = token.start_ + 1; // skip '"'
-  Location end = token.end_ - 1;       // do not include '"'
+  Location current = token.start_ + 1; 
+  Location end = token.end_ - 1;       
   while (current != end) {
     Char c = *current++;
     if (c == '"')
@@ -1705,7 +1613,6 @@ bool OurReader::decodeUnicodeCodePoint(Token& token, Location& current,
   if (!decodeUnicodeEscapeSequence(token, current, end, unicode))
     return false;
   if (unicode >= 0xD800 && unicode <= 0xDBFF) {
-    // surrogate pairs
     if (end - current < 6)
       return addError(
           "additional six characters expected to parse unicode surrogate pair.",
@@ -1764,7 +1671,7 @@ bool OurReader::recoverFromError(TokenType skipUntilToken) {
   Token skip;
   for (;;) {
     if (!readToken(skip))
-      errors_.resize(errorCount); // discard errors caused by recovery
+      errors_.resize(errorCount); 
     if (skip.type_ == skipUntilToken || skip.type_ == tokenEndOfStream)
       break;
   }
@@ -1803,7 +1710,6 @@ void OurReader::getLocationLineAndColumn(Location location, int& line,
       ++line;
     }
   }
-  // column & line start at 1
   column = int(location - lastLineStart) + 1;
   ++line;
 }
@@ -1888,8 +1794,6 @@ CharReader* CharReaderBuilder::newCharReader() const {
   features.allowNumericKeys_ = settings_["allowNumericKeys"].asBool();
   features.allowSingleQuotes_ = settings_["allowSingleQuotes"].asBool();
 
-  // Stack limit is always a size_t, so we get this as an unsigned int
-  // regardless of it we have 64-bit integer support enabled.
   features.stackLimit_ = static_cast<size_t>(settings_["stackLimit"].asUInt());
   features.failIfExtra_ = settings_["failIfExtra"].asBool();
   features.rejectDupKeys_ = settings_["rejectDupKeys"].asBool();
@@ -1928,9 +1832,7 @@ bool CharReaderBuilder::validate(Json::Value* invalid) const {
 Value& CharReaderBuilder::operator[](const String& key) {
   return settings_[key];
 }
-// static
 void CharReaderBuilder::strictMode(Json::Value* settings) {
-  //! [CharReaderBuilderStrictMode]
   (*settings)["allowComments"] = false;
   (*settings)["allowTrailingCommas"] = false;
   (*settings)["strictRoot"] = true;
@@ -1942,11 +1844,8 @@ void CharReaderBuilder::strictMode(Json::Value* settings) {
   (*settings)["rejectDupKeys"] = true;
   (*settings)["allowSpecialFloats"] = false;
   (*settings)["skipBom"] = true;
-  //! [CharReaderBuilderStrictMode]
 }
-// static
 void CharReaderBuilder::setDefaults(Json::Value* settings) {
-  //! [CharReaderBuilderDefaults]
   (*settings)["collectComments"] = true;
   (*settings)["allowComments"] = true;
   (*settings)["allowTrailingCommas"] = true;
@@ -1959,11 +1858,8 @@ void CharReaderBuilder::setDefaults(Json::Value* settings) {
   (*settings)["rejectDupKeys"] = false;
   (*settings)["allowSpecialFloats"] = false;
   (*settings)["skipBom"] = true;
-  //! [CharReaderBuilderDefaults]
 }
-// static
 void CharReaderBuilder::ecma404Mode(Json::Value* settings) {
-  //! [CharReaderBuilderECMA404Mode]
   (*settings)["allowComments"] = false;
   (*settings)["allowTrailingCommas"] = false;
   (*settings)["strictRoot"] = false;
@@ -1975,7 +1871,6 @@ void CharReaderBuilder::ecma404Mode(Json::Value* settings) {
   (*settings)["rejectDupKeys"] = false;
   (*settings)["allowSpecialFloats"] = false;
   (*settings)["skipBom"] = false;
-  //! [CharReaderBuilderECMA404Mode]
 }
 
 std::vector<CharReader::StructuredError>
@@ -1988,8 +1883,6 @@ bool CharReader::parse(char const* beginDoc, char const* endDoc, Value* root,
   return _impl->parse(beginDoc, endDoc, root, errs);
 }
 
-//////////////////////////////////
-// global functions
 
 bool parseFromStream(CharReader::Factory const& fact, IStream& sin, Value* root,
                      String* errs) {
@@ -1998,7 +1891,6 @@ bool parseFromStream(CharReader::Factory const& fact, IStream& sin, Value* root,
   String doc = std::move(ssin).str();
   char const* begin = doc.data();
   char const* end = begin + doc.size();
-  // Note that we do not actually need a null-terminator.
   CharReaderPtr const reader(fact.newCharReader());
   return reader->parse(begin, end, root, errs);
 }
@@ -2013,4 +1905,4 @@ IStream& operator>>(IStream& sin, Value& root) {
   return sin;
 }
 
-} // namespace Json
+} 
