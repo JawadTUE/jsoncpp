@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_our_reader_1_1_error_info" kind="class" language="C++" prot="private">
+    <compoundname>Json::OurReader::ErrorInfo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_json_1_1_our_reader_1_1_error_info_1ad05204ecabe5e7201a842935b874ae9a" prot="public" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_our_reader_1_1_token" kindref="compound">Token</ref></type>
+        <definition>Token Json::OurReader::ErrorInfo::token_</definition>
+        <argsstring></argsstring>
+        <name>token_</name>
+        <qualifiedname>Json::OurReader::ErrorInfo::token_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="859" column="11" bodyfile="src/lib_json/json_reader.cpp" bodystart="859" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_our_reader_1ac6e77795ec2b0574c8f43b60e97a92bc" compoundref="json__reader_8cpp" startline="1648" endline="1655">Json::OurReader::addError</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_reader_1_1_error_info_1a490806cc4d4f441a620f1ab3fe12bd3a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::OurReader::ErrorInfo::message_</definition>
+        <argsstring></argsstring>
+        <name>message_</name>
+        <qualifiedname>Json::OurReader::ErrorInfo::message_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="860" column="12" bodyfile="src/lib_json/json_reader.cpp" bodystart="860" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_our_reader_1ac6e77795ec2b0574c8f43b60e97a92bc" compoundref="json__reader_8cpp" startline="1648" endline="1655">Json::OurReader::addError</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_reader_1_1_error_info_1a77ba2d32a471c7b9bc14621b76a5bdab" prot="public" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_our_reader_1a9cbbee13b829f8270b2943a248048a73" kindref="member">Location</ref></type>
+        <definition>Location Json::OurReader::ErrorInfo::extra_</definition>
+        <argsstring></argsstring>
+        <name>extra_</name>
+        <qualifiedname>Json::OurReader::ErrorInfo::extra_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="861" column="14" bodyfile="src/lib_json/json_reader.cpp" bodystart="861" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_our_reader_1ac6e77795ec2b0574c8f43b60e97a92bc" compoundref="json__reader_8cpp" startline="1648" endline="1655">Json::OurReader::addError</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::OurReader::ErrorInfo</label>
+        <link refid="class_json_1_1_our_reader_1_1_error_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>token_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>message_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>extra_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Json::OurReader::Token</label>
+        <link refid="class_json_1_1_our_reader_1_1_token"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>end_</edgelabel>
+          <edgelabel>start_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TokenType</label>
+      </node>
+      <node id="4">
+        <label>const Char *</label>
+      </node>
+      <node id="6">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</label>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/lib_json/json_reader.cpp" line="857" column="3" bodyfile="src/lib_json/json_reader.cpp" bodystart="857" bodyend="862"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_our_reader_1_1_error_info_1a77ba2d32a471c7b9bc14621b76a5bdab" prot="public" virt="non-virtual"><scope>Json::OurReader::ErrorInfo</scope><name>extra_</name></member>
+      <member refid="class_json_1_1_our_reader_1_1_error_info_1a490806cc4d4f441a620f1ab3fe12bd3a" prot="public" virt="non-virtual"><scope>Json::OurReader::ErrorInfo</scope><name>message_</name></member>
+      <member refid="class_json_1_1_our_reader_1_1_error_info_1ad05204ecabe5e7201a842935b874ae9a" prot="public" virt="non-virtual"><scope>Json::OurReader::ErrorInfo</scope><name>token_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

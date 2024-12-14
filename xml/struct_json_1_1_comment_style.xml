@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="struct_json_1_1_comment_style" kind="struct" language="C++" prot="public">
+    <compoundname>Json::CommentStyle</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Enum</name>
+        <qualifiedname>Json::CommentStyle::Enum</qualifiedname>
+        <enumvalue id="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0cac8b32a8bae63414c8647d4919da8d437" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0cac65238f050773c107690a456e9c05c98" prot="public">
+          <name>Most</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0ca32302c0b97190c1808b3e38f367fef01" prot="public">
+          <name>All</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="814" column="3" bodyfile="src/lib_json/json_writer.cpp" bodystart="814" bodyend="814"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib_json/json_writer.cpp" line="813" column="1" bodyfile="src/lib_json/json_writer.cpp" bodystart="813" bodyend="815"/>
+    <listofallmembers>
+      <member refid="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0ca32302c0b97190c1808b3e38f367fef01" prot="public" virt="non-virtual"><scope>Json::CommentStyle</scope><name>All</name></member>
+      <member refid="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0c" prot="public" virt="non-virtual"><scope>Json::CommentStyle</scope><name>Enum</name></member>
+      <member refid="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0cac65238f050773c107690a456e9c05c98" prot="public" virt="non-virtual"><scope>Json::CommentStyle</scope><name>Most</name></member>
+      <member refid="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0cac8b32a8bae63414c8647d4919da8d437" prot="public" virt="non-virtual"><scope>Json::CommentStyle</scope><name>None</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="writer_8h" kind="file" language="C++">
+    <compoundname>writer.h</compoundname>
+    <includes refid="value_8h" local="yes">value.h</includes>
+    <includes local="no">ostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="json_8h" local="yes">include/json/json.h</includedby>
+    <includedby refid="json__value_8cpp" local="no">src/lib_json/json_value.cpp</includedby>
+    <includedby refid="json__writer_8cpp" local="no">src/lib_json/json_writer.cpp</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>allocator.h</label>
+        <link refid="allocator_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>forwards.h</label>
+        <link refid="forwards_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>value.h</label>
+        <link refid="value_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="1">
+        <label>include/json/writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>algorithm</label>
+      </node>
+      <node id="17">
+        <label>array</label>
+      </node>
+      <node id="5">
+        <label>cstddef</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="15">
+        <label>cstring</label>
+      </node>
+      <node id="18">
+        <label>exception</label>
+      </node>
+      <node id="7">
+        <label>istream</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>ostream</label>
+      </node>
+      <node id="10">
+        <label>sstream</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>type_traits</label>
+      </node>
+      <node id="20">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/json/json.h</label>
+        <link refid="json_8h"/>
+      </node>
+      <node id="1">
+        <label>include/json/writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/lib_json/json_value.cpp</label>
+        <link refid="json__value_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/lib_json/json_writer.cpp</label>
+        <link refid="json__writer_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_json_1_1_stream_writer" prot="public">Json::StreamWriter</innerclass>
+    <innerclass refid="class_json_1_1_stream_writer_1_1_factory" prot="public">Json::StreamWriter::Factory</innerclass>
+    <innerclass refid="class_json_1_1_stream_writer_builder" prot="public">Json::StreamWriterBuilder</innerclass>
+    <innerclass refid="class_json_1_1_writer" prot="public">Json::Writer</innerclass>
+    <innerclass refid="class_json_1_1_fast_writer" prot="public">Json::FastWriter</innerclass>
+    <innerclass refid="class_json_1_1_styled_writer" prot="public">Json::StyledWriter</innerclass>
+    <innerclass refid="class_json_1_1_styled_stream_writer" prot="public">Json::StyledStreamWriter</innerclass>
+    <innernamespace refid="namespace_json">Json</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>JSON_WRITER_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_WRITER_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(JSON_IS_AMALGAMATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="value_8h" kindref="compound">value.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(JSONCPP_DISABLE_DLL_INTERFACE_WARNING)<sp/>&amp;&amp;<sp/>defined(_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable<sp/>:<sp/>4251)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_json" kindref="compound">Json</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Value;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_json_1_1_stream_writer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="class_json_1_1_stream_writer_1afcaf15b7e1c6c6b4b3d3847413588c8f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref>*<sp/><ref refid="class_json_1_1_stream_writer_1afcaf15b7e1c6c6b4b3d3847413588c8f" kindref="member">sout_</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref>();</highlight></codeline>
+<codeline lineno="29" refid="class_json_1_1_stream_writer_1a03f8fb6a873b6b50f05bc4556e043c3a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_stream_writer_1a03f8fb6a873b6b50f05bc4556e043c3a" kindref="member">~StreamWriter</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_json_1_1_stream_writer_1abcb52fb89a6e2302a3e055c4463a273a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_stream_writer_1abcb52fb89a6e2302a3e055c4463a273a" kindref="member">write</ref>(<ref refid="class_json_1_1_value" kindref="compound">Value</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>root,<sp/><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref>*<sp/>sout)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_json_1_1_stream_writer_1_1_factory" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_stream_writer_1_1_factory" kindref="compound">Factory</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="class_json_1_1_stream_writer_1_1_factory_1ad334ad5e81e3b9b1768620a446366ff1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_stream_writer_1_1_factory_1ad334ad5e81e3b9b1768620a446366ff1" kindref="member">~Factory</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_json_1_1_stream_writer_1_1_factory_1ad7e8432ba542dcb01fe9ee12dcd0e574" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref>*<sp/><ref refid="class_json_1_1_stream_writer_1_1_factory_1ad7e8432ba542dcb01fe9ee12dcd0e574" kindref="member">newStreamWriter</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1a4cd945e3d7722c3fabc38e14efacb6f8" kindref="member">writeString</ref>(<ref refid="class_json_1_1_stream_writer_1_1_factory" kindref="compound">StreamWriter::Factory</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>factory,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>root);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_json_1_1_stream_writer_builder" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_stream_writer_builder" kindref="compound">StreamWriterBuilder</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_stream_writer_1_1_factory" kindref="compound">StreamWriter::Factory</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46" refid="class_json_1_1_stream_writer_builder_1a79bdf2e639a52f4e758c0b95bd1d3423" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref><sp/><ref refid="class_json_1_1_stream_writer_builder_1a79bdf2e639a52f4e758c0b95bd1d3423" kindref="member">settings_</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_stream_writer_builder" kindref="compound">StreamWriterBuilder</ref>();</highlight></codeline>
+<codeline lineno="49" refid="class_json_1_1_stream_writer_builder_1ac86f882736cb2fff79adb45adeafeb22" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_stream_writer_builder_1ac86f882736cb2fff79adb45adeafeb22" kindref="member">~StreamWriterBuilder</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref>*<sp/>newStreamWriter()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>validate(<ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref>*<sp/>invalid)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>operator[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>key);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setDefaults(<ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref>*<sp/>settings);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_json_1_1_writer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_writer" kindref="compound">Writer</ref><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62" refid="class_json_1_1_writer_1a3e618564336f26b14921f0d840db668c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_writer_1a3e618564336f26b14921f0d840db668c" kindref="member">~Writer</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_json_1_1_writer_1aa22c9a70fc533ebc87736567293728aa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_writer_1aa22c9a70fc533ebc87736567293728aa" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable<sp/>:<sp/>4996)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_json_1_1_fast_writer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_fast_writer" kindref="compound">FastWriter</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_writer" kindref="compound">Writer</ref><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73" refid="class_json_1_1_fast_writer_1a1bbc73ce1a1cc7b09cd1e02db3905170" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_fast_writer_1a1bbc73ce1a1cc7b09cd1e02db3905170" kindref="member">FastWriter</ref>();</highlight></codeline>
+<codeline lineno="74" refid="class_json_1_1_fast_writer_1a86380e4e42fd175d86c1f2b64745ab35" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_fast_writer_1a86380e4e42fd175d86c1f2b64745ab35" kindref="member">~FastWriter</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>enableYAMLCompatibility();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dropNullPlaceholders();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>omitEndingLineFeed();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/>write(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_json_1_1_fast_writer_1a39fc3356512b2c93169079420562fea4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_fast_writer_1a39fc3356512b2c93169079420562fea4" kindref="member">document_</ref>;</highlight></codeline>
+<codeline lineno="89" refid="class_json_1_1_fast_writer_1afd24bfad25d80ad06d9c6e605e6f343e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>yamlCompatibilityEnabled_{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90" refid="class_json_1_1_fast_writer_1a97e9d4ff84b59a48756dcc27a71b5904" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dropNullPlaceholders_{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91" refid="class_json_1_1_fast_writer_1abd6e13851db6dcf59d84af68d48d50ac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>omitEndingLineFeed_{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable<sp/>:<sp/>4996)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_json_1_1_styled_writer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_styled_writer" kindref="compound">StyledWriter</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_writer" kindref="compound">Writer</ref><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103" refid="class_json_1_1_styled_writer_1a1f1b5f922a6a0ef0e56c6dd2f6170192" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_styled_writer_1a1f1b5f922a6a0ef0e56c6dd2f6170192" kindref="member">StyledWriter</ref>();</highlight></codeline>
+<codeline lineno="104" refid="class_json_1_1_styled_writer_1a6ea086825de39b0f3b25b3323124a26b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_styled_writer_1a6ea086825de39b0f3b25b3323124a26b" kindref="member">~StyledWriter</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/>write(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeArrayValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isMultilineArray(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pushValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeIndent();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeWithIndent(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>indent();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unindent();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeCommentBeforeValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeCommentAfterValueOnSameLine(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasCommentForValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="121" refid="class_json_1_1_styled_writer_1ad3dca9cd62f885840234a90cddd0e5e4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_styled_writer_1ad3dca9cd62f885840234a90cddd0e5e4" kindref="member">normalizeEOL</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>text);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="class_json_1_1_styled_writer_1a27206ba79e6dc3f99aa9500df1c8b411" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_styled_writer_1a27206ba79e6dc3f99aa9500df1c8b411" kindref="member">ChildValues</ref><sp/>=<sp/>std::vector&lt;String&gt;;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="class_json_1_1_styled_writer_1a1f905495f0705365af117ec541e29fdf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_styled_writer_1a27206ba79e6dc3f99aa9500df1c8b411" kindref="member">ChildValues</ref><sp/><ref refid="class_json_1_1_styled_writer_1a1f905495f0705365af117ec541e29fdf" kindref="member">childValues_</ref>;</highlight></codeline>
+<codeline lineno="126" refid="class_json_1_1_styled_writer_1ae51c24c527a61fb07d9d87a185cfea55" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_styled_writer_1ae51c24c527a61fb07d9d87a185cfea55" kindref="member">document_</ref>;</highlight></codeline>
+<codeline lineno="127" refid="class_json_1_1_styled_writer_1ac2f94cdf819aba00122699d6c8dc8010" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_styled_writer_1ac2f94cdf819aba00122699d6c8dc8010" kindref="member">indentString_</ref>;</highlight></codeline>
+<codeline lineno="128" refid="class_json_1_1_styled_writer_1ae648d2e1fc0f7d45c748c96805106cb0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rightMargin_{74};</highlight></codeline>
+<codeline lineno="129" refid="class_json_1_1_styled_writer_1a0b5ab768cc56433d463eb1f03da8614e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indentSize_{3};</highlight></codeline>
+<codeline lineno="130" refid="class_json_1_1_styled_writer_1acaabfa48b50a8bb7fa9ce98e2ae971d9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>addChildValues_{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable<sp/>:<sp/>4996)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="class_json_1_1_styled_stream_writer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_styled_stream_writer" kindref="compound">StyledStreamWriter</ref><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_styled_stream_writer" kindref="compound">StyledStreamWriter</ref>(<ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/>indentation<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="143" refid="class_json_1_1_styled_stream_writer_1ac98ea85e08d1c3cc5230787c5fea240e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_styled_stream_writer_1ac98ea85e08d1c3cc5230787c5fea240e" kindref="member">~StyledStreamWriter</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write(<ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref>&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeArrayValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isMultilineArray(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pushValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeIndent();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeWithIndent(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>indent();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unindent();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeCommentBeforeValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeCommentAfterValueOnSameLine(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasCommentForValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="160" refid="class_json_1_1_styled_stream_writer_1a0212b29c9d12055fd27ea8a4236c5b42" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_styled_stream_writer_1a0212b29c9d12055fd27ea8a4236c5b42" kindref="member">normalizeEOL</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>text);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="class_json_1_1_styled_stream_writer_1a4e566b35970ba4cef9d43b5ae6eca9c1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_styled_stream_writer_1a4e566b35970ba4cef9d43b5ae6eca9c1" kindref="member">ChildValues</ref><sp/>=<sp/>std::vector&lt;String&gt;;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="class_json_1_1_styled_stream_writer_1aafd62e00a401df73fcacb2e410114b3d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_styled_stream_writer_1a4e566b35970ba4cef9d43b5ae6eca9c1" kindref="member">ChildValues</ref><sp/><ref refid="class_json_1_1_styled_stream_writer_1aafd62e00a401df73fcacb2e410114b3d" kindref="member">childValues_</ref>;</highlight></codeline>
+<codeline lineno="165" refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref>*<sp/><ref refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" kindref="member">document_</ref>;</highlight></codeline>
+<codeline lineno="166" refid="class_json_1_1_styled_stream_writer_1ab29404730f68a0de1ad6b0f5a889d37f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_styled_stream_writer_1ab29404730f68a0de1ad6b0f5a889d37f" kindref="member">indentString_</ref>;</highlight></codeline>
+<codeline lineno="167" refid="class_json_1_1_styled_stream_writer_1a94299ec0a9bb925b2dbbab7c1f2b390a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rightMargin_{74};</highlight></codeline>
+<codeline lineno="168" refid="class_json_1_1_styled_stream_writer_1a5ade2dfd46f6c95053ca6a821d74f28c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_styled_stream_writer_1a5ade2dfd46f6c95053ca6a821d74f28c" kindref="member">indentation_</ref>;</highlight></codeline>
+<codeline lineno="169" refid="class_json_1_1_styled_stream_writer_1a4e4bb7fc223b2652b72b523b1ce414fa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_styled_stream_writer_1a4e4bb7fc223b2652b72b523b1ce414fa" kindref="member">addChildValues_</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="170" refid="class_json_1_1_styled_stream_writer_1aa12db1753619a9b48da41f3e45e3275d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_styled_stream_writer_1aa12db1753619a9b48da41f3e45e3275d" kindref="member">indented_</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(JSON_HAS_INT64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" kindref="member">valueToString</ref>(<ref refid="namespace_json_1a9277f826baa1de2d303af893fa6f16ce" kindref="member">Int</ref><sp/>value);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" kindref="member">valueToString</ref>(<ref refid="namespace_json_1a74d106771a079ca397eaffbf93d445be" kindref="member">UInt</ref><sp/>value);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" kindref="member">valueToString</ref>(<ref refid="namespace_json_1a4740dd208d3b4278c0ab4a3b73146b45" kindref="member">LargestInt</ref><sp/>value);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" kindref="member">valueToString</ref>(<ref refid="namespace_json_1acc8c7ef3383b2f4f33ff219810445bc6" kindref="member">LargestUInt</ref><sp/>value);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" kindref="member">valueToString</ref>(</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>precision<sp/>=<sp/><ref refid="class_json_1_1_value_1a66b0728adfe54e8f7652a180b21a2812" kindref="member">Value::defaultRealPrecision</ref>,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8" kindref="member">PrecisionType</ref><sp/>precisionType<sp/>=<sp/><ref refid="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8abb30ddeaa820d370a2438dda7a08996a" kindref="member">PrecisionType::significantDigits</ref>);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" kindref="member">valueToString</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1a6a79f56ee8cba1cae61cf4f0a533217d" kindref="member">valueToQuotedString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1a6a79f56ee8cba1cae61cf4f0a533217d" kindref="member">valueToQuotedString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref>&amp;<sp/><ref refid="namespace_json_1a91e5bd3901936f85718362360bec35c6" kindref="member">operator&lt;&lt;</ref>(<ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Json</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(JSONCPP_DISABLE_DLL_INTERFACE_WARNING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/json/writer.h"/>
+  </compounddef>
+</doxygen>

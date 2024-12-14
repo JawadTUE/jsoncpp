@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_char_reader_1_1_impl" kind="class" language="C++" prot="protected" abstract="yes">
+    <compoundname>Json::CharReader::Impl</compoundname>
+    <derivedcompoundref refid="class_json_1_1_our_char_reader_1_1_our_impl" prot="public" virt="non-virtual">Json::OurCharReader::OurImpl</derivedcompoundref>
+    <includes refid="reader_8h" local="no">reader.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_char_reader_1_1_impl_1accfa0d3067f28375b3406fbdc07c391e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Json::CharReader::Impl::~Impl</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Impl</name>
+        <qualifiedname>Json::CharReader::Impl::~Impl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="167" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_1_1_impl_1ab9cd7159a09c59c67845d6fc356f605a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Json::CharReader::Impl::parse</definition>
+        <argsstring>(char const *beginDoc, char const *endDoc, Value *root, String *errs)=0</argsstring>
+        <name>parse</name>
+        <qualifiedname>Json::CharReader::Impl::parse</qualifiedname>
+        <reimplementedby refid="class_json_1_1_our_char_reader_1_1_our_impl_1ab6d0fa7cb0dccf305aca792fd67da539">parse</reimplementedby>
+        <param>
+          <type>char const *</type>
+          <declname>beginDoc</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>endDoc</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> *</type>
+          <declname>errs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="168" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_1_1_impl_1a29922242864f786fd93a5a2b4940e165" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; <ref refid="struct_json_1_1_char_reader_1_1_structured_error" kindref="compound">StructuredError</ref> &gt;</type>
+        <definition>virtual std::vector&lt; StructuredError &gt; Json::CharReader::Impl::getStructuredErrors</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getStructuredErrors</name>
+        <qualifiedname>Json::CharReader::Impl::getStructuredErrors</qualifiedname>
+        <reimplementedby refid="class_json_1_1_our_char_reader_1_1_our_impl_1a1d1fb2bc93bbd2c9938604cc17741541">getStructuredErrors</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="170" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Json::CharReader::Impl</label>
+        <link refid="class_json_1_1_char_reader_1_1_impl"/>
+      </node>
+      <node id="2">
+        <label>Json::OurCharReader::OurImpl</label>
+        <link refid="class_json_1_1_our_char_reader_1_1_our_impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/json/reader.h" line="165" column="3" bodyfile="include/json/reader.h" bodystart="165" bodyend="171"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_char_reader_1_1_impl_1a29922242864f786fd93a5a2b4940e165" prot="public" virt="pure-virtual"><scope>Json::CharReader::Impl</scope><name>getStructuredErrors</name></member>
+      <member refid="class_json_1_1_char_reader_1_1_impl_1ab9cd7159a09c59c67845d6fc356f605a" prot="public" virt="pure-virtual"><scope>Json::CharReader::Impl</scope><name>parse</name></member>
+      <member refid="class_json_1_1_char_reader_1_1_impl_1accfa0d3067f28375b3406fbdc07c391e" prot="public" virt="virtual"><scope>Json::CharReader::Impl</scope><name>~Impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

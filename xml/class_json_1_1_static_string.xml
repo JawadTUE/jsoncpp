@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_static_string" kind="class" language="C++" prot="public">
+    <compoundname>Json::StaticString</compoundname>
+    <includes refid="value_8h" local="no">value.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_1_1_static_string_1a9f0d9e8caee8f8db14e2c8c24760dffd" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Json::StaticString::c_str_</definition>
+        <argsstring></argsstring>
+        <name>c_str_</name>
+        <qualifiedname>Json::StaticString::c_str_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="103" column="14" bodyfile="include/json/value.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_static_string_1afb6baf1ec078ce76f0b0f9b39d19437f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Json::StaticString::StaticString</definition>
+        <argsstring>(const char *czstring)</argsstring>
+        <name>StaticString</name>
+        <qualifiedname>Json::StaticString::StaticString</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>czstring</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="96" column="12" bodyfile="include/json/value.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_static_string_1a256a6cc0c630aef670848a0f11707b62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Json::StaticString::operator const char *</definition>
+        <argsstring>() const</argsstring>
+        <name>operator const char *</name>
+        <qualifiedname>Json::StaticString::operator const char *</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="98" column="3" bodyfile="include/json/value.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_static_string_1af11e3fc5823978e2946f06caa046ac3c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * Json::StaticString::c_str</definition>
+        <argsstring>() const</argsstring>
+        <name>c_str</name>
+        <qualifiedname>Json::StaticString::c_str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="100" column="14" bodyfile="include/json/value.h" bodystart="100" bodyend="100"/>
+        <referencedby refid="class_json_1_1_value_1ac3763d7d315ca65dc188e273722f7955" compoundref="json__value_8cpp" startline="1047" endline="1049">Json::Value::operator[]</referencedby>
+        <referencedby refid="class_json_1_1_value_1a081830e95f88a37054da7e46c65b0766" compoundref="json__value_8cpp" startline="347" endline="350">Json::Value::Value</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::StaticString</label>
+        <link refid="class_json_1_1_static_string"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>c_str_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>const char *</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/value.h" line="94" column="1" bodyfile="include/json/value.h" bodystart="94" bodyend="104"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_static_string_1af11e3fc5823978e2946f06caa046ac3c" prot="public" virt="non-virtual"><scope>Json::StaticString</scope><name>c_str</name></member>
+      <member refid="class_json_1_1_static_string_1a9f0d9e8caee8f8db14e2c8c24760dffd" prot="private" virt="non-virtual"><scope>Json::StaticString</scope><name>c_str_</name></member>
+      <member refid="class_json_1_1_static_string_1a256a6cc0c630aef670848a0f11707b62" prot="public" virt="non-virtual"><scope>Json::StaticString</scope><name>operator const char *</name></member>
+      <member refid="class_json_1_1_static_string_1afb6baf1ec078ce76f0b0f9b39d19437f" prot="public" virt="non-virtual"><scope>Json::StaticString</scope><name>StaticString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

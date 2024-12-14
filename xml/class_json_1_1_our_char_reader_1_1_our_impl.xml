@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_our_char_reader_1_1_our_impl" kind="class" language="C++" prot="protected">
+    <compoundname>Json::OurCharReader::OurImpl</compoundname>
+    <basecompoundref refid="class_json_1_1_char_reader_1_1_impl" prot="public" virt="non-virtual">Json::CharReader::Impl</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_1_1_our_char_reader_1_1_our_impl_1ad287fb2cde6cdcf94b1ae39331548579" prot="private" static="no" mutable="no">
+        <type>bool const</type>
+        <definition>bool const Json::OurCharReader::OurImpl::collectComments_</definition>
+        <argsstring></argsstring>
+        <name>collectComments_</name>
+        <qualifiedname>Json::OurCharReader::OurImpl::collectComments_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="1767" column="16" bodyfile="src/lib_json/json_reader.cpp" bodystart="1767" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_our_char_reader_1_1_our_impl_1ab6d0fa7cb0dccf305aca792fd67da539" compoundref="json__reader_8cpp" startline="1752" endline="1759">parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_char_reader_1_1_our_impl_1a874144757391d0276529db51c2e0436f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_our_reader" kindref="compound">OurReader</ref></type>
+        <definition>OurReader Json::OurCharReader::OurImpl::reader_</definition>
+        <argsstring></argsstring>
+        <name>reader_</name>
+        <qualifiedname>Json::OurCharReader::OurImpl::reader_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="1768" column="15" bodyfile="src/lib_json/json_reader.cpp" bodystart="1768" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_our_char_reader_1_1_our_impl_1a1d1fb2bc93bbd2c9938604cc17741541" compoundref="json__reader_8cpp" startline="1762" endline="1764">getStructuredErrors</referencedby>
+        <referencedby refid="class_json_1_1_our_char_reader_1_1_our_impl_1ab6d0fa7cb0dccf305aca792fd67da539" compoundref="json__reader_8cpp" startline="1752" endline="1759">parse</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_our_char_reader_1_1_our_impl_1abec3b120665ca047424474fe7cf9fc23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Json::OurCharReader::OurImpl::OurImpl</definition>
+        <argsstring>(bool collectComments, OurFeatures const &amp;features)</argsstring>
+        <name>OurImpl</name>
+        <qualifiedname>Json::OurCharReader::OurImpl::OurImpl</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>collectComments</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_our_features" kindref="compound">OurFeatures</ref> const &amp;</type>
+          <declname>features</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="1749" column="5" bodyfile="src/lib_json/json_reader.cpp" bodystart="1749" bodyend="1750"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_our_char_reader_1_1_our_impl_1ab6d0fa7cb0dccf305aca792fd67da539" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Json::OurCharReader::OurImpl::parse</definition>
+        <argsstring>(char const *beginDoc, char const *endDoc, Value *root, String *errs) override</argsstring>
+        <name>parse</name>
+        <qualifiedname>Json::OurCharReader::OurImpl::parse</qualifiedname>
+        <reimplements refid="class_json_1_1_char_reader_1_1_impl_1ab9cd7159a09c59c67845d6fc356f605a">parse</reimplements>
+        <param>
+          <type>char const *</type>
+          <declname>beginDoc</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>endDoc</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> *</type>
+          <declname>errs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="1752" column="10" bodyfile="src/lib_json/json_reader.cpp" bodystart="1752" bodyend="1759"/>
+        <references refid="class_json_1_1_our_char_reader_1_1_our_impl_1ad287fb2cde6cdcf94b1ae39331548579" compoundref="json__reader_8cpp" startline="1767">collectComments_</references>
+        <references refid="class_json_1_1_our_reader_1a79a84a59b0973dec644cf0d8ea32a1e6" compoundref="json__reader_8cpp" startline="1713" endline="1724">Json::OurReader::getFormattedErrorMessages</references>
+        <references refid="class_json_1_1_our_reader_1aba4f8749aab7f02ec17f107e392caf80" compoundref="json__reader_8cpp" startline="929" endline="970">Json::OurReader::parse</references>
+        <references refid="class_json_1_1_our_char_reader_1_1_our_impl_1a874144757391d0276529db51c2e0436f" compoundref="json__reader_8cpp" startline="1768">reader_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_our_char_reader_1_1_our_impl_1a1d1fb2bc93bbd2c9938604cc17741541" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; <ref refid="struct_json_1_1_char_reader_1_1_structured_error" kindref="compound">CharReader::StructuredError</ref> &gt;</type>
+        <definition>std::vector&lt; CharReader::StructuredError &gt; Json::OurCharReader::OurImpl::getStructuredErrors</definition>
+        <argsstring>() const override</argsstring>
+        <name>getStructuredErrors</name>
+        <qualifiedname>Json::OurCharReader::OurImpl::getStructuredErrors</qualifiedname>
+        <reimplements refid="class_json_1_1_char_reader_1_1_impl_1a29922242864f786fd93a5a2b4940e165">getStructuredErrors</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="1762" column="5" bodyfile="src/lib_json/json_reader.cpp" bodystart="1762" bodyend="1764"/>
+        <references refid="class_json_1_1_our_reader_1a0db8d06e16e335080517c84abd3f01fe" compoundref="json__reader_8cpp" startline="1727" endline="1737">Json::OurReader::getStructuredErrors</references>
+        <references refid="class_json_1_1_our_char_reader_1_1_our_impl_1a874144757391d0276529db51c2e0436f" compoundref="json__reader_8cpp" startline="1768">reader_</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Json::CharReader::Impl</label>
+        <link refid="class_json_1_1_char_reader_1_1_impl"/>
+      </node>
+      <node id="1">
+        <label>Json::OurCharReader::OurImpl</label>
+        <link refid="class_json_1_1_our_char_reader_1_1_our_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>CommentPlacement</label>
+      </node>
+      <node id="2">
+        <label>Json::CharReader::Impl</label>
+        <link refid="class_json_1_1_char_reader_1_1_impl"/>
+      </node>
+      <node id="16">
+        <label>LargestInt</label>
+      </node>
+      <node id="17">
+        <label>LargestUInt</label>
+      </node>
+      <node id="1">
+        <label>Json::OurCharReader::OurImpl</label>
+        <link refid="class_json_1_1_our_char_reader_1_1_our_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>collectComments_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>reader_</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Json::OurFeatures</label>
+        <link refid="class_json_1_1_our_features"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>allowComments_</edgelabel>
+          <edgelabel>allowDroppedNullPlaceholders_</edgelabel>
+          <edgelabel>allowNumericKeys_</edgelabel>
+          <edgelabel>allowSingleQuotes_</edgelabel>
+          <edgelabel>allowSpecialFloats_</edgelabel>
+          <edgelabel>allowTrailingCommas_</edgelabel>
+          <edgelabel>failIfExtra_</edgelabel>
+          <edgelabel>rejectDupKeys_</edgelabel>
+          <edgelabel>skipBom_</edgelabel>
+          <edgelabel>strictRoot_</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>stackLimit_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Json::OurReader</label>
+        <link refid="class_json_1_1_our_reader"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>nodes_</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>errors_</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>commentsBefore_</edgelabel>
+          <edgelabel>document_</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>begin_</edgelabel>
+          <edgelabel>current_</edgelabel>
+          <edgelabel>end_</edgelabel>
+          <edgelabel>lastValueEnd_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>lastValue_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>collectComments_</edgelabel>
+          <edgelabel>lastValueHasAComment_</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>features_</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Json::OurReader::ErrorInfo</label>
+        <link refid="class_json_1_1_our_reader_1_1_error_info"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>token_</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>message_</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>extra_</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Json::OurReader::Token</label>
+        <link refid="class_json_1_1_our_reader_1_1_token"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>type_</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>end_</edgelabel>
+          <edgelabel>start_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Json::Value</label>
+        <link refid="class_json_1_1_value"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>null</edgelabel>
+          <edgelabel>nullRef</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>maxLargestInt</edgelabel>
+          <edgelabel>minLargestInt</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>maxLargestUInt</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>maxInt</edgelabel>
+          <edgelabel>minInt</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>allocated_</edgelabel>
+          <edgelabel>defaultRealPrecision</edgelabel>
+          <edgelabel>maxUInt</edgelabel>
+          <edgelabel>value_type_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>maxInt64</edgelabel>
+          <edgelabel>minInt64</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>maxUInt64</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>maxUInt64AsDouble</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>placement</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>value_</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>bits_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>comments_</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>limit_</edgelabel>
+          <edgelabel>start_</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Json::Value::Comments</label>
+        <link refid="class_json_1_1_value_1_1_comments"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Json::Value::ValueHolder</label>
+        <link refid="union_json_1_1_value_1_1_value_holder"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>int_</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>uint_</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>real_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>bool_</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>string_</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>map_</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ObjectValues *</label>
+      </node>
+      <node id="25">
+        <label>T</label>
+      </node>
+      <node id="32">
+        <label>TokenType</label>
+      </node>
+      <node id="21">
+        <label>anonymous:bits_</label>
+      </node>
+      <node id="3">
+        <label>bool</label>
+      </node>
+      <node id="19">
+        <label>char *</label>
+      </node>
+      <node id="33">
+        <label>const Char *</label>
+      </node>
+      <node id="18">
+        <label>double</label>
+      </node>
+      <node id="27">
+        <label>ptrdiff_t</label>
+      </node>
+      <node id="38">
+        <label>size_t</label>
+      </node>
+      <node id="9">
+        <label>static constexpr Int</label>
+      </node>
+      <node id="11">
+        <label>static constexpr Int64</label>
+      </node>
+      <node id="7">
+        <label>static constexpr LargestInt</label>
+      </node>
+      <node id="8">
+        <label>static constexpr LargestUInt</label>
+      </node>
+      <node id="12">
+        <label>static constexpr UInt64</label>
+      </node>
+      <node id="13">
+        <label>static constexpr double</label>
+      </node>
+      <node id="24">
+        <label>std::array&lt; T &gt;</label>
+        <childnode refid="25" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="34">
+        <label>std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</label>
+        <childnode refid="35" relation="template-instance">
+          <edgelabel>&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>std::deque&lt; T &gt;</label>
+        <childnode refid="25" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>std::deque&lt; ErrorInfo &gt;</label>
+        <childnode refid="30" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="template-instance">
+          <edgelabel>&lt; ErrorInfo &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>std::stack&lt; T &gt;</label>
+        <childnode refid="25" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::stack&lt; Value * &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="template-instance">
+          <edgelabel>&lt; Value * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>std::unique_ptr&lt; T &gt;</label>
+        <childnode refid="25" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>std::unique_ptr&lt; Array &gt;</label>
+        <childnode refid="24" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="template-instance">
+          <edgelabel>&lt; Array &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>unsigned int</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/lib_json/json_reader.cpp" line="1747" column="3" bodyfile="src/lib_json/json_reader.cpp" bodystart="1747" bodyend="1769"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_our_char_reader_1_1_our_impl_1ad287fb2cde6cdcf94b1ae39331548579" prot="private" virt="non-virtual"><scope>Json::OurCharReader::OurImpl</scope><name>collectComments_</name></member>
+      <member refid="class_json_1_1_our_char_reader_1_1_our_impl_1a1d1fb2bc93bbd2c9938604cc17741541" prot="public" virt="virtual"><scope>Json::OurCharReader::OurImpl</scope><name>getStructuredErrors</name></member>
+      <member refid="class_json_1_1_our_char_reader_1_1_our_impl_1abec3b120665ca047424474fe7cf9fc23" prot="public" virt="non-virtual"><scope>Json::OurCharReader::OurImpl</scope><name>OurImpl</name></member>
+      <member refid="class_json_1_1_our_char_reader_1_1_our_impl_1ab6d0fa7cb0dccf305aca792fd67da539" prot="public" virt="virtual"><scope>Json::OurCharReader::OurImpl</scope><name>parse</name></member>
+      <member refid="class_json_1_1_our_char_reader_1_1_our_impl_1a874144757391d0276529db51c2e0436f" prot="private" virt="non-virtual"><scope>Json::OurCharReader::OurImpl</scope><name>reader_</name></member>
+      <member refid="class_json_1_1_char_reader_1_1_impl_1accfa0d3067f28375b3406fbdc07c391e" prot="public" virt="virtual"><scope>Json::OurCharReader::OurImpl</scope><name>~Impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

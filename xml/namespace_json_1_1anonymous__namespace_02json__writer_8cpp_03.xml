@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_json_1_1anonymous__namespace_02json__writer_8cpp_03" kind="namespace" language="C++">
+    <compoundname>Json::anonymous_namespace{json_writer.cpp}</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_json_1_1anonymous__namespace_02json__writer_8cpp_03_1a2b1704cd1d429b685e16fb5ac21f6810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::anonymous_namespace{json_writer.cpp}::valueToString</definition>
+        <argsstring>(double value, bool useSpecialFloats, unsigned int precision, PrecisionType precisionType)</argsstring>
+        <name>valueToString</name>
+        <qualifiedname>Json::anonymous_namespace{json_writer.cpp}::valueToString</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useSpecialFloats</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>precision</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8" kindref="member">PrecisionType</ref></type>
+          <declname>precisionType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="120" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="120" bodyend="158"/>
+        <references refid="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8aaee1bf0411c550a0bb2996b7b67cae87" compoundref="value_8h" startline="92">Json::decimalPlaces</references>
+        <references refid="namespace_json_1a4f93f184c2890cb99b07afeed10a89ec" compoundref="json__tool_8h" startline="64" endline="71">Json::fixNumericLocale</references>
+        <references refid="namespace_json_1ab48d632fe16e62aca0193cf17cdf3c22" compoundref="json__tool_8h" startline="86" endline="99">Json::fixZerosInTheEnd</references>
+        <references refid="json__writer_8cpp_1aab49fbe39624f083e45ef2d85e7e0705" compoundref="json__writer_8cpp" startline="39">isfinite</references>
+        <references refid="json__writer_8cpp_1a075c8459d7e501109174c1a2fdc5cd7e" compoundref="json__writer_8cpp" startline="34">isnan</references>
+        <references refid="config_8h_1a70aadb03056df6baa94058d2fb33046a" compoundref="config_8h" startline="47">jsoncpp_snprintf</references>
+        <references refid="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8abb30ddeaa820d370a2438dda7a08996a" compoundref="value_8h" startline="92">Json::significantDigits</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib_json/json_writer.cpp" line="119" column="1"/>
+  </compounddef>
+</doxygen>

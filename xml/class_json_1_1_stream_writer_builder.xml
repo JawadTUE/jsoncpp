@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_stream_writer_builder" kind="class" language="C++" prot="public">
+    <compoundname>Json::StreamWriterBuilder</compoundname>
+    <basecompoundref refid="class_json_1_1_stream_writer_1_1_factory" prot="public" virt="non-virtual">Json::StreamWriter::Factory</basecompoundref>
+    <includes refid="writer_8h" local="no">writer.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_json_1_1_stream_writer_builder_1a79bdf2e639a52f4e758c0b95bd1d3423" prot="public" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref></type>
+        <definition>Json::Value Json::StreamWriterBuilder::settings_</definition>
+        <argsstring></argsstring>
+        <name>settings_</name>
+        <qualifiedname>Json::StreamWriterBuilder::settings_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="46" column="15" bodyfile="include/json/writer.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_stream_writer_builder_1a042d21b84d8c5bede52a764e2ada7d65" compoundref="json__writer_8cpp" startline="1088" endline="1129">newStreamWriter</referencedby>
+        <referencedby refid="class_json_1_1_stream_writer_builder_1acfac19e42c26ebef23844be9686d68f5" compoundref="json__writer_8cpp" startline="1154" endline="1156">operator[]</referencedby>
+        <referencedby refid="class_json_1_1_stream_writer_builder_1ab95b76179c152673ad14abc639a46ee4" compoundref="json__writer_8cpp" startline="1086" endline="1086">StreamWriterBuilder</referencedby>
+        <referencedby refid="class_json_1_1_stream_writer_builder_1a12353b97766841db7d049da84658da09" compoundref="json__writer_8cpp" startline="1131" endline="1152">validate</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1ab95b76179c152673ad14abc639a46ee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::StreamWriterBuilder::StreamWriterBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>StreamWriterBuilder</name>
+        <qualifiedname>Json::StreamWriterBuilder::StreamWriterBuilder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="48" column="3" bodyfile="src/lib_json/json_writer.cpp" bodystart="1086" bodyend="1086"/>
+        <references refid="class_json_1_1_stream_writer_builder_1a53bf106b141e28637b01ad0ecd2acbf6" compoundref="json__writer_8cpp" startline="1157" endline="1166">setDefaults</references>
+        <references refid="class_json_1_1_stream_writer_builder_1a79bdf2e639a52f4e758c0b95bd1d3423" compoundref="writer_8h" startline="46">settings_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1ac86f882736cb2fff79adb45adeafeb22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::StreamWriterBuilder::~StreamWriterBuilder</definition>
+        <argsstring>() override</argsstring>
+        <name>~StreamWriterBuilder</name>
+        <qualifiedname>Json::StreamWriterBuilder::~StreamWriterBuilder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="49" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1a042d21b84d8c5bede52a764e2ada7d65" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref> *</type>
+        <definition>StreamWriter * Json::StreamWriterBuilder::newStreamWriter</definition>
+        <argsstring>() const override</argsstring>
+        <name>newStreamWriter</name>
+        <qualifiedname>Json::StreamWriterBuilder::newStreamWriter</qualifiedname>
+        <reimplements refid="class_json_1_1_stream_writer_1_1_factory_1ad7e8432ba542dcb01fe9ee12dcd0e574">newStreamWriter</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="51" column="16" bodyfile="src/lib_json/json_writer.cpp" bodystart="1088" bodyend="1129"/>
+        <references refid="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0ca32302c0b97190c1808b3e38f367fef01" compoundref="json__writer_8cpp" startline="814">Json::CommentStyle::All</references>
+        <references refid="class_json_1_1_value_1ab693fb7b9b1595bb0adc49658bbf780d" compoundref="json__value_8cpp" startline="732" endline="750">Json::Value::asBool</references>
+        <references refid="class_json_1_1_value_1a52207c8d4e86160f968a40817cb2529b" compoundref="json__value_8cpp" startline="554" endline="578">Json::Value::asString</references>
+        <references refid="class_json_1_1_value_1a74b305583ec3aacf4f9dd06e799dc265" compoundref="json__value_8cpp" startline="602" endline="622">Json::Value::asUInt</references>
+        <references refid="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8aaee1bf0411c550a0bb2996b7b67cae87" compoundref="value_8h" startline="92">Json::decimalPlaces</references>
+        <references refid="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0cac8b32a8bae63414c8647d4919da8d437" compoundref="json__writer_8cpp" startline="814">Json::CommentStyle::None</references>
+        <references refid="class_json_1_1_stream_writer_builder_1a79bdf2e639a52f4e758c0b95bd1d3423" compoundref="writer_8h" startline="46">settings_</references>
+        <references refid="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8abb30ddeaa820d370a2438dda7a08996a" compoundref="value_8h" startline="92">Json::significantDigits</references>
+        <referencedby refid="namespace_json_1a91e5bd3901936f85718362360bec35c6" compoundref="json__writer_8cpp" startline="1175" endline="1180">Json::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1a12353b97766841db7d049da84658da09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::StreamWriterBuilder::validate</definition>
+        <argsstring>(Json::Value *invalid) const</argsstring>
+        <name>validate</name>
+        <qualifiedname>Json::StreamWriterBuilder::validate</qualifiedname>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref> *</type>
+          <declname>invalid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="53" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="1131" bodyend="1152"/>
+        <references refid="class_json_1_1_value_1a015459a3950c198d63a2d3be8f5ae296" compoundref="json__value_8cpp" startline="1358" endline="1369">Json::Value::begin</references>
+        <references refid="class_json_1_1_value_1a0519a551e37ee6665d74742b3f96bab3" compoundref="json__value_8cpp" startline="808" endline="812">Json::Value::empty</references>
+        <references refid="class_json_1_1_value_1a3e443cd0ef24f7e028b175e47ee045e0" compoundref="json__value_8cpp" startline="1371" endline="1382">Json::Value::end</references>
+        <references refid="class_json_1_1_stream_writer_builder_1a79bdf2e639a52f4e758c0b95bd1d3423" compoundref="writer_8h" startline="46">settings_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1acfac19e42c26ebef23844be9686d68f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+        <definition>Value &amp; Json::StreamWriterBuilder::operator[]</definition>
+        <argsstring>(const String &amp;key)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>Json::StreamWriterBuilder::operator[]</qualifiedname>
+        <param>
+          <type>const <ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="55" column="9" bodyfile="src/lib_json/json_writer.cpp" bodystart="1154" bodyend="1156"/>
+        <references refid="class_json_1_1_stream_writer_builder_1a79bdf2e639a52f4e758c0b95bd1d3423" compoundref="writer_8h" startline="46">settings_</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1a53bf106b141e28637b01ad0ecd2acbf6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StreamWriterBuilder::setDefaults</definition>
+        <argsstring>(Json::Value *settings)</argsstring>
+        <name>setDefaults</name>
+        <qualifiedname>Json::StreamWriterBuilder::setDefaults</qualifiedname>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="57" column="15" bodyfile="src/lib_json/json_writer.cpp" bodystart="1157" bodyend="1166"/>
+        <referencedby refid="class_json_1_1_stream_writer_builder_1ab95b76179c152673ad14abc639a46ee4" compoundref="json__writer_8cpp" startline="1086" endline="1086">StreamWriterBuilder</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Json::StreamWriter::Factory</label>
+        <link refid="class_json_1_1_stream_writer_1_1_factory"/>
+      </node>
+      <node id="1">
+        <label>Json::StreamWriterBuilder</label>
+        <link refid="class_json_1_1_stream_writer_builder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>CommentPlacement</label>
+      </node>
+      <node id="13">
+        <label>LargestInt</label>
+      </node>
+      <node id="14">
+        <label>LargestUInt</label>
+      </node>
+      <node id="2">
+        <label>Json::StreamWriter::Factory</label>
+        <link refid="class_json_1_1_stream_writer_1_1_factory"/>
+      </node>
+      <node id="1">
+        <label>Json::StreamWriterBuilder</label>
+        <link refid="class_json_1_1_stream_writer_builder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>settings_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Json::Value</label>
+        <link refid="class_json_1_1_value"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>null</edgelabel>
+          <edgelabel>nullRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>maxLargestInt</edgelabel>
+          <edgelabel>minLargestInt</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>maxLargestUInt</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>maxInt</edgelabel>
+          <edgelabel>minInt</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>allocated_</edgelabel>
+          <edgelabel>defaultRealPrecision</edgelabel>
+          <edgelabel>maxUInt</edgelabel>
+          <edgelabel>value_type_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>maxInt64</edgelabel>
+          <edgelabel>minInt64</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>maxUInt64</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>maxUInt64AsDouble</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>placement</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>value_</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>bits_</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>comments_</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>limit_</edgelabel>
+          <edgelabel>start_</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Json::Value::Comments</label>
+        <link refid="class_json_1_1_value_1_1_comments"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Json::Value::ValueHolder</label>
+        <link refid="union_json_1_1_value_1_1_value_holder"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>int_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>uint_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>real_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>bool_</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>string_</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>map_</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ObjectValues *</label>
+      </node>
+      <node id="23">
+        <label>T</label>
+      </node>
+      <node id="19">
+        <label>anonymous:bits_</label>
+      </node>
+      <node id="16">
+        <label>bool</label>
+      </node>
+      <node id="17">
+        <label>char *</label>
+      </node>
+      <node id="15">
+        <label>double</label>
+      </node>
+      <node id="25">
+        <label>ptrdiff_t</label>
+      </node>
+      <node id="6">
+        <label>static constexpr Int</label>
+      </node>
+      <node id="8">
+        <label>static constexpr Int64</label>
+      </node>
+      <node id="4">
+        <label>static constexpr LargestInt</label>
+      </node>
+      <node id="5">
+        <label>static constexpr LargestUInt</label>
+      </node>
+      <node id="9">
+        <label>static constexpr UInt64</label>
+      </node>
+      <node id="10">
+        <label>static constexpr double</label>
+      </node>
+      <node id="22">
+        <label>std::array&lt; T &gt;</label>
+        <childnode refid="23" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>std::unique_ptr&lt; T &gt;</label>
+        <childnode refid="23" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>std::unique_ptr&lt; Array &gt;</label>
+        <childnode refid="22" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="template-instance">
+          <edgelabel>&lt; Array &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>unsigned int</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/writer.h" line="44" column="1" bodyfile="include/json/writer.h" bodystart="44" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_stream_writer_builder_1a042d21b84d8c5bede52a764e2ada7d65" prot="public" virt="virtual"><scope>Json::StreamWriterBuilder</scope><name>newStreamWriter</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1acfac19e42c26ebef23844be9686d68f5" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>operator[]</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1a53bf106b141e28637b01ad0ecd2acbf6" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>setDefaults</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1a79bdf2e639a52f4e758c0b95bd1d3423" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>settings_</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1ab95b76179c152673ad14abc639a46ee4" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>StreamWriterBuilder</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1a12353b97766841db7d049da84658da09" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>validate</name></member>
+      <member refid="class_json_1_1_stream_writer_1_1_factory_1ad334ad5e81e3b9b1768620a446366ff1" prot="public" virt="virtual"><scope>Json::StreamWriterBuilder</scope><name>~Factory</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1ac86f882736cb2fff79adb45adeafeb22" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>~StreamWriterBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

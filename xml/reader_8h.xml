@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="reader_8h" kind="file" language="C++">
+    <compoundname>reader.h</compoundname>
+    <includes refid="json__features_8h" local="yes">json_features.h</includes>
+    <includes refid="value_8h" local="yes">value.h</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">iosfwd</includes>
+    <includes local="no">istream</includes>
+    <includes local="no">stack</includes>
+    <includes local="no">string</includes>
+    <includedby refid="json_8h" local="yes">include/json/json.h</includedby>
+    <includedby refid="json__reader_8cpp" local="no">src/lib_json/json_reader.cpp</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>allocator.h</label>
+        <link refid="allocator_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>forwards.h</label>
+        <link refid="forwards_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>json_features.h</label>
+        <link refid="json__features_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/json/reader.h</label>
+        <link refid="reader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>value.h</label>
+        <link refid="value_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="14">
+        <label>algorithm</label>
+      </node>
+      <node id="18">
+        <label>array</label>
+      </node>
+      <node id="5">
+        <label>cstddef</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="15">
+        <label>cstring</label>
+      </node>
+      <node id="22">
+        <label>deque</label>
+      </node>
+      <node id="19">
+        <label>exception</label>
+      </node>
+      <node id="23">
+        <label>iosfwd</label>
+      </node>
+      <node id="7">
+        <label>istream</label>
+      </node>
+      <node id="20">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>ostream</label>
+      </node>
+      <node id="10">
+        <label>sstream</label>
+      </node>
+      <node id="24">
+        <label>stack</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>type_traits</label>
+      </node>
+      <node id="21">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/json/json.h</label>
+        <link refid="json_8h"/>
+      </node>
+      <node id="1">
+        <label>include/json/reader.h</label>
+        <link refid="reader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/lib_json/json_reader.cpp</label>
+        <link refid="json__reader_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_json_1_1_reader" prot="public">Json::Reader</innerclass>
+    <innerclass refid="struct_json_1_1_reader_1_1_structured_error" prot="public">Json::Reader::StructuredError</innerclass>
+    <innerclass refid="class_json_1_1_reader_1_1_token" prot="private">Json::Reader::Token</innerclass>
+    <innerclass refid="class_json_1_1_reader_1_1_error_info" prot="private">Json::Reader::ErrorInfo</innerclass>
+    <innerclass refid="class_json_1_1_char_reader" prot="public">Json::CharReader</innerclass>
+    <innerclass refid="struct_json_1_1_char_reader_1_1_structured_error" prot="public">Json::CharReader::StructuredError</innerclass>
+    <innerclass refid="class_json_1_1_char_reader_1_1_factory" prot="public">Json::CharReader::Factory</innerclass>
+    <innerclass refid="class_json_1_1_char_reader_1_1_impl" prot="protected">Json::CharReader::Impl</innerclass>
+    <innerclass refid="class_json_1_1_char_reader_builder" prot="public">Json::CharReaderBuilder</innerclass>
+    <innernamespace refid="namespace_json">Json</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>JSON_READER_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_READER_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(JSON_IS_AMALGAMATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="json__features_8h" kindref="compound">json_features.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="value_8h" kindref="compound">value.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iosfwd&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;istream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(JSONCPP_DISABLE_DLL_INTERFACE_WARNING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable<sp/>:<sp/>4251)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_json" kindref="compound">Json</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_json_1_1_reader" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_reader" kindref="compound">Reader</ref><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="class_json_1_1_reader_1a068ce78fe0105dce714f8f5ff1928634" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_reader_1a068ce78fe0105dce714f8f5ff1928634" kindref="member">Char</ref><sp/>=<sp/>char;</highlight></codeline>
+<codeline lineno="27" refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>=<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_reader_1a068ce78fe0105dce714f8f5ff1928634" kindref="member">Char</ref>*;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_json_1_1_reader_1_1_structured_error" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_json_1_1_reader_1_1_structured_error" kindref="compound">StructuredError</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="struct_json_1_1_reader_1_1_structured_error_1ac98af0da2d704be4b64a9572a682423b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ptrdiff_t<sp/><ref refid="struct_json_1_1_reader_1_1_structured_error_1ac98af0da2d704be4b64a9572a682423b" kindref="member">offset_start</ref>;</highlight></codeline>
+<codeline lineno="31" refid="struct_json_1_1_reader_1_1_structured_error_1ad76ac01aeb0ada7e882c2df5daa54c6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ptrdiff_t<sp/><ref refid="struct_json_1_1_reader_1_1_structured_error_1ad76ac01aeb0ada7e882c2df5daa54c6e" kindref="member">offset_limit</ref>;</highlight></codeline>
+<codeline lineno="32" refid="struct_json_1_1_reader_1_1_structured_error_1a8daa4b3db497d8437726d4cf9c86726a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="struct_json_1_1_reader_1_1_structured_error_1a8daa4b3db497d8437726d4cf9c86726a" kindref="member">message</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_reader" kindref="compound">Reader</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_reader" kindref="compound">Reader</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_features" kindref="compound">Features</ref>&amp;<sp/>features);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>parse(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>document,<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>collectComments<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>parse(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>beginDoc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>endDoc,<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>collectComments<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>parse(<ref refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" kindref="member">IStream</ref>&amp;<sp/>is,<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>root,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>collectComments<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_json_1_1_reader_1a4bc441d184492b7792b7b3c775cda1de" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="config_8h_1a6933a4321aa03c8a29016669073f1af6" kindref="member">JSONCPP_DEPRECATED</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>getFormattedErrorMessages()<sp/>instead.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/>getFormatedErrorMessages()<sp/>const;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/>getFormattedErrorMessages()<sp/>const;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>std::vector&lt;<ref refid="struct_json_1_1_reader_1_1_structured_error" kindref="compound">StructuredError</ref>&gt;<sp/>getStructuredErrors()<sp/>const;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pushError(const<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value,<sp/>const<sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>message);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pushError(const<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>value,<sp/>const<sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>message,<sp/>const<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>extra);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>good()<sp/>const;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">private:</highlight></codeline>
+<codeline lineno="61" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9" refkind="member"><highlight class="normal"><sp/><sp/>enum<sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9" kindref="member">TokenType</ref><sp/>{</highlight></codeline>
+<codeline lineno="62" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a87fd3ad9cae11a8afe2bd022d8ab90f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>tokenEndOfStream<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="63" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a6196ce743696e6c803b130e8eef970f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a6196ce743696e6c803b130e8eef970f3" kindref="member">tokenObjectBegin</ref>,</highlight></codeline>
+<codeline lineno="64" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a12d03a3a710b2d3f1384889df3da887d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a12d03a3a710b2d3f1384889df3da887d" kindref="member">tokenObjectEnd</ref>,</highlight></codeline>
+<codeline lineno="65" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a366d1a18459ad0c3b5bd32a35391e35a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a366d1a18459ad0c3b5bd32a35391e35a" kindref="member">tokenArrayBegin</ref>,</highlight></codeline>
+<codeline lineno="66" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9adc87fd67f5fc21391a4be89382a316" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9adc87fd67f5fc21391a4be89382a316" kindref="member">tokenArrayEnd</ref>,</highlight></codeline>
+<codeline lineno="67" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ace89d4e0342535b8c00104ed4e5e0cee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ace89d4e0342535b8c00104ed4e5e0cee" kindref="member">tokenString</ref>,</highlight></codeline>
+<codeline lineno="68" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9b1717bee03ce7016f507bd4598fa5c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9b1717bee03ce7016f507bd4598fa5c6" kindref="member">tokenNumber</ref>,</highlight></codeline>
+<codeline lineno="69" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9acec3234e26f2d6bf206187fc5d949a03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9acec3234e26f2d6bf206187fc5d949a03" kindref="member">tokenTrue</ref>,</highlight></codeline>
+<codeline lineno="70" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ac24318c0842c7653c3555a82437b8eb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ac24318c0842c7653c3555a82437b8eb2" kindref="member">tokenFalse</ref>,</highlight></codeline>
+<codeline lineno="71" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a11bd0ba1c34448d075022b89d5bf9853" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a11bd0ba1c34448d075022b89d5bf9853" kindref="member">tokenNull</ref>,</highlight></codeline>
+<codeline lineno="72" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9af2c235e8da86f11ffb1a1243e49ed1fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9af2c235e8da86f11ffb1a1243e49ed1fa" kindref="member">tokenArraySeparator</ref>,</highlight></codeline>
+<codeline lineno="73" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a08227b96f54242f4f9a8a597403c4424" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a08227b96f54242f4f9a8a597403c4424" kindref="member">tokenMemberSeparator</ref>,</highlight></codeline>
+<codeline lineno="74" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ae4fcf05c3b1ce462bacd34af0ccac32b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ae4fcf05c3b1ce462bacd34af0ccac32b" kindref="member">tokenComment</ref>,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>tokenError</highlight></codeline>
+<codeline lineno="76" refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a55d1ab9135c3d068b57fafdbabfa569a" refkind="member"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_json_1_1_reader_1_1_token" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80" refid="class_json_1_1_reader_1_1_token_1aa0f06d0105ec3d8cb42427c66b991bad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9" kindref="member">TokenType</ref><sp/><ref refid="class_json_1_1_reader_1_1_token_1aa0f06d0105ec3d8cb42427c66b991bad" kindref="member">type_</ref>;</highlight></codeline>
+<codeline lineno="81" refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/><ref refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" kindref="member">start_</ref>;</highlight></codeline>
+<codeline lineno="82" refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/><ref refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" kindref="member">end_</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_json_1_1_reader_1_1_error_info" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_reader_1_1_error_info" kindref="compound">ErrorInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87" refid="class_json_1_1_reader_1_1_error_info_1a52e1c71b12eb1c3f0395d7ef1e778ce6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref><sp/><ref refid="class_json_1_1_reader_1_1_error_info_1a52e1c71b12eb1c3f0395d7ef1e778ce6" kindref="member">token_</ref>;</highlight></codeline>
+<codeline lineno="88" refid="class_json_1_1_reader_1_1_error_info_1ad9d14af433dff90d58506f08b81ee149" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_reader_1_1_error_info_1ad9d14af433dff90d58506f08b81ee149" kindref="member">message_</ref>;</highlight></codeline>
+<codeline lineno="89" refid="class_json_1_1_reader_1_1_error_info_1af92c24acf642b040d6e40aac4952d44d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/><ref refid="class_json_1_1_reader_1_1_error_info_1af92c24acf642b040d6e40aac4952d44d" kindref="member">extra_</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_json_1_1_reader_1a1b89728a746769f4326ed7f57f8076aa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_reader_1a1b89728a746769f4326ed7f57f8076aa" kindref="member">Errors</ref><sp/>=<sp/>std::deque&lt;ErrorInfo&gt;;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readToken(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readTokenSkippingComments(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>skipSpaces();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>match(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_reader_1a068ce78fe0105dce714f8f5ff1928634" kindref="member">Char</ref>*<sp/>pattern,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>patternLength);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readComment();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readCStyleComment();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readCppStyleComment();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readString();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>readNumber();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readValue();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readObject(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readArray(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>decodeNumber(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>decodeNumber(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token,<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>decoded);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>decodeString(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>decodeString(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token,<sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>decoded);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>decodeDouble(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>decodeDouble(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token,<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>decoded);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>decodeUnicodeCodePoint(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token,<sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref>&amp;<sp/>current,<sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>end,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>unicode);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>decodeUnicodeEscapeSequence(<ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token,<sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref>&amp;<sp/>current,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>end,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>unicode);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>addError(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>message,<sp/><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token,<sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>extra<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recoverFromError(<ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9" kindref="member">TokenType</ref><sp/>skipUntilToken);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>addErrorAndRecover(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>message,<sp/><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref>&amp;<sp/>token,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9" kindref="member">TokenType</ref><sp/>skipUntilToken);</highlight></codeline>
+<codeline lineno="120" refid="class_json_1_1_reader_1ad922ea5a8ab333084edbb84827861fa3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_reader_1ad922ea5a8ab333084edbb84827861fa3" kindref="member">skipUntilSpace</ref>();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>currentValue();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_reader_1a068ce78fe0105dce714f8f5ff1928634" kindref="member">Char</ref><sp/>getNextChar();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getLocationLineAndColumn(<ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>location,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>line,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>column)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/>getLocationLineAndColumn(<ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>location)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addComment(<ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>begin,<sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>end,<sp/><ref refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351" kindref="member">CommentPlacement</ref><sp/>placement);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>containsNewLine(<ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>begin,<sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>end);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/>normalizeEOL(<ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>begin,<sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>end);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="class_json_1_1_reader_1a52477fd8ed25bbd2758779fe1e28fdfb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_reader_1a52477fd8ed25bbd2758779fe1e28fdfb" kindref="member">Nodes</ref><sp/>=<sp/>std::stack&lt;Value*&gt;;</highlight></codeline>
+<codeline lineno="132" refid="class_json_1_1_reader_1ada3d2c47699dad662e6d156c8c78a6ac" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_reader_1a52477fd8ed25bbd2758779fe1e28fdfb" kindref="member">Nodes</ref><sp/><ref refid="class_json_1_1_reader_1ada3d2c47699dad662e6d156c8c78a6ac" kindref="member">nodes_</ref>;</highlight></codeline>
+<codeline lineno="133" refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_reader_1a1b89728a746769f4326ed7f57f8076aa" kindref="member">Errors</ref><sp/><ref refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" kindref="member">errors_</ref>;</highlight></codeline>
+<codeline lineno="134" refid="class_json_1_1_reader_1aaddc23cd1b1d58b0bc3ee9249403e096" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_reader_1aaddc23cd1b1d58b0bc3ee9249403e096" kindref="member">document_</ref>;</highlight></codeline>
+<codeline lineno="135" refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>begin_{};</highlight></codeline>
+<codeline lineno="136" refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>end_{};</highlight></codeline>
+<codeline lineno="137" refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>current_{};</highlight></codeline>
+<codeline lineno="138" refid="class_json_1_1_reader_1a497a114f7b760f1b794b8fff9876615a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_reader_1ab8ce1ea3970e97a9b748ba17754fbe4b" kindref="member">Location</ref><sp/>lastValueEnd_{};</highlight></codeline>
+<codeline lineno="139" refid="class_json_1_1_reader_1a87cc75ae5adc6a6755f0ba1c7255ff6c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>*<sp/>lastValue_{};</highlight></codeline>
+<codeline lineno="140" refid="class_json_1_1_reader_1a270118b9586e79b506a0d2cc411c63e8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_reader_1a270118b9586e79b506a0d2cc411c63e8" kindref="member">commentsBefore_</ref>;</highlight></codeline>
+<codeline lineno="141" refid="class_json_1_1_reader_1aa9984ff8f519b5541346157b7aebf97b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_features" kindref="compound">Features</ref><sp/><ref refid="class_json_1_1_reader_1aa9984ff8f519b5541346157b7aebf97b" kindref="member">features_</ref>;</highlight></codeline>
+<codeline lineno="142" refid="class_json_1_1_reader_1a8e9ce743f6004f0596692f0a9ee4626c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>collectComments_{};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="144" refid="class_json_1_1_char_reader" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_char_reader" kindref="compound">CharReader</ref><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="146" refid="struct_json_1_1_char_reader_1_1_structured_error" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="struct_json_1_1_char_reader_1_1_structured_error" kindref="compound">StructuredError</ref><sp/>{</highlight></codeline>
+<codeline lineno="147" refid="struct_json_1_1_char_reader_1_1_structured_error_1a3eceeb876bed4cddd2d55fbd0d35b684" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ptrdiff_t<sp/><ref refid="struct_json_1_1_char_reader_1_1_structured_error_1a3eceeb876bed4cddd2d55fbd0d35b684" kindref="member">offset_start</ref>;</highlight></codeline>
+<codeline lineno="148" refid="struct_json_1_1_char_reader_1_1_structured_error_1a33afe9964fb40edde7b63e33b93de291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ptrdiff_t<sp/><ref refid="struct_json_1_1_char_reader_1_1_structured_error_1a33afe9964fb40edde7b63e33b93de291" kindref="member">offset_limit</ref>;</highlight></codeline>
+<codeline lineno="149" refid="struct_json_1_1_char_reader_1_1_structured_error_1ad6dad829a6ab1c5b618ae2237b697f3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="struct_json_1_1_char_reader_1_1_structured_error_1ad6dad829a6ab1c5b618ae2237b697f3e" kindref="member">message</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="class_json_1_1_char_reader_1a21bc5672fa0757fbe46d3c6daa2b79e9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_char_reader_1a21bc5672fa0757fbe46d3c6daa2b79e9" kindref="member">~CharReader</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>parse(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>beginDoc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>endDoc,<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>*<sp/>root,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>*<sp/>errs);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>std::vector&lt;StructuredError&gt;<sp/>getStructuredErrors()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="class_json_1_1_char_reader_1_1_factory" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_char_reader_1_1_factory" kindref="compound">Factory</ref><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="160" refid="class_json_1_1_char_reader_1_1_factory_1a4b922356483f1da73308613ef0899b3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_char_reader_1_1_factory_1a4b922356483f1da73308613ef0899b3b" kindref="member">~Factory</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161" refid="class_json_1_1_char_reader_1_1_factory_1aa498627213eada8b64d84594c3badb35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_char_reader" kindref="compound">CharReader</ref>*<sp/><ref refid="class_json_1_1_char_reader_1_1_factory_1aa498627213eada8b64d84594c3badb35" kindref="member">newCharReader</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="165" refid="class_json_1_1_char_reader_1_1_impl" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_char_reader_1_1_impl" kindref="compound">Impl</ref><sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="167" refid="class_json_1_1_char_reader_1_1_impl_1accfa0d3067f28375b3406fbdc07c391e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_char_reader_1_1_impl_1accfa0d3067f28375b3406fbdc07c391e" kindref="member">~Impl</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168" refid="class_json_1_1_char_reader_1_1_impl_1ab9cd7159a09c59c67845d6fc356f605a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_char_reader_1_1_impl_1ab9cd7159a09c59c67845d6fc356f605a" kindref="member">parse</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>beginDoc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>endDoc,<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>*<sp/>root,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>*<sp/>errs)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="170" refid="class_json_1_1_char_reader_1_1_impl_1a29922242864f786fd93a5a2b4940e165" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;StructuredError&gt;<sp/><ref refid="class_json_1_1_char_reader_1_1_impl_1a29922242864f786fd93a5a2b4940e165" kindref="member">getStructuredErrors</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="class_json_1_1_char_reader_1a00273556e37dddfb79002d6c2546adaa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_char_reader_1a00273556e37dddfb79002d6c2546adaa" kindref="member">CharReader</ref>(std::unique_ptr&lt;Impl&gt;<sp/>impl)<sp/>:<sp/>_impl(std::move(impl))<sp/>{}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="176" refid="class_json_1_1_char_reader_1a3740aa0042f428826e7717f3638cd1ee" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;Impl&gt;<sp/><ref refid="class_json_1_1_char_reader_1a3740aa0042f428826e7717f3638cd1ee" kindref="member">_impl</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="178" refid="class_json_1_1_char_reader_builder" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="class_json_1_1_char_reader_builder" kindref="compound">CharReaderBuilder</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_char_reader_1_1_factory" kindref="compound">CharReader::Factory</ref><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="180" refid="class_json_1_1_char_reader_builder_1ac69b7911ad64c171c51ebaf2ea26d958" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref><sp/><ref refid="class_json_1_1_char_reader_builder_1ac69b7911ad64c171c51ebaf2ea26d958" kindref="member">settings_</ref>;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_char_reader_builder" kindref="compound">CharReaderBuilder</ref>();</highlight></codeline>
+<codeline lineno="183" refid="class_json_1_1_char_reader_builder_1ae37ffbceec53ba08a99345ae3335af32" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_char_reader_builder_1ae37ffbceec53ba08a99345ae3335af32" kindref="member">~CharReaderBuilder</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_char_reader" kindref="compound">CharReader</ref>*<sp/>newCharReader()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>validate(<ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref>*<sp/>invalid)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/>operator[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>&amp;<sp/>key);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setDefaults(<ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref>*<sp/>settings);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>strictMode(<ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref>*<sp/>settings);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ecma404Mode(<ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref>*<sp/>settings);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1ad0e6a29ad2eac4ae58cd5b96d19bb01e" kindref="member">parseFromStream</ref>(<ref refid="class_json_1_1_char_reader_1_1_factory" kindref="compound">CharReader::Factory</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;,<sp/><ref refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" kindref="member">IStream</ref>&amp;,<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>*<sp/>root,</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>*<sp/>errs);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/><ref refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" kindref="member">IStream</ref>&amp;<sp/><ref refid="namespace_json_1ac21ce6d431c2a8d93fdec0def5154cbd" kindref="member">operator&gt;&gt;</ref>(<ref refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" kindref="member">IStream</ref>&amp;,<sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Json</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(JSONCPP_DISABLE_DLL_INTERFACE_WARNING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/json/reader.h"/>
+  </compounddef>
+</doxygen>

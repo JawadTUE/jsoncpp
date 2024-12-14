@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="struct_json_1_1_reader_1_1_structured_error" kind="struct" language="C++" prot="public">
+    <compoundname>Json::Reader::StructuredError</compoundname>
+    <includes refid="reader_8h" local="no">reader.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_json_1_1_reader_1_1_structured_error_1ac98af0da2d704be4b64a9572a682423b" prot="public" static="no" mutable="no">
+        <type>ptrdiff_t</type>
+        <definition>ptrdiff_t Json::Reader::StructuredError::offset_start</definition>
+        <argsstring></argsstring>
+        <name>offset_start</name>
+        <qualifiedname>Json::Reader::StructuredError::offset_start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="30" column="15" bodyfile="include/json/reader.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1ae3d714e95bd98b27e296c607e408189b" compoundref="json__reader_8cpp" startline="749" endline="759">Json::Reader::getStructuredErrors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_json_1_1_reader_1_1_structured_error_1ad76ac01aeb0ada7e882c2df5daa54c6e" prot="public" static="no" mutable="no">
+        <type>ptrdiff_t</type>
+        <definition>ptrdiff_t Json::Reader::StructuredError::offset_limit</definition>
+        <argsstring></argsstring>
+        <name>offset_limit</name>
+        <qualifiedname>Json::Reader::StructuredError::offset_limit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="31" column="15" bodyfile="include/json/reader.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1ae3d714e95bd98b27e296c607e408189b" compoundref="json__reader_8cpp" startline="749" endline="759">Json::Reader::getStructuredErrors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_json_1_1_reader_1_1_structured_error_1a8daa4b3db497d8437726d4cf9c86726a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::Reader::StructuredError::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <qualifiedname>Json::Reader::StructuredError::message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="32" column="12" bodyfile="include/json/reader.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1ae3d714e95bd98b27e296c607e408189b" compoundref="json__reader_8cpp" startline="749" endline="759">Json::Reader::getStructuredErrors</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::Reader::StructuredError</label>
+        <link refid="struct_json_1_1_reader_1_1_structured_error"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>offset_limit</edgelabel>
+          <edgelabel>offset_start</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>message</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ptrdiff_t</label>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</label>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/reader.h" line="29" column="3" bodyfile="include/json/reader.h" bodystart="29" bodyend="33"/>
+    <listofallmembers>
+      <member refid="struct_json_1_1_reader_1_1_structured_error_1a8daa4b3db497d8437726d4cf9c86726a" prot="public" virt="non-virtual"><scope>Json::Reader::StructuredError</scope><name>message</name></member>
+      <member refid="struct_json_1_1_reader_1_1_structured_error_1ad76ac01aeb0ada7e882c2df5daa54c6e" prot="public" virt="non-virtual"><scope>Json::Reader::StructuredError</scope><name>offset_limit</name></member>
+      <member refid="struct_json_1_1_reader_1_1_structured_error_1ac98af0da2d704be4b64a9572a682423b" prot="public" virt="non-virtual"><scope>Json::Reader::StructuredError</scope><name>offset_start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_json" kind="namespace" language="C++">
+    <compoundname>Json</compoundname>
+    <innerclass refid="struct_json_1_1_built_styled_stream_writer" prot="public">Json::BuiltStyledStreamWriter</innerclass>
+    <innerclass refid="class_json_1_1_char_reader" prot="public">Json::CharReader</innerclass>
+    <innerclass refid="class_json_1_1_char_reader_builder" prot="public">Json::CharReaderBuilder</innerclass>
+    <innerclass refid="struct_json_1_1_comment_style" prot="public">Json::CommentStyle</innerclass>
+    <innerclass refid="class_json_1_1_exception" prot="public">Json::Exception</innerclass>
+    <innerclass refid="class_json_1_1_fast_writer" prot="public">Json::FastWriter</innerclass>
+    <innerclass refid="class_json_1_1_features" prot="public">Json::Features</innerclass>
+    <innerclass refid="class_json_1_1_logic_error" prot="public">Json::LogicError</innerclass>
+    <innerclass refid="class_json_1_1_our_char_reader" prot="public">Json::OurCharReader</innerclass>
+    <innerclass refid="class_json_1_1_our_features" prot="public">Json::OurFeatures</innerclass>
+    <innerclass refid="class_json_1_1_our_reader" prot="public">Json::OurReader</innerclass>
+    <innerclass refid="class_json_1_1_path" prot="public">Json::Path</innerclass>
+    <innerclass refid="class_json_1_1_path_argument" prot="public">Json::PathArgument</innerclass>
+    <innerclass refid="class_json_1_1_reader" prot="public">Json::Reader</innerclass>
+    <innerclass refid="class_json_1_1_runtime_error" prot="public">Json::RuntimeError</innerclass>
+    <innerclass refid="class_json_1_1_secure_allocator" prot="public">Json::SecureAllocator</innerclass>
+    <innerclass refid="class_json_1_1_static_string" prot="public">Json::StaticString</innerclass>
+    <innerclass refid="class_json_1_1_stream_writer" prot="public">Json::StreamWriter</innerclass>
+    <innerclass refid="class_json_1_1_stream_writer_builder" prot="public">Json::StreamWriterBuilder</innerclass>
+    <innerclass refid="class_json_1_1_styled_stream_writer" prot="public">Json::StyledStreamWriter</innerclass>
+    <innerclass refid="class_json_1_1_styled_writer" prot="public">Json::StyledWriter</innerclass>
+    <innerclass refid="class_json_1_1_value" prot="public">Json::Value</innerclass>
+    <innerclass refid="class_json_1_1_value_const_iterator" prot="public">Json::ValueConstIterator</innerclass>
+    <innerclass refid="class_json_1_1_value_iterator" prot="public">Json::ValueIterator</innerclass>
+    <innerclass refid="class_json_1_1_value_iterator_base" prot="public">Json::ValueIteratorBase</innerclass>
+    <innerclass refid="class_json_1_1_writer" prot="public">Json::Writer</innerclass>
+    <innernamespace refid="namespace_json_1_1anonymous__namespace_02json__writer_8cpp_03">Json::anonymous_namespace{json_writer.cpp}</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_json_1a7d654b75c16a57007925868e38212b4e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ValueType</name>
+        <qualifiedname>Json::ValueType</qualifiedname>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4ea7d9899633b4409bd3fc107e6737f8391" prot="public">
+          <name>nullValue</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4eae5a9d708d5c9e23ae9bf98898522512d" prot="public">
+          <name>intValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4eaea788d9a3bb00adc6d68d97d43e1ccd3" prot="public">
+          <name>uintValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4eab837c7b869c14d8be712deb45c9e490e" prot="public">
+          <name>realValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4ea804ef857affea2d415843c73f261c258" prot="public">
+          <name>stringValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4ea14c30dbf4da86f7b809be299f671f7fd" prot="public">
+          <name>booleanValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4eadc8f264f36b55b063c78126b335415f4" prot="public">
+          <name>arrayValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4eae8386dcfc36d1ae897745f7b4f77a1f6" prot="public">
+          <name>objectValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="73" column="1" bodyfile="include/json/value.h" bodystart="73" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CommentPlacement</name>
+        <qualifiedname>Json::CommentPlacement</qualifiedname>
+        <enumvalue id="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a52f1733775460517b2ea6bedf4906d52" prot="public">
+          <name>commentBefore</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a008a230a0586de54f30b76afe70fdcfa" prot="public">
+          <name>commentAfterOnSameLine</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351ac5784ca53b12250888ddb642b06aebef" prot="public">
+          <name>commentAfter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351abcbd3eb00417335e094e4a03379659b5" prot="public">
+          <name>numberOfCommentPlacement</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="84" column="1" bodyfile="include/json/value.h" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PrecisionType</name>
+        <qualifiedname>Json::PrecisionType</qualifiedname>
+        <enumvalue id="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8abb30ddeaa820d370a2438dda7a08996a" prot="public">
+          <name>significantDigits</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8aaee1bf0411c550a0bb2996b7b67cae87" prot="public">
+          <name>decimalPlaces</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="92" column="1" bodyfile="include/json/value.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_json_1aadee45558f50b72b173c1d2175303b84" prot="public" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <qualifiedname>Json</qualifiedname>
+        <enumvalue id="namespace_json_1aadee45558f50b72b173c1d2175303b84ae4f2008c7919f20d81286121d1374424" prot="public">
+          <name>uintToStringBufferSize</name>
+          <initializer>= 3 * sizeof(LargestUInt) + 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_tool.h" line="52" column="1" bodyfile="src/lib_json/json_tool.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_json_1a9277f826baa1de2d303af893fa6f16ce" prot="public" static="no">
+        <type>int</type>
+        <definition>using Json::Int =  int</definition>
+        <argsstring></argsstring>
+        <name>Int</name>
+        <qualifiedname>Json::Int</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="85" column="1" bodyfile="include/json/config.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a74d106771a079ca397eaffbf93d445be" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>using Json::UInt =  unsigned int</definition>
+        <argsstring></argsstring>
+        <name>UInt</name>
+        <qualifiedname>Json::UInt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="86" column="1" bodyfile="include/json/config.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a2458aa292509f109ee2c56aa56fb140a" prot="public" static="no">
+        <type>__int64</type>
+        <definition>using Json::Int64 =  __int64</definition>
+        <argsstring></argsstring>
+        <name>Int64</name>
+        <qualifiedname>Json::Int64</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="93" column="1" bodyfile="include/json/config.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a14aa7299a0ff9d2ec4350dcb93acf7f4" prot="public" static="no">
+        <type>unsigned __int64</type>
+        <definition>using Json::UInt64 =  unsigned __int64</definition>
+        <argsstring></argsstring>
+        <name>UInt64</name>
+        <qualifiedname>Json::UInt64</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="94" column="1" bodyfile="include/json/config.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a4740dd208d3b4278c0ab4a3b73146b45" prot="public" static="no">
+        <type><ref refid="namespace_json_1a2458aa292509f109ee2c56aa56fb140a" kindref="member">Int64</ref></type>
+        <definition>using Json::LargestInt =  Int64</definition>
+        <argsstring></argsstring>
+        <name>LargestInt</name>
+        <qualifiedname>Json::LargestInt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="99" column="1" bodyfile="include/json/config.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1acc8c7ef3383b2f4f33ff219810445bc6" prot="public" static="no">
+        <type><ref refid="namespace_json_1a14aa7299a0ff9d2ec4350dcb93acf7f4" kindref="member">UInt64</ref></type>
+        <definition>using Json::LargestUInt =  UInt64</definition>
+        <argsstring></argsstring>
+        <name>LargestUInt</name>
+        <qualifiedname>Json::LargestUInt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="100" column="1" bodyfile="include/json/config.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a8274527a365623cbf6cdf21f4789af66" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>typename std::conditional&lt; 0, <ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator</ref>&lt; T &gt;, std::allocator&lt; T &gt; &gt;::type</type>
+        <definition>using Json::Allocator = 
+    typename std::conditional&lt; 0 , SecureAllocator&lt;T&gt;,
+                              std::allocator&lt;T&gt;&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>Allocator</name>
+        <qualifiedname>Json::Allocator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="105" column="1" bodyfile="include/json/config.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" prot="public" static="no">
+        <type>std::basic_string&lt; char, std::char_traits&lt; char &gt;, <ref refid="namespace_json_1a8274527a365623cbf6cdf21f4789af66" kindref="member">Allocator</ref>&lt; char &gt; &gt;</type>
+        <definition>using Json::String =  std::basic_string&lt;char, std::char_traits&lt;char&gt;, Allocator&lt;char&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>String</name>
+        <qualifiedname>Json::String</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="108" column="1" bodyfile="include/json/config.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a6817cb1d877255197a60465b76999c95" prot="public" static="no">
+        <type>std::basic_istringstream&lt; String::value_type, String::traits_type, String::allocator_type &gt;</type>
+        <definition>using Json::IStringStream = 
+    std::basic_istringstream&lt;String::value_type, String::traits_type,
+                             String::allocator_type&gt;</definition>
+        <argsstring></argsstring>
+        <name>IStringStream</name>
+        <qualifiedname>Json::IStringStream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="109" column="1" bodyfile="include/json/config.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a030bde1f9b3527d1b0003fe787d20387" prot="public" static="no">
+        <type>std::basic_ostringstream&lt; String::value_type, String::traits_type, String::allocator_type &gt;</type>
+        <definition>using Json::OStringStream = 
+    std::basic_ostringstream&lt;String::value_type, String::traits_type,
+                             String::allocator_type&gt;</definition>
+        <argsstring></argsstring>
+        <name>OStringStream</name>
+        <qualifiedname>Json::OStringStream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="112" column="1" bodyfile="include/json/config.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" prot="public" static="no">
+        <type>std::istream</type>
+        <definition>using Json::IStream =  std::istream</definition>
+        <argsstring></argsstring>
+        <name>IStream</name>
+        <qualifiedname>Json::IStream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="115" column="1" bodyfile="include/json/config.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" prot="public" static="no">
+        <type>std::ostream</type>
+        <definition>using Json::OStream =  std::ostream</definition>
+        <argsstring></argsstring>
+        <name>OStream</name>
+        <qualifiedname>Json::OStream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="116" column="1" bodyfile="include/json/config.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a1dee75d1d0b8282b43b8c5b7f0eff4b1" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>using Json::ArrayIndex =  unsigned int</definition>
+        <argsstring></argsstring>
+        <name>ArrayIndex</name>
+        <qualifiedname>Json::ArrayIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/forwards.h" line="23" column="1" bodyfile="include/json/forwards.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1aa18f4485f0f2d16345d266a462947e07" prot="public" static="no">
+        <type>std::auto_ptr&lt; <ref refid="class_json_1_1_char_reader" kindref="compound">CharReader</ref> &gt;</type>
+        <definition>using Json::CharReaderPtr =  std::auto_ptr&lt;CharReader&gt;</definition>
+        <argsstring></argsstring>
+        <name>CharReaderPtr</name>
+        <qualifiedname>Json::CharReaderPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="49" column="1" bodyfile="src/lib_json/json_reader.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1ac1220df94c88dbd1c57da17a1b43a730" prot="public" static="no">
+        <type>char[<ref refid="namespace_json_1aadee45558f50b72b173c1d2175303b84ae4f2008c7919f20d81286121d1374424" kindref="member">uintToStringBufferSize</ref>]</type>
+        <definition>using Json::UIntToStringBuffer =  char[uintToStringBufferSize]</definition>
+        <argsstring></argsstring>
+        <name>UIntToStringBuffer</name>
+        <qualifiedname>Json::UIntToStringBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_tool.h" line="54" column="1" bodyfile="src/lib_json/json_tool.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1aa71951ff14545267d03a1c6e9cd856c2" prot="public" static="no">
+        <type>std::auto_ptr&lt; <ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref> &gt;</type>
+        <definition>using Json::StreamWriterPtr =  std::auto_ptr&lt;StreamWriter&gt;</definition>
+        <argsstring></argsstring>
+        <name>StreamWriterPtr</name>
+        <qualifiedname>Json::StreamWriterPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="84" column="1" bodyfile="src/lib_json/json_writer.cpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_json_1a05aed54518637ec00aac59b03eb855a1" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char Json::hex2[]</definition>
+        <argsstring>[]</argsstring>
+        <name>hex2</name>
+        <qualifiedname>Json::hex2</qualifiedname>
+        <initializer>= &quot;000102030405060708090a0b0c0d0e0f&quot;
+                           &quot;101112131415161718191a1b1c1d1e1f&quot;
+                           &quot;202122232425262728292a2b2c2d2e2f&quot;
+                           &quot;303132333435363738393a3b3c3d3e3f&quot;
+                           &quot;404142434445464748494a4b4c4d4e4f&quot;
+                           &quot;505152535455565758595a5b5c5d5e5f&quot;
+                           &quot;606162636465666768696a6b6c6d6e6f&quot;
+                           &quot;707172737475767778797a7b7c7d7e7f&quot;
+                           &quot;808182838485868788898a8b8c8d8e8f&quot;
+                           &quot;909192939495969798999a9b9c9d9e9f&quot;
+                           &quot;a0a1a2a3a4a5a6a7a8a9aaabacadaeaf&quot;
+                           &quot;b0b1b2b3b4b5b6b7b8b9babbbcbdbebf&quot;
+                           &quot;c0c1c2c3c4c5c6c7c8c9cacbcccdcecf&quot;
+                           &quot;d0d1d2d3d4d5d6d7d8d9dadbdcdddedf&quot;
+                           &quot;e0e1e2e3e4e5e6e7e8e9eaebecedeeef&quot;
+                           &quot;f0f1f2f3f4f5f6f7f8f9fafbfcfdfeff&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="222" column="19" bodyfile="src/lib_json/json_writer.cpp" bodystart="222" bodyend="-1"/>
+        <referencedby refid="namespace_json_1a518ab2ed3b29e01190a3f0d71bdb48c1" compoundref="json__writer_8cpp" startline="239" endline="248">toHex16Bit</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_json_1a85a761cd8643a538387c0fe37bb937e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Json::operator==</definition>
+        <argsstring>(const SecureAllocator&lt; T &gt; &amp;, const SecureAllocator&lt; U &gt; &amp;)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>Json::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator</ref>&lt; T &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator</ref>&lt; U &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/allocator.h" line="58" column="6" bodyfile="include/json/allocator.h" bodystart="58" bodyend="60"/>
+        <referencedby refid="class_json_1_1_value_1a08a632cc1a237067431cff954866121f">Json::Value::Value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a86063654ac54c5e00f2f559f2c363b4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Json::operator!=</definition>
+        <argsstring>(const SecureAllocator&lt; T &gt; &amp;, const SecureAllocator&lt; U &gt; &amp;)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>Json::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator</ref>&lt; T &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator</ref>&lt; U &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/allocator.h" line="63" column="6" bodyfile="include/json/allocator.h" bodystart="63" bodyend="65"/>
+        <referencedby refid="class_json_1_1_value_1a08a632cc1a237067431cff954866121f">Json::Value::Value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1ad0e6a29ad2eac4ae58cd5b96d19bb01e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::parseFromStream</definition>
+        <argsstring>(CharReader::Factory const &amp;, IStream &amp;, Value *root, String *errs)</argsstring>
+        <name>parseFromStream</name>
+        <qualifiedname>Json::parseFromStream</qualifiedname>
+        <param>
+          <type><ref refid="class_json_1_1_char_reader_1_1_factory" kindref="compound">CharReader::Factory</ref> const &amp;</type>
+          <defname>fact</defname>
+        </param>
+        <param>
+          <type><ref refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" kindref="member">IStream</ref> &amp;</type>
+          <defname>sin</defname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> *</type>
+          <declname>errs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="1874" column="6" bodyfile="src/lib_json/json_reader.cpp" bodystart="1874" bodyend="1883" declfile="include/json/reader.h" declline="195" declcolumn="7"/>
+        <references refid="class_json_1_1_char_reader_1_1_factory_1aa498627213eada8b64d84594c3badb35">Json::CharReader::Factory::newCharReader</references>
+        <referencedby refid="namespace_json_1ac21ce6d431c2a8d93fdec0def5154cbd" compoundref="json__reader_8cpp" startline="1885" endline="1893">operator&gt;&gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1ac21ce6d431c2a8d93fdec0def5154cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" kindref="member">IStream</ref> &amp;</type>
+        <definition>IStream &amp; Json::operator&gt;&gt;</definition>
+        <argsstring>(IStream &amp;, Value &amp;)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <qualifiedname>Json::operator&gt;&gt;</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" kindref="member">IStream</ref> &amp;</type>
+          <defname>sin</defname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <defname>root</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="1885" column="9" bodyfile="src/lib_json/json_reader.cpp" bodystart="1885" bodyend="1893" declfile="include/json/reader.h" declline="197" declcolumn="11"/>
+        <references refid="namespace_json_1ad0e6a29ad2eac4ae58cd5b96d19bb01e" compoundref="json__reader_8cpp" startline="1874" endline="1883">parseFromStream</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a8968faeae7df54f8ae98e156b3c9745e" prot="public" static="no" const="yes" explicit="no" inline="no" refqual="lvalue" virt="non-virtual">
+        <type></type>
+        <definition>Json::__declspec</definition>
+        <argsstring>(noreturn) void throwRuntimeError(String const &amp;msg)</argsstring>
+        <name>__declspec</name>
+        <qualifiedname>Json::__declspec</qualifiedname>
+        <param>
+          <type>noreturn</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_value.cpp" line="168" column="2" bodyfile="src/lib_json/json_value.cpp" bodystart="168" bodyend="170" declfile="include/json/value.h" declline="70" declcolumn="2"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1afed1c011474d8243d72fc38f43de0f8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::swap</definition>
+        <argsstring>(Value &amp;a, Value &amp;b)</argsstring>
+        <name>swap</name>
+        <qualifiedname>Json::swap</qualifiedname>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="649" column="13" bodyfile="include/json/value.h" bodystart="649" bodyend="649"/>
+        <references refid="namespace_json_1afed1c011474d8243d72fc38f43de0f8e" compoundref="value_8h" startline="649" endline="649">swap</references>
+        <references refid="class_json_1_1_value_1aab841120d78e296e1bc06a373345e822" compoundref="json__value_8cpp" startline="392" endline="397">Json::Value::swap</references>
+        <referencedby refid="namespace_json_1afed1c011474d8243d72fc38f43de0f8e" compoundref="value_8h" startline="649" endline="649">swap</referencedby>
+        <referencedby refid="class_json_1_1_value_1a08a632cc1a237067431cff954866121f">Json::Value::Value</referencedby>
+        <referencedby refid="class_json_1_1_value_1adace4216e0f5b3be7f855adebae6aa0b" compoundref="json__value_8cpp" startline="362" endline="365">Json::Value::Value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a4cd945e3d7722c3fabc38e14efacb6f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::writeString</definition>
+        <argsstring>(StreamWriter::Factory const &amp;factory, Value const &amp;root)</argsstring>
+        <name>writeString</name>
+        <qualifiedname>Json::writeString</qualifiedname>
+        <param>
+          <type><ref refid="class_json_1_1_stream_writer_1_1_factory" kindref="compound">StreamWriter::Factory</ref> const &amp;</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> const &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="1168" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="1168" bodyend="1173" declfile="include/json/writer.h" declline="41" declcolumn="9"/>
+        <references refid="class_json_1_1_stream_writer_1_1_factory_1ad7e8432ba542dcb01fe9ee12dcd0e574">Json::StreamWriter::Factory::newStreamWriter</references>
+        <referencedby refid="class_json_1_1_value_1a49ffe98d65426066c4356132af96c87e" compoundref="json__value_8cpp" startline="1348" endline="1356">Json::Value::toStyledString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::valueToString</definition>
+        <argsstring>(Int value)</argsstring>
+        <name>valueToString</name>
+        <qualifiedname>Json::valueToString</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1a9277f826baa1de2d303af893fa6f16ce" kindref="member">Int</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="113" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="113" bodyend="113" declfile="include/json/writer.h" declline="177" declcolumn="9"/>
+        <references refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" compoundref="json__writer_8cpp" startline="113" endline="113">valueToString</references>
+        <referencedby refid="class_json_1_1_value_1a52207c8d4e86160f968a40817cb2529b" compoundref="json__value_8cpp" startline="554" endline="578">Json::Value::asString</referencedby>
+        <referencedby refid="namespace_json_1a5cc541c2d1f620a118a09626899b3b56" compoundref="json__writer_8cpp" startline="161" endline="164">valueToString</referencedby>
+        <referencedby refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" compoundref="json__writer_8cpp" startline="113" endline="113">valueToString</referencedby>
+        <referencedby refid="namespace_json_1aa0c937cb3843c90cee0e8e48215695a3" compoundref="json__writer_8cpp" startline="115" endline="115">valueToString</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1a7c9da861861e570a51b45f270c9ff150" compoundref="json__writer_8cpp" startline="880" endline="940">Json::BuiltStyledStreamWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" compoundref="json__writer_8cpp" startline="350" endline="400">Json::FastWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">Json::StyledStreamWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_writer_1ac40143cf43f7c4a94d3d0b41e5245069" compoundref="json__writer_8cpp" startline="415" endline="472">Json::StyledWriter::writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aa0c937cb3843c90cee0e8e48215695a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::valueToString</definition>
+        <argsstring>(UInt value)</argsstring>
+        <name>valueToString</name>
+        <qualifiedname>Json::valueToString</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1a74d106771a079ca397eaffbf93d445be" kindref="member">UInt</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="115" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="115" bodyend="115" declfile="include/json/writer.h" declline="178" declcolumn="9"/>
+        <references refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" compoundref="json__writer_8cpp" startline="113" endline="113">valueToString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aa7c8a95ed4a381676cf58b17d5d86e0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::valueToString</definition>
+        <argsstring>(LargestInt value)</argsstring>
+        <name>valueToString</name>
+        <qualifiedname>Json::valueToString</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1a4740dd208d3b4278c0ab4a3b73146b45" kindref="member">LargestInt</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="87" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="87" bodyend="101" declfile="include/json/writer.h" declline="180" declcolumn="9"/>
+        <references refid="class_json_1_1_value_1a08a915ca68917f2ae15b5921747441db" compoundref="value_8h" startline="136">Json::Value::maxLargestInt</references>
+        <references refid="class_json_1_1_value_1af022bf2313a004f1f566ea7a6e24b660" compoundref="value_8h" startline="133">Json::Value::minLargestInt</references>
+        <references refid="namespace_json_1ac1ffd21a9e55122014353c773ccc496e" compoundref="json__tool_8h" startline="56" endline="62">uintToString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a26a301a7304febbd1066ad818add2459" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::valueToString</definition>
+        <argsstring>(LargestUInt value)</argsstring>
+        <name>valueToString</name>
+        <qualifiedname>Json::valueToString</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1acc8c7ef3383b2f4f33ff219810445bc6" kindref="member">LargestUInt</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="103" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="103" bodyend="109" declfile="include/json/writer.h" declline="181" declcolumn="9"/>
+        <references refid="namespace_json_1ac1ffd21a9e55122014353c773ccc496e" compoundref="json__tool_8h" startline="56" endline="62">uintToString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a5cc541c2d1f620a118a09626899b3b56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::valueToString</definition>
+        <argsstring>(double value, unsigned int precision=Value::defaultRealPrecision, PrecisionType precisionType=PrecisionType::significantDigits)</argsstring>
+        <name>valueToString</name>
+        <qualifiedname>Json::valueToString</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>precision</declname>
+          <defval><ref refid="class_json_1_1_value_1a66b0728adfe54e8f7652a180b21a2812" kindref="member">Value::defaultRealPrecision</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8" kindref="member">PrecisionType</ref></type>
+          <declname>precisionType</declname>
+          <defval><ref refid="namespace_json_1af6e1447a3c43e3a62e11050dd0a11ce8abb30ddeaa820d370a2438dda7a08996a" kindref="member">PrecisionType::significantDigits</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="161" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="161" bodyend="164" declfile="include/json/writer.h" declline="182" declcolumn="9"/>
+        <references refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" compoundref="json__writer_8cpp" startline="113" endline="113">valueToString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a8274afe87c7f08bca77f62ee6ef29e41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::valueToString</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>valueToString</name>
+        <qualifiedname>Json::valueToString</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="166" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="166" bodyend="166" declfile="include/json/writer.h" declline="185" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a6a79f56ee8cba1cae61cf4f0a533217d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::valueToQuotedString</definition>
+        <argsstring>(const char *value)</argsstring>
+        <name>valueToQuotedString</name>
+        <qualifiedname>Json::valueToQuotedString</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="322" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="322" bodyend="324" declfile="include/json/writer.h" declline="186" declcolumn="9"/>
+        <references refid="namespace_json_1a6a91497cb0b18b81333a84994bd05d40" compoundref="json__writer_8cpp" startline="258" endline="320">valueToQuotedStringN</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">Json::StyledStreamWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_writer_1ac40143cf43f7c4a94d3d0b41e5245069" compoundref="json__writer_8cpp" startline="415" endline="472">Json::StyledWriter::writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1af6d7a60df95d0b915961e6131fe3bbde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::valueToQuotedString</definition>
+        <argsstring>(const char *value, size_t length)</argsstring>
+        <name>valueToQuotedString</name>
+        <qualifiedname>Json::valueToQuotedString</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="326" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="326" bodyend="328" declfile="include/json/writer.h" declline="187" declcolumn="9"/>
+        <references refid="namespace_json_1a6a91497cb0b18b81333a84994bd05d40" compoundref="json__writer_8cpp" startline="258" endline="320">valueToQuotedStringN</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a91e5bd3901936f85718362360bec35c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref> &amp;</type>
+        <definition>OStream &amp; Json::operator&lt;&lt;</definition>
+        <argsstring>(OStream &amp;, const Value &amp;root)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Json::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref> &amp;</type>
+          <defname>sout</defname>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="1175" column="1" bodyfile="src/lib_json/json_writer.cpp" bodystart="1175" bodyend="1180" declfile="include/json/writer.h" declline="189" declcolumn="3"/>
+        <references refid="class_json_1_1_stream_writer_builder_1a042d21b84d8c5bede52a764e2ada7d65" compoundref="json__writer_8cpp" startline="1088" endline="1129">Json::StreamWriterBuilder::newStreamWriter</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1ac99d7a5551039dfa712dd1d143c25a16" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>static char Json::getDecimalPoint</definition>
+        <argsstring>()</argsstring>
+        <name>getDecimalPoint</name>
+        <qualifiedname>Json::getDecimalPoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_tool.h" line="17" column="20" bodyfile="src/lib_json/json_tool.h" bodystart="17" bodyend="24"/>
+        <referencedby refid="namespace_json_1adc6272a7aca28093bc7232ada8607fe4" compoundref="json__tool_8h" startline="73" endline="83">fixNumericLocaleInput</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a9d88498bb2b3d3f9f519b47646e07fae" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>static String Json::codePointToUTF8</definition>
+        <argsstring>(unsigned int cp)</argsstring>
+        <name>codePointToUTF8</name>
+        <qualifiedname>Json::codePointToUTF8</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_tool.h" line="26" column="22" bodyfile="src/lib_json/json_tool.h" bodystart="26" bodyend="50"/>
+        <referencedby refid="class_json_1_1_our_reader_1aa6bcf5428e4c45f478700bc5fbae500f" compoundref="json__reader_8cpp" startline="1545" endline="1596">Json::OurReader::decodeString</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac8a1bc73b350a9e7258e45099eba164e" compoundref="json__reader_8cpp" startline="564" endline="615">Json::Reader::decodeString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1ac1ffd21a9e55122014353c773ccc496e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::uintToString</definition>
+        <argsstring>(LargestUInt value, char *&amp;current)</argsstring>
+        <name>uintToString</name>
+        <qualifiedname>Json::uintToString</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1acc8c7ef3383b2f4f33ff219810445bc6" kindref="member">LargestUInt</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *&amp;</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_tool.h" line="56" column="20" bodyfile="src/lib_json/json_tool.h" bodystart="56" bodyend="62"/>
+        <referencedby refid="namespace_json_1aa7c8a95ed4a381676cf58b17d5d86e0d" compoundref="json__writer_8cpp" startline="87" endline="101">valueToString</referencedby>
+        <referencedby refid="namespace_json_1a26a301a7304febbd1066ad818add2459" compoundref="json__writer_8cpp" startline="103" endline="109">valueToString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a4f93f184c2890cb99b07afeed10a89ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Iter</type>
+          </param>
+        </templateparamlist>
+        <type>Iter</type>
+        <definition>Iter Json::fixNumericLocale</definition>
+        <argsstring>(Iter begin, Iter end)</argsstring>
+        <name>fixNumericLocale</name>
+        <qualifiedname>Json::fixNumericLocale</qualifiedname>
+        <param>
+          <type>Iter</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>Iter</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_tool.h" line="64" column="18" bodyfile="src/lib_json/json_tool.h" bodystart="64" bodyend="71"/>
+        <referencedby refid="namespace_json_1_1anonymous__namespace_02json__writer_8cpp_03_1a2b1704cd1d429b685e16fb5ac21f6810" compoundref="json__writer_8cpp" startline="120" endline="158">Json::anonymous_namespace{json_writer.cpp}::valueToString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1adc6272a7aca28093bc7232ada8607fe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Iter</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Json::fixNumericLocaleInput</definition>
+        <argsstring>(Iter begin, Iter end)</argsstring>
+        <name>fixNumericLocaleInput</name>
+        <qualifiedname>Json::fixNumericLocaleInput</qualifiedname>
+        <param>
+          <type>Iter</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>Iter</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_tool.h" line="73" column="18" bodyfile="src/lib_json/json_tool.h" bodystart="73" bodyend="83"/>
+        <references refid="namespace_json_1ac99d7a5551039dfa712dd1d143c25a16" compoundref="json__tool_8h" startline="17" endline="24">getDecimalPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1ab48d632fe16e62aca0193cf17cdf3c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Iter</type>
+          </param>
+        </templateparamlist>
+        <type>Iter</type>
+        <definition>Iter Json::fixZerosInTheEnd</definition>
+        <argsstring>(Iter begin, Iter end, unsigned int precision)</argsstring>
+        <name>fixZerosInTheEnd</name>
+        <qualifiedname>Json::fixZerosInTheEnd</qualifiedname>
+        <param>
+          <type>Iter</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>Iter</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>precision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_tool.h" line="86" column="6" bodyfile="src/lib_json/json_tool.h" bodystart="86" bodyend="99"/>
+        <referencedby refid="namespace_json_1_1anonymous__namespace_02json__writer_8cpp_03_1a2b1704cd1d429b685e16fb5ac21f6810" compoundref="json__writer_8cpp" startline="120" endline="158">Json::anonymous_namespace{json_writer.cpp}::valueToString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1ace1c06a193e376c0a7bb9ece706c4fb5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::unique_ptr&lt; T &gt;</type>
+        <definition>static std::unique_ptr&lt; T &gt; Json::cloneUnique</definition>
+        <argsstring>(const std::unique_ptr&lt; T &gt; &amp;p)</argsstring>
+        <name>cloneUnique</name>
+        <qualifiedname>Json::cloneUnique</qualifiedname>
+        <param>
+          <type>const std::unique_ptr&lt; T &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_value.cpp" line="45" column="24" bodyfile="src/lib_json/json_value.cpp" bodystart="45" bodyend="51"/>
+        <referencedby refid="class_json_1_1_value_1_1_comments_1a93c119f71b022940fc9576cf1e688576" compoundref="json__value_8cpp" startline="1288" endline="1289">Json::Value::Comments::Comments</referencedby>
+        <referencedby refid="class_json_1_1_value_1_1_comments_1a4ef41f461812975989bc6378b613791e" compoundref="json__value_8cpp" startline="1294" endline="1297">Json::Value::Comments::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aff0180507262a244de61b961178d7443" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool Json::InRange</definition>
+        <argsstring>(double d, T min, U max)</argsstring>
+        <name>InRange</name>
+        <qualifiedname>Json::InRange</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>U</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_value.cpp" line="72" column="20" bodyfile="src/lib_json/json_value.cpp" bodystart="72" bodyend="75"/>
+        <referencedby refid="class_json_1_1_value_1a614d635bc248a592593feb322cd15ab8" compoundref="json__value_8cpp" startline="580" endline="600">Json::Value::asInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1aa647ac4fe51a2e325c063ebe32262b44" compoundref="json__value_8cpp" startline="626" endline="648">Json::Value::asInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1a74b305583ec3aacf4f9dd06e799dc265" compoundref="json__value_8cpp" startline="602" endline="622">Json::Value::asUInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a0e44a5a4cd0c099f9570dfa25813eb60" compoundref="json__value_8cpp" startline="650" endline="669">Json::Value::asUInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1af1ee6be27a96a7d12128efdd60deb54d" compoundref="json__value_8cpp" startline="752" endline="783">Json::Value::isConvertibleTo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a0c9384eed1624da7aa0bda3c89f5ae72" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * Json::duplicateStringValue</definition>
+        <argsstring>(const char *value, size_t length)</argsstring>
+        <name>duplicateStringValue</name>
+        <qualifiedname>Json::duplicateStringValue</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_value.cpp" line="93" column="20" bodyfile="src/lib_json/json_value.cpp" bodystart="93" bodyend="105"/>
+        <references refid="class_json_1_1_value_1ab6042b06093ce9871db116aa8b8e9c90" compoundref="value_8h" startline="142">Json::Value::maxInt</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aef6a987788e83e3d123816745b1c3431" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char * Json::duplicateAndPrefixStringValue</definition>
+        <argsstring>(const char *value, unsigned int length)</argsstring>
+        <name>duplicateAndPrefixStringValue</name>
+        <qualifiedname>Json::duplicateAndPrefixStringValue</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_value.cpp" line="107" column="20" bodyfile="src/lib_json/json_value.cpp" bodystart="107" bodyend="123"/>
+        <references refid="assertions_8h_1ad7facdeeca0f495765e3b204c265eadb" compoundref="assertions_8h" startline="42" endline="47">JSON_ASSERT_MESSAGE</references>
+        <references refid="class_json_1_1_value_1ab6042b06093ce9871db116aa8b8e9c90" compoundref="value_8h" startline="142">Json::Value::maxInt</references>
+        <referencedby refid="class_json_1_1_value_1a13a986e39651853469b6c3ef39898b0a" compoundref="json__value_8cpp" startline="902" endline="932">Json::Value::dupPayload</referencedby>
+        <referencedby refid="class_json_1_1_value_1a39fa09d1902efbd4350e1236db920571" compoundref="json__value_8cpp" startline="335" endline="339">Json::Value::Value</referencedby>
+        <referencedby refid="class_json_1_1_value_1ad87b849356816aca75995dd07302e49d" compoundref="json__value_8cpp" startline="327" endline="333">Json::Value::Value</referencedby>
+        <referencedby refid="class_json_1_1_value_1a0ee1ff8974f050b80308a2dc580b8867" compoundref="json__value_8cpp" startline="341" endline="345">Json::Value::Value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aad8b4982c1acd164f541fba396ac9fb1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::decodePrefixedString</definition>
+        <argsstring>(bool isPrefixed, char const *prefixed, unsigned *length, char const **value)</argsstring>
+        <name>decodePrefixedString</name>
+        <qualifiedname>Json::decodePrefixedString</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>isPrefixed</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>prefixed</declname>
+        </param>
+        <param>
+          <type>unsigned *</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>char const **</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_value.cpp" line="124" column="20" bodyfile="src/lib_json/json_value.cpp" bodystart="124" bodyend="133"/>
+        <referencedby refid="class_json_1_1_value_1a16668c8db7ef0a5de040012f0dfd84b0" compoundref="json__value_8cpp" startline="516" endline="526">Json::Value::asCString</referencedby>
+        <referencedby refid="class_json_1_1_value_1a52207c8d4e86160f968a40817cb2529b" compoundref="json__value_8cpp" startline="554" endline="578">Json::Value::asString</referencedby>
+        <referencedby refid="class_json_1_1_value_1a13a986e39651853469b6c3ef39898b0a" compoundref="json__value_8cpp" startline="902" endline="932">Json::Value::dupPayload</referencedby>
+        <referencedby refid="class_json_1_1_value_1a2e1b7be6bde2fe23f15290d9ddbbdf8a" compoundref="json__value_8cpp" startline="542" endline="552">Json::Value::getString</referencedby>
+        <referencedby refid="class_json_1_1_value_1aac6bd14155b88ed2d39ef54820b39e49" compoundref="json__value_8cpp" startline="416" endline="464">Json::Value::operator&lt;</referencedby>
+        <referencedby refid="class_json_1_1_value_1a16f9250e30d5c4505cd11137c564a764" compoundref="json__value_8cpp" startline="472" endline="512">Json::Value::operator==</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a48f4e3ea655e3b4a5d7f892c81f00511" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::releasePrefixedStringValue</definition>
+        <argsstring>(char *value)</argsstring>
+        <name>releasePrefixedStringValue</name>
+        <qualifiedname>Json::releasePrefixedStringValue</qualifiedname>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_value.cpp" line="149" column="20" bodyfile="src/lib_json/json_value.cpp" bodystart="149" bodyend="149"/>
+        <referencedby refid="class_json_1_1_value_1ac47cca0abfc24071b1c5caa98d752862" compoundref="json__value_8cpp" startline="934" endline="953">Json::Value::releasePayload</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a3e0d81d514d0e8bddf33b08074214abd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::releaseStringValue</definition>
+        <argsstring>(char *value, unsigned)</argsstring>
+        <name>releaseStringValue</name>
+        <qualifiedname>Json::releaseStringValue</qualifiedname>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_value.cpp" line="150" column="20" bodyfile="src/lib_json/json_value.cpp" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a1a04cc9d31e64b5912dade003c9b99b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Json::IsIntegral</definition>
+        <argsstring>(double d)</argsstring>
+        <name>IsIntegral</name>
+        <qualifiedname>Json::IsIntegral</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_value.cpp" line="1172" column="13" bodyfile="src/lib_json/json_value.cpp" bodystart="1172" bodyend="1175"/>
+        <references refid="namespace_json_1a1a04cc9d31e64b5912dade003c9b99b5" compoundref="json__value_8cpp" startline="1172" endline="1175">IsIntegral</references>
+        <referencedby refid="class_json_1_1_value_1aff51d8b52979ca06cf9d909accd5f695" compoundref="json__value_8cpp" startline="1181" endline="1198">Json::Value::isInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a4a81fb3c3acdbb68b2e2f30836a4f53e" compoundref="json__value_8cpp" startline="1223" endline="1238">Json::Value::isInt64</referencedby>
+        <referencedby refid="namespace_json_1a1a04cc9d31e64b5912dade003c9b99b5" compoundref="json__value_8cpp" startline="1172" endline="1175">IsIntegral</referencedby>
+        <referencedby refid="class_json_1_1_value_1ab6798954f6e80281cf22708ef45198a7" compoundref="json__value_8cpp" startline="1257" endline="1274">Json::Value::isIntegral</referencedby>
+        <referencedby refid="class_json_1_1_value_1abdda463d3269015f883587349726cfbc" compoundref="json__value_8cpp" startline="1200" endline="1221">Json::Value::isUInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a883576e35cb03a785258edb56777a2de" compoundref="json__value_8cpp" startline="1240" endline="1255">Json::Value::isUInt64</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a69c11fe2e521ce22347be44d91e79f0c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Json::doesAnyCharRequireEscaping</definition>
+        <argsstring>(char const *s, size_t n)</argsstring>
+        <name>doesAnyCharRequireEscaping</name>
+        <qualifiedname>Json::doesAnyCharRequireEscaping</qualifiedname>
+        <param>
+          <type>char const *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="168" column="13" bodyfile="src/lib_json/json_writer.cpp" bodystart="168" bodyend="174"/>
+        <referencedby refid="namespace_json_1a6a91497cb0b18b81333a84994bd05d40" compoundref="json__writer_8cpp" startline="258" endline="320">valueToQuotedStringN</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a09f2caaead38dd396b21affdf87230ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int Json::utf8ToCodepoint</definition>
+        <argsstring>(const char *&amp;s, const char *e)</argsstring>
+        <name>utf8ToCodepoint</name>
+        <qualifiedname>Json::utf8ToCodepoint</qualifiedname>
+        <param>
+          <type>const char *&amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="176" column="21" bodyfile="src/lib_json/json_writer.cpp" bodystart="176" bodyend="220"/>
+        <referencedby refid="namespace_json_1a6a91497cb0b18b81333a84994bd05d40" compoundref="json__writer_8cpp" startline="258" endline="320">valueToQuotedStringN</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a518ab2ed3b29e01190a3f0d71bdb48c1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>static String Json::toHex16Bit</definition>
+        <argsstring>(unsigned int x)</argsstring>
+        <name>toHex16Bit</name>
+        <qualifiedname>Json::toHex16Bit</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="239" column="15" bodyfile="src/lib_json/json_writer.cpp" bodystart="239" bodyend="248"/>
+        <references refid="namespace_json_1a05aed54518637ec00aac59b03eb855a1" compoundref="json__writer_8cpp" startline="222">hex2</references>
+        <referencedby refid="namespace_json_1aaaa865101dd7c1e98574c2c2cdd7960d" compoundref="json__writer_8cpp" startline="254" endline="256">appendHex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a370e7293d16da9ea28bb29277ff04412" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::appendRaw</definition>
+        <argsstring>(String &amp;result, unsigned ch)</argsstring>
+        <name>appendRaw</name>
+        <qualifiedname>Json::appendRaw</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="250" column="13" bodyfile="src/lib_json/json_writer.cpp" bodystart="250" bodyend="252"/>
+        <referencedby refid="namespace_json_1a6a91497cb0b18b81333a84994bd05d40" compoundref="json__writer_8cpp" startline="258" endline="320">valueToQuotedStringN</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aaaa865101dd7c1e98574c2c2cdd7960d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::appendHex</definition>
+        <argsstring>(String &amp;result, unsigned ch)</argsstring>
+        <name>appendHex</name>
+        <qualifiedname>Json::appendHex</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="254" column="13" bodyfile="src/lib_json/json_writer.cpp" bodystart="254" bodyend="256"/>
+        <references refid="namespace_json_1a518ab2ed3b29e01190a3f0d71bdb48c1" compoundref="json__writer_8cpp" startline="239" endline="248">toHex16Bit</references>
+        <referencedby refid="namespace_json_1a6a91497cb0b18b81333a84994bd05d40" compoundref="json__writer_8cpp" startline="258" endline="320">valueToQuotedStringN</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a6a91497cb0b18b81333a84994bd05d40" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>static String Json::valueToQuotedStringN</definition>
+        <argsstring>(const char *value, size_t length, bool emitUTF8=false)</argsstring>
+        <name>valueToQuotedStringN</name>
+        <qualifiedname>Json::valueToQuotedStringN</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>emitUTF8</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_writer.cpp" line="258" column="15" bodyfile="src/lib_json/json_writer.cpp" bodystart="258" bodyend="320"/>
+        <references refid="namespace_json_1aaaa865101dd7c1e98574c2c2cdd7960d" compoundref="json__writer_8cpp" startline="254" endline="256">appendHex</references>
+        <references refid="namespace_json_1a370e7293d16da9ea28bb29277ff04412" compoundref="json__writer_8cpp" startline="250" endline="252">appendRaw</references>
+        <references refid="namespace_json_1a69c11fe2e521ce22347be44d91e79f0c" compoundref="json__writer_8cpp" startline="168" endline="174">doesAnyCharRequireEscaping</references>
+        <references refid="namespace_json_1a09f2caaead38dd396b21affdf87230ae" compoundref="json__writer_8cpp" startline="176" endline="220">utf8ToCodepoint</references>
+        <referencedby refid="namespace_json_1a6a79f56ee8cba1cae61cf4f0a533217d" compoundref="json__writer_8cpp" startline="322" endline="324">valueToQuotedString</referencedby>
+        <referencedby refid="namespace_json_1af6d7a60df95d0b915961e6131fe3bbde" compoundref="json__writer_8cpp" startline="326" endline="328">valueToQuotedString</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1a7c9da861861e570a51b45f270c9ff150" compoundref="json__writer_8cpp" startline="880" endline="940">Json::BuiltStyledStreamWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" compoundref="json__writer_8cpp" startline="350" endline="400">Json::FastWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">Json::StyledStreamWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_writer_1ac40143cf43f7c4a94d3d0b41e5245069" compoundref="json__writer_8cpp" startline="415" endline="472">Json::StyledWriter::writeValue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/json/allocator.h" line="11" column="1"/>
+  </compounddef>
+</doxygen>

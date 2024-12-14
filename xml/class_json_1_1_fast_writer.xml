@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_fast_writer" kind="class" language="C++" prot="public">
+    <compoundname>Json::FastWriter</compoundname>
+    <basecompoundref refid="class_json_1_1_writer" prot="public" virt="non-virtual">Json::Writer</basecompoundref>
+    <includes refid="writer_8h" local="no">writer.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_1_1_fast_writer_1a39fc3356512b2c93169079420562fea4" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::FastWriter::document_</definition>
+        <argsstring></argsstring>
+        <name>document_</name>
+        <qualifiedname>Json::FastWriter::document_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="88" column="10" bodyfile="include/json/writer.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_fast_writer_1a0a4b6018894eee37b5e09495d69fda94" compoundref="json__writer_8cpp" startline="342" endline="348">write</referencedby>
+        <referencedby refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" compoundref="json__writer_8cpp" startline="350" endline="400">writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_fast_writer_1afd24bfad25d80ad06d9c6e605e6f343e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::FastWriter::yamlCompatibilityEnabled_</definition>
+        <argsstring></argsstring>
+        <name>yamlCompatibilityEnabled_</name>
+        <qualifiedname>Json::FastWriter::yamlCompatibilityEnabled_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="89" column="8" bodyfile="include/json/writer.h" bodystart="89" bodyend="89"/>
+        <referencedby refid="class_json_1_1_fast_writer_1a78d98e9f76d33660ad6e6a1abe287d45" compoundref="json__writer_8cpp" startline="336" endline="336">enableYAMLCompatibility</referencedby>
+        <referencedby refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" compoundref="json__writer_8cpp" startline="350" endline="400">writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_fast_writer_1a97e9d4ff84b59a48756dcc27a71b5904" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::FastWriter::dropNullPlaceholders_</definition>
+        <argsstring></argsstring>
+        <name>dropNullPlaceholders_</name>
+        <qualifiedname>Json::FastWriter::dropNullPlaceholders_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="90" column="8" bodyfile="include/json/writer.h" bodystart="90" bodyend="90"/>
+        <referencedby refid="class_json_1_1_fast_writer_1a6e93d8dce951e408517311026a065b40" compoundref="json__writer_8cpp" startline="338" endline="338">dropNullPlaceholders</referencedby>
+        <referencedby refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" compoundref="json__writer_8cpp" startline="350" endline="400">writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_fast_writer_1abd6e13851db6dcf59d84af68d48d50ac" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::FastWriter::omitEndingLineFeed_</definition>
+        <argsstring></argsstring>
+        <name>omitEndingLineFeed_</name>
+        <qualifiedname>Json::FastWriter::omitEndingLineFeed_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="91" column="8" bodyfile="include/json/writer.h" bodystart="91" bodyend="91"/>
+        <referencedby refid="class_json_1_1_fast_writer_1af4ee077d365d75941fb2688d97207a55" compoundref="json__writer_8cpp" startline="340" endline="340">omitEndingLineFeed</referencedby>
+        <referencedby refid="class_json_1_1_fast_writer_1a0a4b6018894eee37b5e09495d69fda94" compoundref="json__writer_8cpp" startline="342" endline="348">write</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_fast_writer_1a1bbc73ce1a1cc7b09cd1e02db3905170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::FastWriter::FastWriter</definition>
+        <argsstring>()</argsstring>
+        <name>FastWriter</name>
+        <qualifiedname>Json::FastWriter::FastWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="73" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_fast_writer_1a86380e4e42fd175d86c1f2b64745ab35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::FastWriter::~FastWriter</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~FastWriter</name>
+        <qualifiedname>Json::FastWriter::~FastWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="74" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_fast_writer_1a78d98e9f76d33660ad6e6a1abe287d45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::FastWriter::enableYAMLCompatibility</definition>
+        <argsstring>()</argsstring>
+        <name>enableYAMLCompatibility</name>
+        <qualifiedname>Json::FastWriter::enableYAMLCompatibility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="76" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="336" bodyend="336"/>
+        <references refid="class_json_1_1_fast_writer_1afd24bfad25d80ad06d9c6e605e6f343e" compoundref="writer_8h" startline="89" endline="89">yamlCompatibilityEnabled_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_fast_writer_1a6e93d8dce951e408517311026a065b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::FastWriter::dropNullPlaceholders</definition>
+        <argsstring>()</argsstring>
+        <name>dropNullPlaceholders</name>
+        <qualifiedname>Json::FastWriter::dropNullPlaceholders</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="78" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="338" bodyend="338"/>
+        <references refid="class_json_1_1_fast_writer_1a97e9d4ff84b59a48756dcc27a71b5904" compoundref="writer_8h" startline="90" endline="90">dropNullPlaceholders_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_fast_writer_1af4ee077d365d75941fb2688d97207a55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::FastWriter::omitEndingLineFeed</definition>
+        <argsstring>()</argsstring>
+        <name>omitEndingLineFeed</name>
+        <qualifiedname>Json::FastWriter::omitEndingLineFeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="80" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="340" bodyend="340"/>
+        <references refid="class_json_1_1_fast_writer_1abd6e13851db6dcf59d84af68d48d50ac" compoundref="writer_8h" startline="91" endline="91">omitEndingLineFeed_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_fast_writer_1a0a4b6018894eee37b5e09495d69fda94" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::FastWriter::write</definition>
+        <argsstring>(const Value &amp;root) override</argsstring>
+        <name>write</name>
+        <qualifiedname>Json::FastWriter::write</qualifiedname>
+        <reimplements refid="class_json_1_1_writer_1aa22c9a70fc533ebc87736567293728aa">write</reimplements>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="83" column="10" bodyfile="src/lib_json/json_writer.cpp" bodystart="342" bodyend="348"/>
+        <references refid="class_json_1_1_fast_writer_1a39fc3356512b2c93169079420562fea4" compoundref="writer_8h" startline="88">document_</references>
+        <references refid="class_json_1_1_fast_writer_1abd6e13851db6dcf59d84af68d48d50ac" compoundref="writer_8h" startline="91" endline="91">omitEndingLineFeed_</references>
+        <references refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" compoundref="json__writer_8cpp" startline="350" endline="400">writeValue</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::FastWriter::writeValue</definition>
+        <argsstring>(const Value &amp;value)</argsstring>
+        <name>writeValue</name>
+        <qualifiedname>Json::FastWriter::writeValue</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="86" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="350" bodyend="400"/>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eadc8f264f36b55b063c78126b335415f4" compoundref="value_8h" startline="80">Json::arrayValue</references>
+        <references refid="class_json_1_1_value_1ab693fb7b9b1595bb0adc49658bbf780d" compoundref="json__value_8cpp" startline="732" endline="750">Json::Value::asBool</references>
+        <references refid="class_json_1_1_value_1afd24002a18aef907ad746b1cb9eda0a2" compoundref="json__value_8cpp" startline="688" endline="708">Json::Value::asDouble</references>
+        <references refid="class_json_1_1_value_1ab16f2ea2a117a1b3b576acab8b6a700d" compoundref="json__value_8cpp" startline="672" endline="678">Json::Value::asLargestInt</references>
+        <references refid="class_json_1_1_value_1ad03548101e0bf3d2d9eac75c64a0b8d7" compoundref="json__value_8cpp" startline="680" endline="686">Json::Value::asLargestUInt</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4ea14c30dbf4da86f7b809be299f671f7fd" compoundref="value_8h" startline="79">Json::booleanValue</references>
+        <references refid="class_json_1_1_fast_writer_1a39fc3356512b2c93169079420562fea4" compoundref="writer_8h" startline="88">document_</references>
+        <references refid="class_json_1_1_fast_writer_1a97e9d4ff84b59a48756dcc27a71b5904" compoundref="writer_8h" startline="90" endline="90">dropNullPlaceholders_</references>
+        <references refid="class_json_1_1_value_1a79d7725dce6260317333e69022367ac9" compoundref="json__value_8cpp" startline="1156" endline="1170">Json::Value::getMemberNames</references>
+        <references refid="class_json_1_1_value_1a2e1b7be6bde2fe23f15290d9ddbbdf8a" compoundref="json__value_8cpp" startline="542" endline="552">Json::Value::getString</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eae5a9d708d5c9e23ae9bf98898522512d" compoundref="value_8h" startline="75">Json::intValue</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4ea7d9899633b4409bd3fc107e6737f8391" compoundref="value_8h" startline="74">Json::nullValue</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eae8386dcfc36d1ae897745f7b4f77a1f6" compoundref="value_8h" startline="81">Json::objectValue</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eab837c7b869c14d8be712deb45c9e490e" compoundref="value_8h" startline="77">Json::realValue</references>
+        <references refid="class_json_1_1_value_1a0ec2808e1d7efa4e9fad938d6667be44" compoundref="json__value_8cpp" startline="785" endline="806">Json::Value::size</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4ea804ef857affea2d415843c73f261c258" compoundref="value_8h" startline="78">Json::stringValue</references>
+        <references refid="class_json_1_1_value_1a8ce61157a011894f0252ceed232312de" compoundref="json__value_8cpp" startline="404" endline="406">Json::Value::type</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eaea788d9a3bb00adc6d68d97d43e1ccd3" compoundref="value_8h" startline="76">Json::uintValue</references>
+        <references refid="namespace_json_1a6a91497cb0b18b81333a84994bd05d40" compoundref="json__writer_8cpp" startline="258" endline="320">Json::valueToQuotedStringN</references>
+        <references refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" compoundref="json__writer_8cpp" startline="113" endline="113">Json::valueToString</references>
+        <references refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" compoundref="json__writer_8cpp" startline="350" endline="400">writeValue</references>
+        <references refid="class_json_1_1_fast_writer_1afd24bfad25d80ad06d9c6e605e6f343e" compoundref="writer_8h" startline="89" endline="89">yamlCompatibilityEnabled_</references>
+        <referencedby refid="class_json_1_1_fast_writer_1a0a4b6018894eee37b5e09495d69fda94" compoundref="json__writer_8cpp" startline="342" endline="348">write</referencedby>
+        <referencedby refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" compoundref="json__writer_8cpp" startline="350" endline="400">writeValue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Json::FastWriter</label>
+        <link refid="class_json_1_1_fast_writer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Json::Writer</label>
+        <link refid="class_json_1_1_writer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::FastWriter</label>
+        <link refid="class_json_1_1_fast_writer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>document_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>dropNullPlaceholders_</edgelabel>
+          <edgelabel>omitEndingLineFeed_</edgelabel>
+          <edgelabel>yamlCompatibilityEnabled_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Json::Writer</label>
+        <link refid="class_json_1_1_writer"/>
+      </node>
+      <node id="5">
+        <label>bool</label>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</label>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/writer.h" line="71" column="1" bodyfile="include/json/writer.h" bodystart="71" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_fast_writer_1a39fc3356512b2c93169079420562fea4" prot="private" virt="non-virtual"><scope>Json::FastWriter</scope><name>document_</name></member>
+      <member refid="class_json_1_1_fast_writer_1a6e93d8dce951e408517311026a065b40" prot="public" virt="non-virtual"><scope>Json::FastWriter</scope><name>dropNullPlaceholders</name></member>
+      <member refid="class_json_1_1_fast_writer_1a97e9d4ff84b59a48756dcc27a71b5904" prot="private" virt="non-virtual"><scope>Json::FastWriter</scope><name>dropNullPlaceholders_</name></member>
+      <member refid="class_json_1_1_fast_writer_1a78d98e9f76d33660ad6e6a1abe287d45" prot="public" virt="non-virtual"><scope>Json::FastWriter</scope><name>enableYAMLCompatibility</name></member>
+      <member refid="class_json_1_1_fast_writer_1a1bbc73ce1a1cc7b09cd1e02db3905170" prot="public" virt="non-virtual"><scope>Json::FastWriter</scope><name>FastWriter</name></member>
+      <member refid="class_json_1_1_fast_writer_1af4ee077d365d75941fb2688d97207a55" prot="public" virt="non-virtual"><scope>Json::FastWriter</scope><name>omitEndingLineFeed</name></member>
+      <member refid="class_json_1_1_fast_writer_1abd6e13851db6dcf59d84af68d48d50ac" prot="private" virt="non-virtual"><scope>Json::FastWriter</scope><name>omitEndingLineFeed_</name></member>
+      <member refid="class_json_1_1_fast_writer_1a0a4b6018894eee37b5e09495d69fda94" prot="public" virt="virtual"><scope>Json::FastWriter</scope><name>write</name></member>
+      <member refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" prot="private" virt="non-virtual"><scope>Json::FastWriter</scope><name>writeValue</name></member>
+      <member refid="class_json_1_1_fast_writer_1afd24bfad25d80ad06d9c6e605e6f343e" prot="private" virt="non-virtual"><scope>Json::FastWriter</scope><name>yamlCompatibilityEnabled_</name></member>
+      <member refid="class_json_1_1_fast_writer_1a86380e4e42fd175d86c1f2b64745ab35" prot="public" virt="non-virtual"><scope>Json::FastWriter</scope><name>~FastWriter</name></member>
+      <member refid="class_json_1_1_writer_1a3e618564336f26b14921f0d840db668c" prot="public" virt="virtual"><scope>Json::FastWriter</scope><name>~Writer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

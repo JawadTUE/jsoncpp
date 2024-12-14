@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="json__valueiterator_8inl" kind="file" language="C++">
+    <compoundname>json_valueiterator.inl</compoundname>
+    <includedby refid="json__value_8cpp" local="yes">src/lib_json/json_value.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/lib_json/json_value.cpp</label>
+        <link refid="json__value_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/lib_json/json_valueiterator.inl</label>
+        <link refid="json__valueiterator_8inl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_json">Json</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_json" kindref="compound">Json</ref><sp/>{</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_json_1_1_value_iterator_base_1af45b028d9ff9cbd2554a87878b42dd75" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value_iterator_base_1af45b028d9ff9cbd2554a87878b42dd75" kindref="member">ValueIteratorBase::ValueIteratorBase</ref>()<sp/>:<sp/>current_()<sp/>{}</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_json_1_1_value_iterator_base_1a640e990e5f03a96fd650122a2906f59d" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value_iterator_base_1af45b028d9ff9cbd2554a87878b42dd75" kindref="member">ValueIteratorBase::ValueIteratorBase</ref>(</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Value::ObjectValues::iterator&amp;<sp/>current)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>current_(current),<sp/>isNull_(false)<sp/>{}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_json_1_1_value_iterator_base_1a38a04ec053dabf3d0f112c9dd97bdcbe" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/><ref refid="class_json_1_1_value_iterator_base_1ac75f6062c1ad2cd0d0243aeea2312d57" kindref="member">ValueIteratorBase::deref</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" kindref="member">current_</ref>-&gt;second;<sp/>}</highlight></codeline>
+<codeline lineno="10" refid="class_json_1_1_value_iterator_base_1ac75f6062c1ad2cd0d0243aeea2312d57" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>&amp;<sp/><ref refid="class_json_1_1_value_iterator_base_1ac75f6062c1ad2cd0d0243aeea2312d57" kindref="member">ValueIteratorBase::deref</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" kindref="member">current_</ref>-&gt;second;<sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_json_1_1_value_iterator_base_1afe58f9534e1fd2033419fd9fe244551e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base_1afe58f9534e1fd2033419fd9fe244551e" kindref="member">ValueIteratorBase::increment</ref>()<sp/>{<sp/>++<ref refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" kindref="member">current_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_json_1_1_value_iterator_base_1affc8cf5ff54a9f432cc693362c153fa6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base_1affc8cf5ff54a9f432cc693362c153fa6" kindref="member">ValueIteratorBase::decrement</ref>()<sp/>{<sp/>--<ref refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" kindref="member">current_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="class_json_1_1_value_iterator_base_1afea6c61bcdf1ad448a5d64f2eede6f40" kindref="member">ValueIteratorBase::difference_type</ref></highlight></codeline>
+<codeline lineno="17" refid="class_json_1_1_value_iterator_base_1af11473c9e20d07782e42b52a2f9e4540" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value_iterator_base_1af11473c9e20d07782e42b52a2f9e4540" kindref="member">ValueIteratorBase::computeDistance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base" kindref="compound">SelfType</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_json_1_1_value_iterator_base_1a3e08b114a1aed9bde518c527f94a8c59" kindref="member">isNull_</ref><sp/>&amp;&amp;<sp/>other.<ref refid="class_json_1_1_value_iterator_base_1a3e08b114a1aed9bde518c527f94a8c59" kindref="member">isNull_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value_iterator_base_1afea6c61bcdf1ad448a5d64f2eede6f40" kindref="member">difference_type</ref><sp/>myDistance<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(Value::ObjectValues::iterator<sp/>it<sp/>=<sp/><ref refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" kindref="member">current_</ref>;<sp/>it<sp/>!=<sp/>other.<ref refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" kindref="member">current_</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>++myDistance;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myDistance;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_json_1_1_value_iterator_base_1a010b5ad3f3337ae3732e5d7e16ca5e25" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base_1a010b5ad3f3337ae3732e5d7e16ca5e25" kindref="member">ValueIteratorBase::isEqual</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base" kindref="compound">SelfType</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_json_1_1_value_iterator_base_1a3e08b114a1aed9bde518c527f94a8c59" kindref="member">isNull_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>other.<ref refid="class_json_1_1_value_iterator_base_1a3e08b114a1aed9bde518c527f94a8c59" kindref="member">isNull_</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" kindref="member">current_</ref><sp/>==<sp/>other.<ref refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" kindref="member">current_</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_json_1_1_value_iterator_base_1a496e6aba44808433ec5858c178be5719" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base_1a496e6aba44808433ec5858c178be5719" kindref="member">ValueIteratorBase::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base" kindref="compound">SelfType</ref>&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" kindref="member">current_</ref><sp/>=<sp/>other.<ref refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" kindref="member">current_</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value_iterator_base_1a3e08b114a1aed9bde518c527f94a8c59" kindref="member">isNull_</ref><sp/>=<sp/>other.<ref refid="class_json_1_1_value_iterator_base_1a3e08b114a1aed9bde518c527f94a8c59" kindref="member">isNull_</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_json_1_1_value_iterator_base_1a3838ba39c43c518cf3ed4aa6ce78ccad" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value" kindref="compound">Value</ref><sp/><ref refid="class_json_1_1_value_iterator_base_1a3838ba39c43c518cf3ed4aa6ce78ccad" kindref="member">ValueIteratorBase::key</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Value::CZString<sp/>czstring<sp/>=<sp/>(*current_).first;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(czstring.data())<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(czstring.isStaticString())</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>(<ref refid="class_json_1_1_static_string" kindref="compound">StaticString</ref>(czstring.data()));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>(czstring.data(),<sp/>czstring.data()<sp/>+<sp/>czstring.length());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value" kindref="compound">Value</ref>(czstring.index());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="class_json_1_1_value_iterator_base_1a549c66a0bd20e9ae772175a5c0d2e88a" refkind="member"><highlight class="normal"><ref refid="namespace_json_1a74d106771a079ca397eaffbf93d445be" kindref="member">UInt</ref><sp/><ref refid="class_json_1_1_value_iterator_base_1a549c66a0bd20e9ae772175a5c0d2e88a" kindref="member">ValueIteratorBase::index</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Value::CZString<sp/>czstring<sp/>=<sp/>(*current_).first;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!czstring.data())</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>czstring.index();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_1a10794060631f3e5f895739cfd2cc98b2" kindref="member">Value::UInt</ref>(-1);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_json_1_1_value_iterator_base_1ab68610aea87eba9b0d9b3829c7bfa33f" refkind="member"><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/><ref refid="class_json_1_1_value_iterator_base_1ab68610aea87eba9b0d9b3829c7bfa33f" kindref="member">ValueIteratorBase::name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>keey;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>end;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>keey<sp/>=<sp/><ref refid="class_json_1_1_value_iterator_base_1a391c9cbd0edf9a447b37df00e8ce6059" kindref="member">memberName</ref>(&amp;end);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!keey)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref>(keey,<sp/>end);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_json_1_1_value_iterator_base_1a391c9cbd0edf9a447b37df00e8ce6059" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><ref refid="class_json_1_1_value_iterator_base_1a391c9cbd0edf9a447b37df00e8ce6059" kindref="member">ValueIteratorBase::memberName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>cname<sp/>=<sp/>(*current_).first.data();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cname<sp/>?<sp/>cname<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><ref refid="class_json_1_1_value_iterator_base_1a391c9cbd0edf9a447b37df00e8ce6059" kindref="member">ValueIteratorBase::memberName</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">**<sp/>end)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>cname<sp/>=<sp/>(*current_).first.data();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!cname)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>*end<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>*end<sp/>=<sp/>cname<sp/>+<sp/>(*current_).first.length();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cname;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><ref refid="class_json_1_1_value_const_iterator_1a1b10a46f1606421b0663492a5f9a2aad" kindref="member">ValueConstIterator::ValueConstIterator</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_json_1_1_value_const_iterator_1aa0a87edf5f1097f91dca5f2a389c4abd" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value_const_iterator_1a1b10a46f1606421b0663492a5f9a2aad" kindref="member">ValueConstIterator::ValueConstIterator</ref>(</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Value::ObjectValues::iterator&amp;<sp/>current)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_1_1_value_iterator_base" kindref="compound">ValueIteratorBase</ref>(current)<sp/>{}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="class_json_1_1_value_const_iterator_1a7ef3df204a9ae83a0d8a3cd128e05c70" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value_const_iterator_1a1b10a46f1606421b0663492a5f9a2aad" kindref="member">ValueConstIterator::ValueConstIterator</ref>(<ref refid="class_json_1_1_value_iterator" kindref="compound">ValueIterator</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_1_1_value_iterator_base" kindref="compound">ValueIteratorBase</ref>(other)<sp/>{}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="class_json_1_1_value_const_iterator" kindref="compound">ValueConstIterator</ref>&amp;</highlight></codeline>
+<codeline lineno="93" refid="class_json_1_1_value_const_iterator_1ad1b1c11f8d7fb22d4d3c231915f2b15b" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value_const_iterator_1ad1b1c11f8d7fb22d4d3c231915f2b15b" kindref="member">ValueConstIterator::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator_base" kindref="compound">ValueIteratorBase</ref>&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value_iterator_base_1a496e6aba44808433ec5858c178be5719" kindref="member">copy</ref>(other);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><ref refid="class_json_1_1_value_iterator_1a09425cf4dc12244072a942f290a5c0ec" kindref="member">ValueIterator::ValueIterator</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="class_json_1_1_value_iterator_1afb06ea21add440c78c27dc49570460a5" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value_iterator_1a09425cf4dc12244072a942f290a5c0ec" kindref="member">ValueIterator::ValueIterator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Value::ObjectValues::iterator&amp;<sp/>current)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_1_1_value_iterator_base" kindref="compound">ValueIteratorBase</ref>(current)<sp/>{}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="class_json_1_1_value_iterator_1aa85aa208670891670392259efa0143bb" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value_iterator_1a09425cf4dc12244072a942f290a5c0ec" kindref="member">ValueIterator::ValueIterator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_const_iterator" kindref="compound">ValueConstIterator</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_1_1_value_iterator_base" kindref="compound">ValueIteratorBase</ref>(other)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>throwRuntimeError(</highlight><highlight class="stringliteral">&quot;ConstIterator<sp/>to<sp/>Iterator<sp/>should<sp/>never<sp/>be<sp/>allowed.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="class_json_1_1_value_iterator_1a09425cf4dc12244072a942f290a5c0ec" kindref="member">ValueIterator::ValueIterator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator" kindref="compound">ValueIterator</ref>&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_json_1_1_value_iterator_1a8e23312b1db874f7e403fd7e76611bdc" refkind="member"><highlight class="normal"><ref refid="class_json_1_1_value_iterator" kindref="compound">ValueIterator</ref>&amp;<sp/><ref refid="class_json_1_1_value_iterator_1a8e23312b1db874f7e403fd7e76611bdc" kindref="member">ValueIterator::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_value_iterator" kindref="compound">SelfType</ref>&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_value_iterator_base_1a496e6aba44808433ec5858c178be5719" kindref="member">copy</ref>(other);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Json</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/lib_json/json_valueiterator.inl"/>
+  </compounddef>
+</doxygen>

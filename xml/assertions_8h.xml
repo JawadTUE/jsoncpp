@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="assertions_8h" kind="file" language="C++">
+    <compoundname>assertions.h</compoundname>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includedby refid="json__reader_8cpp" local="no">src/lib_json/json_reader.cpp</includedby>
+    <includedby refid="json__value_8cpp" local="no">src/lib_json/json_value.cpp</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>allocator.h</label>
+        <link refid="allocator_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/json/assertions.h</label>
+        <link refid="assertions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="5">
+        <label>cstddef</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="2">
+        <label>cstdlib</label>
+      </node>
+      <node id="14">
+        <label>cstring</label>
+      </node>
+      <node id="7">
+        <label>istream</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>ostream</label>
+      </node>
+      <node id="3">
+        <label>sstream</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/json/assertions.h</label>
+        <link refid="assertions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/lib_json/json_reader.cpp</label>
+        <link refid="json__reader_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/lib_json/json_value.cpp</label>
+        <link refid="json__value_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="assertions_8h_1a188941dcc789ccb6539c3d6f41405582" prot="public" static="no">
+        <name>JSON_ASSERT</name>
+        <param><defname>condition</defname></param>
+        <initializer>  do {                                                                         \
+    if (!(condition)) {                                                        \
+      Json::throwLogicError(&quot;assert json failed&quot;);                             \
+    }                                                                          \
+  } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/assertions.h" line="13" column="9" bodyfile="include/json/assertions.h" bodystart="13" bodyend="18"/>
+        <referencedby refid="class_json_1_1_value_1aac6bd14155b88ed2d39ef54820b39e49" compoundref="json__value_8cpp" startline="416" endline="464">Json::Value::operator&lt;</referencedby>
+        <referencedby refid="class_json_1_1_value_1a16f9250e30d5c4505cd11137c564a764" compoundref="json__value_8cpp" startline="472" endline="512">Json::Value::operator==</referencedby>
+        <referencedby refid="class_json_1_1_value_1a7a064d8aa47fde09a268be2aea992134" compoundref="json__value_8cpp" startline="832" endline="849">Json::Value::resize</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="assertions_8h_1a67007439f94bc6afc465923f56147ba1" prot="public" static="no">
+        <name>JSON_FAIL_MESSAGE</name>
+        <param><defname>message</defname></param>
+        <initializer>  do {                                                                         \
+    OStringStream oss;                                                         \
+    oss &lt;&lt; message;                                                            \
+    Json::throwLogicError(oss.str());                                          \
+    abort();                                                                   \
+  } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/assertions.h" line="20" column="9" bodyfile="include/json/assertions.h" bodystart="20" bodyend="26"/>
+        <referencedby refid="class_json_1_1_value_1ab693fb7b9b1595bb0adc49658bbf780d" compoundref="json__value_8cpp" startline="732" endline="750">Json::Value::asBool</referencedby>
+        <referencedby refid="class_json_1_1_value_1afd24002a18aef907ad746b1cb9eda0a2" compoundref="json__value_8cpp" startline="688" endline="708">Json::Value::asDouble</referencedby>
+        <referencedby refid="class_json_1_1_value_1af3a4d10bf575fabdc5440a7135c9649c" compoundref="json__value_8cpp" startline="710" endline="730">Json::Value::asFloat</referencedby>
+        <referencedby refid="class_json_1_1_value_1a614d635bc248a592593feb322cd15ab8" compoundref="json__value_8cpp" startline="580" endline="600">Json::Value::asInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1aa647ac4fe51a2e325c063ebe32262b44" compoundref="json__value_8cpp" startline="626" endline="648">Json::Value::asInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1a52207c8d4e86160f968a40817cb2529b" compoundref="json__value_8cpp" startline="554" endline="578">Json::Value::asString</referencedby>
+        <referencedby refid="class_json_1_1_value_1a74b305583ec3aacf4f9dd06e799dc265" compoundref="json__value_8cpp" startline="602" endline="622">Json::Value::asUInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a0e44a5a4cd0c099f9570dfa25813eb60" compoundref="json__value_8cpp" startline="650" endline="669">Json::Value::asUInt64</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="assertions_8h_1ad7facdeeca0f495765e3b204c265eadb" prot="public" static="no">
+        <name>JSON_ASSERT_MESSAGE</name>
+        <param><defname>condition</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  do {                                                                         \
+    if (!(condition)) {                                                        \
+      <ref refid="assertions_8h_1a67007439f94bc6afc465923f56147ba1" kindref="member">JSON_FAIL_MESSAGE</ref>(message);                                              \
+    }                                                                          \
+  } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/assertions.h" line="42" column="9" bodyfile="include/json/assertions.h" bodystart="42" bodyend="47"/>
+        <referencedby refid="class_json_1_1_value_1ab723e9957d7b198eb102e8e2afc00e3a" compoundref="json__value_8cpp" startline="1053" endline="1060">Json::Value::append</referencedby>
+        <referencedby refid="class_json_1_1_value_1a16668c8db7ef0a5de040012f0dfd84b0" compoundref="json__value_8cpp" startline="516" endline="526">Json::Value::asCString</referencedby>
+        <referencedby refid="class_json_1_1_value_1a614d635bc248a592593feb322cd15ab8" compoundref="json__value_8cpp" startline="580" endline="600">Json::Value::asInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1aa647ac4fe51a2e325c063ebe32262b44" compoundref="json__value_8cpp" startline="626" endline="648">Json::Value::asInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1a74b305583ec3aacf4f9dd06e799dc265" compoundref="json__value_8cpp" startline="602" endline="622">Json::Value::asUInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a0e44a5a4cd0c099f9570dfa25813eb60" compoundref="json__value_8cpp" startline="650" endline="669">Json::Value::asUInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1a501a4d67e6c875255c2ecc03ccd2019b" compoundref="json__value_8cpp" startline="816" endline="830">Json::Value::clear</referencedby>
+        <referencedby refid="class_json_1_1_value_1aa7000f461207c415592f564e68ee0271" compoundref="json__value_8cpp" startline="1020" endline="1025">Json::Value::demand</referencedby>
+        <referencedby refid="namespace_json_1aef6a987788e83e3d123816745b1c3431" compoundref="json__value_8cpp" startline="107" endline="123">Json::duplicateAndPrefixStringValue</referencedby>
+        <referencedby refid="class_json_1_1_value_1afb007b9ce9b2cf9d5f667a07e5e0349f" compoundref="json__value_8cpp" startline="1004" endline="1016">Json::Value::find</referencedby>
+        <referencedby refid="class_json_1_1_value_1a79d7725dce6260317333e69022367ac9" compoundref="json__value_8cpp" startline="1156" endline="1170">Json::Value::getMemberNames</referencedby>
+        <referencedby refid="class_json_1_1_value_1a61337074536697bae6f5f1642521e1d1" compoundref="json__value_8cpp" startline="1066" endline="1078">Json::Value::insert</referencedby>
+        <referencedby refid="class_json_1_1_value_1a7d99f5dba388cdaa152ce6ef933d64ef" compoundref="json__value_8cpp" startline="851" endline="865">Json::Value::operator[]</referencedby>
+        <referencedby refid="class_json_1_1_value_1a46607236038b29695ed80c15895271e4" compoundref="json__value_8cpp" startline="874" endline="885">Json::Value::operator[]</referencedby>
+        <referencedby refid="class_json_1_1_value_1ac9182982c361e0ab621134d406e5f250" compoundref="json__value_8cpp" startline="867" endline="872">Json::Value::operator[]</referencedby>
+        <referencedby refid="class_json_1_1_value_1a0b42557a95621a4676b46a21ffc5e949" compoundref="json__value_8cpp" startline="887" endline="892">Json::Value::operator[]</referencedby>
+        <referencedby refid="class_json_1_1_value_1a92e165f04105d27a930fb3a18a053585" compoundref="json__value_8cpp" startline="1112" endline="1120">Json::Value::removeMember</referencedby>
+        <referencedby refid="class_json_1_1_value_1a7a064d8aa47fde09a268be2aea992134" compoundref="json__value_8cpp" startline="832" endline="849">Json::Value::resize</referencedby>
+        <referencedby refid="class_json_1_1_value_1a9ff9cdae2c8f4155bab603d750b0b3f1" compoundref="json__value_8cpp" startline="961" endline="977">Json::Value::resolveReference</referencedby>
+        <referencedby refid="class_json_1_1_value_1a5f6b3aaf4f2e952a33dd823db008c333" compoundref="json__value_8cpp" startline="979" endline="995">Json::Value::resolveReference</referencedby>
+        <referencedby refid="class_json_1_1_value_1aeec137a52217bf72e9000d75eef5e46e" compoundref="json__value_8cpp" startline="1322" endline="1330">Json::Value::setComment</referencedby>
+        <referencedby refid="class_json_1_1_value_1ad87b849356816aca75995dd07302e49d" compoundref="json__value_8cpp" startline="327" endline="333">Json::Value::Value</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>JSON_ASSERTIONS_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_ASSERTIONS_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(JSON_IS_AMALGAMATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>JSON_USE_EXCEPTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="assertions_8h_1a188941dcc789ccb6539c3d6f41405582" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_ASSERT(condition)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(!(condition))<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>Json::throwLogicError(&quot;assert<sp/>json<sp/>failed&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="assertions_8h_1a67007439f94bc6afc465923f56147ba1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_FAIL_MESSAGE(message)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OStringStream<sp/>oss;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/>message;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>Json::throwLogicError(oss.str());<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>abort();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_ASSERT(condition)<sp/>assert(condition)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_FAIL_MESSAGE(message)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>OStringStream<sp/>oss;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/>message;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>assert(false<sp/>&amp;&amp;<sp/>oss.str().c_str());<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>abort();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="assertions_8h_1ad7facdeeca0f495765e3b204c265eadb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_ASSERT_MESSAGE(condition,<sp/>message)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(!(condition))<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>JSON_FAIL_MESSAGE(message);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/json/assertions.h"/>
+  </compounddef>
+</doxygen>

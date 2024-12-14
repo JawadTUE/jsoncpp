@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_writer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Json::Writer</compoundname>
+    <derivedcompoundref refid="class_json_1_1_fast_writer" prot="public" virt="non-virtual">Json::FastWriter</derivedcompoundref>
+    <derivedcompoundref refid="class_json_1_1_styled_writer" prot="public" virt="non-virtual">Json::StyledWriter</derivedcompoundref>
+    <includes refid="writer_8h" local="no">writer.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_writer_1a3e618564336f26b14921f0d840db668c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Json::Writer::~Writer</definition>
+        <argsstring>()</argsstring>
+        <name>~Writer</name>
+        <qualifiedname>Json::Writer::~Writer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="62" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_writer_1aa22c9a70fc533ebc87736567293728aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>virtual String Json::Writer::write</definition>
+        <argsstring>(const Value &amp;root)=0</argsstring>
+        <name>write</name>
+        <qualifiedname>Json::Writer::write</qualifiedname>
+        <reimplementedby refid="class_json_1_1_fast_writer_1a0a4b6018894eee37b5e09495d69fda94">write</reimplementedby>
+        <reimplementedby refid="class_json_1_1_styled_writer_1afcdfb4c982f93890729881f44e931cd7">write</reimplementedby>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="64" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Json::FastWriter</label>
+        <link refid="class_json_1_1_fast_writer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Json::StyledWriter</label>
+        <link refid="class_json_1_1_styled_writer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Json::Writer</label>
+        <link refid="class_json_1_1_writer"/>
+      </node>
+    </inheritancegraph>
+    <location file="include/json/writer.h" line="60" column="1" bodyfile="include/json/writer.h" bodystart="60" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_writer_1aa22c9a70fc533ebc87736567293728aa" prot="public" virt="pure-virtual"><scope>Json::Writer</scope><name>write</name></member>
+      <member refid="class_json_1_1_writer_1a3e618564336f26b14921f0d840db668c" prot="public" virt="virtual"><scope>Json::Writer</scope><name>~Writer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

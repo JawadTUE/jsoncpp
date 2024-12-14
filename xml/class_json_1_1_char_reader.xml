@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_char_reader" kind="class" language="C++" prot="public">
+    <compoundname>Json::CharReader</compoundname>
+    <derivedcompoundref refid="class_json_1_1_our_char_reader" prot="public" virt="non-virtual">Json::OurCharReader</derivedcompoundref>
+    <includes refid="reader_8h" local="no">reader.h</includes>
+    <innerclass refid="class_json_1_1_char_reader_1_1_factory" prot="public">Json::CharReader::Factory</innerclass>
+    <innerclass refid="class_json_1_1_char_reader_1_1_impl" prot="protected">Json::CharReader::Impl</innerclass>
+    <innerclass refid="struct_json_1_1_char_reader_1_1_structured_error" prot="public">Json::CharReader::StructuredError</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_1_1_char_reader_1a3740aa0042f428826e7717f3638cd1ee" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="class_json_1_1_char_reader_1_1_impl" kindref="compound">Impl</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;Impl&gt; Json::CharReader::_impl</definition>
+        <argsstring></argsstring>
+        <name>_impl</name>
+        <qualifiedname>Json::CharReader::_impl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="176" column="19" bodyfile="include/json/reader.h" bodystart="176" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_1ac2ef2132a011b9dc1db2adb8960a688b" compoundref="json__reader_8cpp" startline="1865" endline="1867">getStructuredErrors</referencedby>
+        <referencedby refid="class_json_1_1_char_reader_1aca4b17535802d832f6239a26e2721d13" compoundref="json__reader_8cpp" startline="1869" endline="1872">parse</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_char_reader_1a21bc5672fa0757fbe46d3c6daa2b79e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Json::CharReader::~CharReader</definition>
+        <argsstring>()=default</argsstring>
+        <name>~CharReader</name>
+        <qualifiedname>Json::CharReader::~CharReader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="152" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_1aca4b17535802d832f6239a26e2721d13" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Json::CharReader::parse</definition>
+        <argsstring>(char const *beginDoc, char const *endDoc, Value *root, String *errs)</argsstring>
+        <name>parse</name>
+        <qualifiedname>Json::CharReader::parse</qualifiedname>
+        <param>
+          <type>char const *</type>
+          <declname>beginDoc</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>endDoc</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> *</type>
+          <declname>errs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="153" column="16" bodyfile="src/lib_json/json_reader.cpp" bodystart="1869" bodyend="1872"/>
+        <references refid="class_json_1_1_char_reader_1a3740aa0042f428826e7717f3638cd1ee" compoundref="reader_8h" startline="176">_impl</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_1ac2ef2132a011b9dc1db2adb8960a688b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="struct_json_1_1_char_reader_1_1_structured_error" kindref="compound">StructuredError</ref> &gt;</type>
+        <definition>std::vector&lt; CharReader::StructuredError &gt; Json::CharReader::getStructuredErrors</definition>
+        <argsstring>() const</argsstring>
+        <name>getStructuredErrors</name>
+        <qualifiedname>Json::CharReader::getStructuredErrors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="156" column="15" bodyfile="src/lib_json/json_reader.cpp" bodystart="1865" bodyend="1867"/>
+        <references refid="class_json_1_1_char_reader_1a3740aa0042f428826e7717f3638cd1ee" compoundref="reader_8h" startline="176">_impl</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_json_1_1_char_reader_1a00273556e37dddfb79002d6c2546adaa" prot="protected" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Json::CharReader::CharReader</definition>
+        <argsstring>(std::unique_ptr&lt; Impl &gt; impl)</argsstring>
+        <name>CharReader</name>
+        <qualifiedname>Json::CharReader::CharReader</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="class_json_1_1_char_reader_1_1_impl" kindref="compound">Impl</ref> &gt;</type>
+          <declname>impl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="173" column="12" bodyfile="include/json/reader.h" bodystart="173" bodyend="173"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Json::CharReader</label>
+        <link refid="class_json_1_1_char_reader"/>
+      </node>
+      <node id="2">
+        <label>Json::OurCharReader</label>
+        <link refid="class_json_1_1_our_char_reader"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::CharReader</label>
+        <link refid="class_json_1_1_char_reader"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_impl</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Json::CharReader::Impl</label>
+        <link refid="class_json_1_1_char_reader_1_1_impl"/>
+      </node>
+      <node id="5">
+        <label>T</label>
+      </node>
+      <node id="4">
+        <label>std::unique_ptr&lt; T &gt;</label>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::unique_ptr&lt; Json::CharReader::Impl &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; Json::CharReader::Impl &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/reader.h" line="144" column="1" bodyfile="include/json/reader.h" bodystart="144" bodyend="177"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_char_reader_1a3740aa0042f428826e7717f3638cd1ee" prot="private" virt="non-virtual"><scope>Json::CharReader</scope><name>_impl</name></member>
+      <member refid="class_json_1_1_char_reader_1a00273556e37dddfb79002d6c2546adaa" prot="protected" virt="non-virtual"><scope>Json::CharReader</scope><name>CharReader</name></member>
+      <member refid="class_json_1_1_char_reader_1ac2ef2132a011b9dc1db2adb8960a688b" prot="public" virt="non-virtual"><scope>Json::CharReader</scope><name>getStructuredErrors</name></member>
+      <member refid="class_json_1_1_char_reader_1aca4b17535802d832f6239a26e2721d13" prot="public" virt="virtual"><scope>Json::CharReader</scope><name>parse</name></member>
+      <member refid="class_json_1_1_char_reader_1a21bc5672fa0757fbe46d3c6daa2b79e9" prot="public" virt="virtual"><scope>Json::CharReader</scope><name>~CharReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

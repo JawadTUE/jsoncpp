@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="union_json_1_1_value_1_1_value_holder" kind="union" language="C++" prot="private">
+    <compoundname>Json::Value::ValueHolder</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_json_1_1_value_1_1_value_holder_1adbfb384301298844ed955ba5cf6015a0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_value_1a6ce811c4ceb845590426eee1ac95fc99" kindref="member">LargestInt</ref></type>
+        <definition>LargestInt Json::Value::ValueHolder::int_</definition>
+        <argsstring></argsstring>
+        <name>int_</name>
+        <qualifiedname>Json::Value::ValueHolder::int_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="401" column="16" bodyfile="include/json/value.h" bodystart="401" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_value_1aac6bd14155b88ed2d39ef54820b39e49" compoundref="json__value_8cpp" startline="416" endline="464">Json::Value::operator&lt;</referencedby>
+        <referencedby refid="class_json_1_1_value_1a16f9250e30d5c4505cd11137c564a764" compoundref="json__value_8cpp" startline="472" endline="512">Json::Value::operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="union_json_1_1_value_1_1_value_holder_1aab65665dc15a24a29a8e93cdeeaa7e50" prot="public" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_value_1a6e5a59766fcd42192dd0a46c13a9a55b" kindref="member">LargestUInt</ref></type>
+        <definition>LargestUInt Json::Value::ValueHolder::uint_</definition>
+        <argsstring></argsstring>
+        <name>uint_</name>
+        <qualifiedname>Json::Value::ValueHolder::uint_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="402" column="17" bodyfile="include/json/value.h" bodystart="402" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_value_1aac6bd14155b88ed2d39ef54820b39e49" compoundref="json__value_8cpp" startline="416" endline="464">Json::Value::operator&lt;</referencedby>
+        <referencedby refid="class_json_1_1_value_1a16f9250e30d5c4505cd11137c564a764" compoundref="json__value_8cpp" startline="472" endline="512">Json::Value::operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="union_json_1_1_value_1_1_value_holder_1af0c5ca724e5fe3a15db773d750e2351e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Json::Value::ValueHolder::real_</definition>
+        <argsstring></argsstring>
+        <name>real_</name>
+        <qualifiedname>Json::Value::ValueHolder::real_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="403" column="12" bodyfile="include/json/value.h" bodystart="403" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_value_1aac6bd14155b88ed2d39ef54820b39e49" compoundref="json__value_8cpp" startline="416" endline="464">Json::Value::operator&lt;</referencedby>
+        <referencedby refid="class_json_1_1_value_1a16f9250e30d5c4505cd11137c564a764" compoundref="json__value_8cpp" startline="472" endline="512">Json::Value::operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="union_json_1_1_value_1_1_value_holder_1a92edab1861dadbfefd8be5fd4285eefe" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::Value::ValueHolder::bool_</definition>
+        <argsstring></argsstring>
+        <name>bool_</name>
+        <qualifiedname>Json::Value::ValueHolder::bool_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="404" column="10" bodyfile="include/json/value.h" bodystart="404" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_value_1aac6bd14155b88ed2d39ef54820b39e49" compoundref="json__value_8cpp" startline="416" endline="464">Json::Value::operator&lt;</referencedby>
+        <referencedby refid="class_json_1_1_value_1a16f9250e30d5c4505cd11137c564a764" compoundref="json__value_8cpp" startline="472" endline="512">Json::Value::operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="union_json_1_1_value_1_1_value_holder_1a70ac2b153bc405527baa3850d2ddc3cb" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* Json::Value::ValueHolder::string_</definition>
+        <argsstring></argsstring>
+        <name>string_</name>
+        <qualifiedname>Json::Value::ValueHolder::string_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="405" column="10" bodyfile="include/json/value.h" bodystart="405" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_value_1a13a986e39651853469b6c3ef39898b0a" compoundref="json__value_8cpp" startline="902" endline="932">Json::Value::dupPayload</referencedby>
+        <referencedby refid="class_json_1_1_value_1aac6bd14155b88ed2d39ef54820b39e49" compoundref="json__value_8cpp" startline="416" endline="464">Json::Value::operator&lt;</referencedby>
+        <referencedby refid="class_json_1_1_value_1a16f9250e30d5c4505cd11137c564a764" compoundref="json__value_8cpp" startline="472" endline="512">Json::Value::operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="union_json_1_1_value_1_1_value_holder_1a1e7a5b86d4f52234f55c847ad1ce389a" prot="public" static="no" mutable="no">
+        <type>ObjectValues *</type>
+        <definition>ObjectValues* Json::Value::ValueHolder::map_</definition>
+        <argsstring></argsstring>
+        <name>map_</name>
+        <qualifiedname>Json::Value::ValueHolder::map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="406" column="18" bodyfile="include/json/value.h" bodystart="406" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_value_1a2d45bb2e68e8f22fe356d7d955ebd3c9" compoundref="json__value_8cpp" startline="1384" endline="1395">Json::Value::begin</referencedby>
+        <referencedby refid="class_json_1_1_value_1a015459a3950c198d63a2d3be8f5ae296" compoundref="json__value_8cpp" startline="1358" endline="1369">Json::Value::begin</referencedby>
+        <referencedby refid="class_json_1_1_value_1a13a986e39651853469b6c3ef39898b0a" compoundref="json__value_8cpp" startline="902" endline="932">Json::Value::dupPayload</referencedby>
+        <referencedby refid="class_json_1_1_value_1a2f961eff73f7f79cd29260b6cbd42558" compoundref="json__value_8cpp" startline="1397" endline="1408">Json::Value::end</referencedby>
+        <referencedby refid="class_json_1_1_value_1a3e443cd0ef24f7e028b175e47ee045e0" compoundref="json__value_8cpp" startline="1371" endline="1382">Json::Value::end</referencedby>
+        <referencedby refid="class_json_1_1_value_1aac6bd14155b88ed2d39ef54820b39e49" compoundref="json__value_8cpp" startline="416" endline="464">Json::Value::operator&lt;</referencedby>
+        <referencedby refid="class_json_1_1_value_1a16f9250e30d5c4505cd11137c564a764" compoundref="json__value_8cpp" startline="472" endline="512">Json::Value::operator==</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>LargestInt</label>
+      </node>
+      <node id="3">
+        <label>LargestUInt</label>
+      </node>
+      <node id="1">
+        <label>Json::Value::ValueHolder</label>
+        <link refid="union_json_1_1_value_1_1_value_holder"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>int_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>uint_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>real_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>bool_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>string_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>map_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ObjectValues *</label>
+      </node>
+      <node id="5">
+        <label>bool</label>
+      </node>
+      <node id="6">
+        <label>char *</label>
+      </node>
+      <node id="4">
+        <label>double</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/value.h" line="400" column="3" bodyfile="include/json/value.h" bodystart="400" bodyend="407"/>
+    <listofallmembers>
+      <member refid="union_json_1_1_value_1_1_value_holder_1a92edab1861dadbfefd8be5fd4285eefe" prot="public" virt="non-virtual"><scope>Json::Value::ValueHolder</scope><name>bool_</name></member>
+      <member refid="union_json_1_1_value_1_1_value_holder_1adbfb384301298844ed955ba5cf6015a0" prot="public" virt="non-virtual"><scope>Json::Value::ValueHolder</scope><name>int_</name></member>
+      <member refid="union_json_1_1_value_1_1_value_holder_1a1e7a5b86d4f52234f55c847ad1ce389a" prot="public" virt="non-virtual"><scope>Json::Value::ValueHolder</scope><name>map_</name></member>
+      <member refid="union_json_1_1_value_1_1_value_holder_1af0c5ca724e5fe3a15db773d750e2351e" prot="public" virt="non-virtual"><scope>Json::Value::ValueHolder</scope><name>real_</name></member>
+      <member refid="union_json_1_1_value_1_1_value_holder_1a70ac2b153bc405527baa3850d2ddc3cb" prot="public" virt="non-virtual"><scope>Json::Value::ValueHolder</scope><name>string_</name></member>
+      <member refid="union_json_1_1_value_1_1_value_holder_1aab65665dc15a24a29a8e93cdeeaa7e50" prot="public" virt="non-virtual"><scope>Json::Value::ValueHolder</scope><name>uint_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

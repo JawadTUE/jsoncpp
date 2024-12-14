@@ -1,0 +1,635 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_styled_stream_writer" kind="class" language="C++" prot="public">
+    <compoundname>Json::StyledStreamWriter</compoundname>
+    <includes refid="writer_8h" local="no">writer.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_json_1_1_styled_stream_writer_1a4e566b35970ba4cef9d43b5ae6eca9c1" prot="private" static="no">
+        <type>std::vector&lt; <ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &gt;</type>
+        <definition>using Json::StyledStreamWriter::ChildValues =  std::vector&lt;String&gt;</definition>
+        <argsstring></argsstring>
+        <name>ChildValues</name>
+        <qualifiedname>Json::StyledStreamWriter::ChildValues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="162" column="3" bodyfile="include/json/writer.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_1_1_styled_stream_writer_1aafd62e00a401df73fcacb2e410114b3d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_styled_stream_writer_1a4e566b35970ba4cef9d43b5ae6eca9c1" kindref="member">ChildValues</ref></type>
+        <definition>ChildValues Json::StyledStreamWriter::childValues_</definition>
+        <argsstring></argsstring>
+        <name>childValues_</name>
+        <qualifiedname>Json::StyledStreamWriter::childValues_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="164" column="15" bodyfile="include/json/writer.h" bodystart="164" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a49e775f9dd2ea653cbf73d1cece15a9e" compoundref="json__writer_8cpp" startline="730" endline="754">isMultilineArray</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1af625db6781f60efa0ed4134ab401b0f1" compoundref="json__writer_8cpp" startline="756" endline="761">pushValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref> *</type>
+        <definition>OStream* Json::StyledStreamWriter::document_</definition>
+        <argsstring></argsstring>
+        <name>document_</name>
+        <qualifiedname>Json::StyledStreamWriter::document_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="165" column="11" bodyfile="include/json/writer.h" bodystart="165" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1af625db6781f60efa0ed4134ab401b0f1" compoundref="json__writer_8cpp" startline="756" endline="761">pushValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1aaaeb88acc1bd7df1c805611afaf09728" compoundref="json__writer_8cpp" startline="611" endline="624">write</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1ad2ca860e317ca91d6b2932535b4ce9c7" compoundref="json__writer_8cpp" startline="796" endline="805">writeCommentAfterValueOnSameLine</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a79c3c2b320475035c47b2db484a3e434" compoundref="json__writer_8cpp" startline="779" endline="794">writeCommentBeforeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a5a52fa5b406f1580a61dde3b5638e76d" compoundref="json__writer_8cpp" startline="763" endline="763">writeIndent</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a3f86f2560ef7244417edce1cc605a978" compoundref="json__writer_8cpp" startline="765" endline="770">writeWithIndent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_styled_stream_writer_1ab29404730f68a0de1ad6b0f5a889d37f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::StyledStreamWriter::indentString_</definition>
+        <argsstring></argsstring>
+        <name>indentString_</name>
+        <qualifiedname>Json::StyledStreamWriter::indentString_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="166" column="10" bodyfile="include/json/writer.h" bodystart="166" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1ab49409578422aa73b060e3492dd6c72a" compoundref="json__writer_8cpp" startline="772" endline="772">indent</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a74d8fb9beecd29759d7b79f430386358" compoundref="json__writer_8cpp" startline="774" endline="777">unindent</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1aaaeb88acc1bd7df1c805611afaf09728" compoundref="json__writer_8cpp" startline="611" endline="624">write</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a79c3c2b320475035c47b2db484a3e434" compoundref="json__writer_8cpp" startline="779" endline="794">writeCommentBeforeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a5a52fa5b406f1580a61dde3b5638e76d" compoundref="json__writer_8cpp" startline="763" endline="763">writeIndent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_styled_stream_writer_1a94299ec0a9bb925b2dbbab7c1f2b390a" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Json::StyledStreamWriter::rightMargin_</definition>
+        <argsstring></argsstring>
+        <name>rightMargin_</name>
+        <qualifiedname>Json::StyledStreamWriter::rightMargin_</qualifiedname>
+        <initializer>{74}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="167" column="16" bodyfile="include/json/writer.h" bodystart="167" bodyend="167"/>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a49e775f9dd2ea653cbf73d1cece15a9e" compoundref="json__writer_8cpp" startline="730" endline="754">isMultilineArray</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_styled_stream_writer_1a5ade2dfd46f6c95053ca6a821d74f28c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::StyledStreamWriter::indentation_</definition>
+        <argsstring></argsstring>
+        <name>indentation_</name>
+        <qualifiedname>Json::StyledStreamWriter::indentation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="168" column="10" bodyfile="include/json/writer.h" bodystart="168" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1ab49409578422aa73b060e3492dd6c72a" compoundref="json__writer_8cpp" startline="772" endline="772">indent</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a74d8fb9beecd29759d7b79f430386358" compoundref="json__writer_8cpp" startline="774" endline="777">unindent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_styled_stream_writer_1a4e4bb7fc223b2652b72b523b1ce414fa" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::StyledStreamWriter::addChildValues_</definition>
+        <argsstring></argsstring>
+        <name>addChildValues_</name>
+        <qualifiedname>Json::StyledStreamWriter::addChildValues_</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="169" column="8" bodyfile="include/json/writer.h" bodystart="169" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a49e775f9dd2ea653cbf73d1cece15a9e" compoundref="json__writer_8cpp" startline="730" endline="754">isMultilineArray</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1af625db6781f60efa0ed4134ab401b0f1" compoundref="json__writer_8cpp" startline="756" endline="761">pushValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1aaaeb88acc1bd7df1c805611afaf09728" compoundref="json__writer_8cpp" startline="611" endline="624">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_styled_stream_writer_1aa12db1753619a9b48da41f3e45e3275d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::StyledStreamWriter::indented_</definition>
+        <argsstring></argsstring>
+        <name>indented_</name>
+        <qualifiedname>Json::StyledStreamWriter::indented_</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="170" column="8" bodyfile="include/json/writer.h" bodystart="170" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1aaaeb88acc1bd7df1c805611afaf09728" compoundref="json__writer_8cpp" startline="611" endline="624">write</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1ad2ca860e317ca91d6b2932535b4ce9c7" compoundref="json__writer_8cpp" startline="796" endline="805">writeCommentAfterValueOnSameLine</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a79c3c2b320475035c47b2db484a3e434" compoundref="json__writer_8cpp" startline="779" endline="794">writeCommentBeforeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a3f86f2560ef7244417edce1cc605a978" compoundref="json__writer_8cpp" startline="765" endline="770">writeWithIndent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1aba02f94aa7f50d9835abef1530d17a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::StyledStreamWriter::StyledStreamWriter</definition>
+        <argsstring>(String indentation=&quot;\t&quot;)</argsstring>
+        <name>StyledStreamWriter</name>
+        <qualifiedname>Json::StyledStreamWriter::StyledStreamWriter</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+          <declname>indentation</declname>
+          <defval>&quot;\t&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="142" column="3" bodyfile="src/lib_json/json_writer.cpp" bodystart="607" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1ac98ea85e08d1c3cc5230787c5fea240e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::StyledStreamWriter::~StyledStreamWriter</definition>
+        <argsstring>()=default</argsstring>
+        <name>~StyledStreamWriter</name>
+        <qualifiedname>Json::StyledStreamWriter::~StyledStreamWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="143" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1aaaeb88acc1bd7df1c805611afaf09728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StyledStreamWriter::write</definition>
+        <argsstring>(OStream &amp;out, const Value &amp;root)</argsstring>
+        <name>write</name>
+        <qualifiedname>Json::StyledStreamWriter::write</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="146" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="611" bodyend="624"/>
+        <references refid="class_json_1_1_styled_stream_writer_1a4e4bb7fc223b2652b72b523b1ce414fa" compoundref="writer_8h" startline="169">addChildValues_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" compoundref="writer_8h" startline="165">document_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1aa12db1753619a9b48da41f3e45e3275d" compoundref="writer_8h" startline="170">indented_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ab29404730f68a0de1ad6b0f5a889d37f" compoundref="writer_8h" startline="166">indentString_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ad2ca860e317ca91d6b2932535b4ce9c7" compoundref="json__writer_8cpp" startline="796" endline="805">writeCommentAfterValueOnSameLine</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a79c3c2b320475035c47b2db484a3e434" compoundref="json__writer_8cpp" startline="779" endline="794">writeCommentBeforeValue</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a5a52fa5b406f1580a61dde3b5638e76d" compoundref="json__writer_8cpp" startline="763" endline="763">writeIndent</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StyledStreamWriter::writeValue</definition>
+        <argsstring>(const Value &amp;value)</argsstring>
+        <name>writeValue</name>
+        <qualifiedname>Json::StyledStreamWriter::writeValue</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="149" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="626" bodyend="683"/>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eadc8f264f36b55b063c78126b335415f4" compoundref="value_8h" startline="80">Json::arrayValue</references>
+        <references refid="class_json_1_1_value_1ab693fb7b9b1595bb0adc49658bbf780d" compoundref="json__value_8cpp" startline="732" endline="750">Json::Value::asBool</references>
+        <references refid="class_json_1_1_value_1afd24002a18aef907ad746b1cb9eda0a2" compoundref="json__value_8cpp" startline="688" endline="708">Json::Value::asDouble</references>
+        <references refid="class_json_1_1_value_1ab16f2ea2a117a1b3b576acab8b6a700d" compoundref="json__value_8cpp" startline="672" endline="678">Json::Value::asLargestInt</references>
+        <references refid="class_json_1_1_value_1ad03548101e0bf3d2d9eac75c64a0b8d7" compoundref="json__value_8cpp" startline="680" endline="686">Json::Value::asLargestUInt</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4ea14c30dbf4da86f7b809be299f671f7fd" compoundref="value_8h" startline="79">Json::booleanValue</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" compoundref="writer_8h" startline="165">document_</references>
+        <references refid="class_json_1_1_value_1a79d7725dce6260317333e69022367ac9" compoundref="json__value_8cpp" startline="1156" endline="1170">Json::Value::getMemberNames</references>
+        <references refid="class_json_1_1_value_1a2e1b7be6bde2fe23f15290d9ddbbdf8a" compoundref="json__value_8cpp" startline="542" endline="552">Json::Value::getString</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ab49409578422aa73b060e3492dd6c72a" compoundref="json__writer_8cpp" startline="772" endline="772">indent</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eae5a9d708d5c9e23ae9bf98898522512d" compoundref="value_8h" startline="75">Json::intValue</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4ea7d9899633b4409bd3fc107e6737f8391" compoundref="value_8h" startline="74">Json::nullValue</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eae8386dcfc36d1ae897745f7b4f77a1f6" compoundref="value_8h" startline="81">Json::objectValue</references>
+        <references refid="class_json_1_1_styled_stream_writer_1af625db6781f60efa0ed4134ab401b0f1" compoundref="json__writer_8cpp" startline="756" endline="761">pushValue</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eab837c7b869c14d8be712deb45c9e490e" compoundref="value_8h" startline="77">Json::realValue</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4ea804ef857affea2d415843c73f261c258" compoundref="value_8h" startline="78">Json::stringValue</references>
+        <references refid="class_json_1_1_value_1a8ce61157a011894f0252ceed232312de" compoundref="json__value_8cpp" startline="404" endline="406">Json::Value::type</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eaea788d9a3bb00adc6d68d97d43e1ccd3" compoundref="value_8h" startline="76">Json::uintValue</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a74d8fb9beecd29759d7b79f430386358" compoundref="json__writer_8cpp" startline="774" endline="777">unindent</references>
+        <references refid="namespace_json_1a6a79f56ee8cba1cae61cf4f0a533217d" compoundref="json__writer_8cpp" startline="322" endline="324">Json::valueToQuotedString</references>
+        <references refid="namespace_json_1a6a91497cb0b18b81333a84994bd05d40" compoundref="json__writer_8cpp" startline="258" endline="320">Json::valueToQuotedStringN</references>
+        <references refid="namespace_json_1a6a9fc77df9b882fced01b0fd6a3b439e" compoundref="json__writer_8cpp" startline="113" endline="113">Json::valueToString</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ad2ca860e317ca91d6b2932535b4ce9c7" compoundref="json__writer_8cpp" startline="796" endline="805">writeCommentAfterValueOnSameLine</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a79c3c2b320475035c47b2db484a3e434" compoundref="json__writer_8cpp" startline="779" endline="794">writeCommentBeforeValue</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a3f86f2560ef7244417edce1cc605a978" compoundref="json__writer_8cpp" startline="765" endline="770">writeWithIndent</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a49e775f9dd2ea653cbf73d1cece15a9e" compoundref="json__writer_8cpp" startline="730" endline="754">isMultilineArray</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1aaaeb88acc1bd7df1c805611afaf09728" compoundref="json__writer_8cpp" startline="611" endline="624">write</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StyledStreamWriter::writeArrayValue</definition>
+        <argsstring>(const Value &amp;value)</argsstring>
+        <name>writeArrayValue</name>
+        <qualifiedname>Json::StyledStreamWriter::writeArrayValue</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="150" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="685" bodyend="728"/>
+        <references refid="class_json_1_1_styled_stream_writer_1aafd62e00a401df73fcacb2e410114b3d" compoundref="writer_8h" startline="164">childValues_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" compoundref="writer_8h" startline="165">document_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ab49409578422aa73b060e3492dd6c72a" compoundref="json__writer_8cpp" startline="772" endline="772">indent</references>
+        <references refid="class_json_1_1_styled_stream_writer_1aa12db1753619a9b48da41f3e45e3275d" compoundref="writer_8h" startline="170">indented_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a49e775f9dd2ea653cbf73d1cece15a9e" compoundref="json__writer_8cpp" startline="730" endline="754">isMultilineArray</references>
+        <references refid="class_json_1_1_styled_stream_writer_1af625db6781f60efa0ed4134ab401b0f1" compoundref="json__writer_8cpp" startline="756" endline="761">pushValue</references>
+        <references refid="class_json_1_1_value_1a0ec2808e1d7efa4e9fad938d6667be44" compoundref="json__value_8cpp" startline="785" endline="806">Json::Value::size</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a74d8fb9beecd29759d7b79f430386358" compoundref="json__writer_8cpp" startline="774" endline="777">unindent</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ad2ca860e317ca91d6b2932535b4ce9c7" compoundref="json__writer_8cpp" startline="796" endline="805">writeCommentAfterValueOnSameLine</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a79c3c2b320475035c47b2db484a3e434" compoundref="json__writer_8cpp" startline="779" endline="794">writeCommentBeforeValue</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a5a52fa5b406f1580a61dde3b5638e76d" compoundref="json__writer_8cpp" startline="763" endline="763">writeIndent</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a3f86f2560ef7244417edce1cc605a978" compoundref="json__writer_8cpp" startline="765" endline="770">writeWithIndent</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1a49e775f9dd2ea653cbf73d1cece15a9e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::StyledStreamWriter::isMultilineArray</definition>
+        <argsstring>(const Value &amp;value)</argsstring>
+        <name>isMultilineArray</name>
+        <qualifiedname>Json::StyledStreamWriter::isMultilineArray</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="151" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="730" bodyend="754"/>
+        <references refid="class_json_1_1_styled_stream_writer_1a4e4bb7fc223b2652b72b523b1ce414fa" compoundref="writer_8h" startline="169">addChildValues_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1aafd62e00a401df73fcacb2e410114b3d" compoundref="writer_8h" startline="164">childValues_</references>
+        <references refid="class_json_1_1_value_1a0519a551e37ee6665d74742b3f96bab3" compoundref="json__value_8cpp" startline="808" endline="812">Json::Value::empty</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ad2892f57171919fa4f8a5ae5574755cf" compoundref="json__writer_8cpp" startline="807" endline="811">hasCommentForValue</references>
+        <references refid="class_json_1_1_value_1a1627eb9d6568d6d0252fa8bb711c0a59" compoundref="json__value_8cpp" startline="1284" endline="1284">Json::Value::isArray</references>
+        <references refid="class_json_1_1_value_1a8cf96c0f2a552051fcfc78ffee60e037" compoundref="json__value_8cpp" startline="1286" endline="1286">Json::Value::isObject</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a94299ec0a9bb925b2dbbab7c1f2b390a" compoundref="writer_8h" startline="167" endline="167">rightMargin_</references>
+        <references refid="class_json_1_1_value_1a0ec2808e1d7efa4e9fad938d6667be44" compoundref="json__value_8cpp" startline="785" endline="806">Json::Value::size</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1af625db6781f60efa0ed4134ab401b0f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StyledStreamWriter::pushValue</definition>
+        <argsstring>(const String &amp;value)</argsstring>
+        <name>pushValue</name>
+        <qualifiedname>Json::StyledStreamWriter::pushValue</qualifiedname>
+        <param>
+          <type>const <ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="152" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="756" bodyend="761"/>
+        <references refid="class_json_1_1_styled_stream_writer_1a4e4bb7fc223b2652b72b523b1ce414fa" compoundref="writer_8h" startline="169">addChildValues_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1aafd62e00a401df73fcacb2e410114b3d" compoundref="writer_8h" startline="164">childValues_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" compoundref="writer_8h" startline="165">document_</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1a5a52fa5b406f1580a61dde3b5638e76d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StyledStreamWriter::writeIndent</definition>
+        <argsstring>()</argsstring>
+        <name>writeIndent</name>
+        <qualifiedname>Json::StyledStreamWriter::writeIndent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="153" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="763" bodyend="763"/>
+        <references refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" compoundref="writer_8h" startline="165">document_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ab29404730f68a0de1ad6b0f5a889d37f" compoundref="writer_8h" startline="166">indentString_</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1aaaeb88acc1bd7df1c805611afaf09728" compoundref="json__writer_8cpp" startline="611" endline="624">write</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1ad2ca860e317ca91d6b2932535b4ce9c7" compoundref="json__writer_8cpp" startline="796" endline="805">writeCommentAfterValueOnSameLine</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a79c3c2b320475035c47b2db484a3e434" compoundref="json__writer_8cpp" startline="779" endline="794">writeCommentBeforeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a3f86f2560ef7244417edce1cc605a978" compoundref="json__writer_8cpp" startline="765" endline="770">writeWithIndent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1a3f86f2560ef7244417edce1cc605a978" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StyledStreamWriter::writeWithIndent</definition>
+        <argsstring>(const String &amp;value)</argsstring>
+        <name>writeWithIndent</name>
+        <qualifiedname>Json::StyledStreamWriter::writeWithIndent</qualifiedname>
+        <param>
+          <type>const <ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="154" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="765" bodyend="770"/>
+        <references refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" compoundref="writer_8h" startline="165">document_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1aa12db1753619a9b48da41f3e45e3275d" compoundref="writer_8h" startline="170">indented_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a5a52fa5b406f1580a61dde3b5638e76d" compoundref="json__writer_8cpp" startline="763" endline="763">writeIndent</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1ab49409578422aa73b060e3492dd6c72a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StyledStreamWriter::indent</definition>
+        <argsstring>()</argsstring>
+        <name>indent</name>
+        <qualifiedname>Json::StyledStreamWriter::indent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="155" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="772" bodyend="772"/>
+        <references refid="class_json_1_1_styled_stream_writer_1a5ade2dfd46f6c95053ca6a821d74f28c" compoundref="writer_8h" startline="168">indentation_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ab29404730f68a0de1ad6b0f5a889d37f" compoundref="writer_8h" startline="166">indentString_</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1a74d8fb9beecd29759d7b79f430386358" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StyledStreamWriter::unindent</definition>
+        <argsstring>()</argsstring>
+        <name>unindent</name>
+        <qualifiedname>Json::StyledStreamWriter::unindent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="156" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="774" bodyend="777"/>
+        <references refid="class_json_1_1_styled_stream_writer_1a5ade2dfd46f6c95053ca6a821d74f28c" compoundref="writer_8h" startline="168">indentation_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ab29404730f68a0de1ad6b0f5a889d37f" compoundref="writer_8h" startline="166">indentString_</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1a79c3c2b320475035c47b2db484a3e434" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StyledStreamWriter::writeCommentBeforeValue</definition>
+        <argsstring>(const Value &amp;root)</argsstring>
+        <name>writeCommentBeforeValue</name>
+        <qualifiedname>Json::StyledStreamWriter::writeCommentBeforeValue</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="157" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="779" bodyend="794"/>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a52f1733775460517b2ea6bedf4906d52" compoundref="value_8h" startline="85">Json::commentBefore</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" compoundref="writer_8h" startline="165">document_</references>
+        <references refid="class_json_1_1_value_1a43a09822e756ba45deff61195a9ba12d" compoundref="json__value_8cpp" startline="1336" endline="1338">Json::Value::getComment</references>
+        <references refid="class_json_1_1_value_1a65d8e3ab6a5871cbd019a3e0f0b944a3" compoundref="json__value_8cpp" startline="1332" endline="1334">Json::Value::hasComment</references>
+        <references refid="class_json_1_1_styled_stream_writer_1aa12db1753619a9b48da41f3e45e3275d" compoundref="writer_8h" startline="170">indented_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1ab29404730f68a0de1ad6b0f5a889d37f" compoundref="writer_8h" startline="166">indentString_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a5a52fa5b406f1580a61dde3b5638e76d" compoundref="json__writer_8cpp" startline="763" endline="763">writeIndent</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1aaaeb88acc1bd7df1c805611afaf09728" compoundref="json__writer_8cpp" startline="611" endline="624">write</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1ad2ca860e317ca91d6b2932535b4ce9c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StyledStreamWriter::writeCommentAfterValueOnSameLine</definition>
+        <argsstring>(const Value &amp;root)</argsstring>
+        <name>writeCommentAfterValueOnSameLine</name>
+        <qualifiedname>Json::StyledStreamWriter::writeCommentAfterValueOnSameLine</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="158" column="8" bodyfile="src/lib_json/json_writer.cpp" bodystart="796" bodyend="805"/>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351ac5784ca53b12250888ddb642b06aebef" compoundref="value_8h" startline="87">Json::commentAfter</references>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a008a230a0586de54f30b76afe70fdcfa" compoundref="value_8h" startline="86">Json::commentAfterOnSameLine</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" compoundref="writer_8h" startline="165">document_</references>
+        <references refid="class_json_1_1_value_1a43a09822e756ba45deff61195a9ba12d" compoundref="json__value_8cpp" startline="1336" endline="1338">Json::Value::getComment</references>
+        <references refid="class_json_1_1_value_1a65d8e3ab6a5871cbd019a3e0f0b944a3" compoundref="json__value_8cpp" startline="1332" endline="1334">Json::Value::hasComment</references>
+        <references refid="class_json_1_1_styled_stream_writer_1aa12db1753619a9b48da41f3e45e3275d" compoundref="writer_8h" startline="170">indented_</references>
+        <references refid="class_json_1_1_styled_stream_writer_1a5a52fa5b406f1580a61dde3b5638e76d" compoundref="json__writer_8cpp" startline="763" endline="763">writeIndent</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1aaaeb88acc1bd7df1c805611afaf09728" compoundref="json__writer_8cpp" startline="611" endline="624">write</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" compoundref="json__writer_8cpp" startline="685" endline="728">writeArrayValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="626" endline="683">writeValue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1ad2892f57171919fa4f8a5ae5574755cf" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::StyledStreamWriter::hasCommentForValue</definition>
+        <argsstring>(const Value &amp;value)</argsstring>
+        <name>hasCommentForValue</name>
+        <qualifiedname>Json::StyledStreamWriter::hasCommentForValue</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="159" column="15" bodyfile="src/lib_json/json_writer.cpp" bodystart="807" bodyend="811"/>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351ac5784ca53b12250888ddb642b06aebef" compoundref="value_8h" startline="87">Json::commentAfter</references>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a008a230a0586de54f30b76afe70fdcfa" compoundref="value_8h" startline="86">Json::commentAfterOnSameLine</references>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a52f1733775460517b2ea6bedf4906d52" compoundref="value_8h" startline="85">Json::commentBefore</references>
+        <references refid="class_json_1_1_value_1a65d8e3ab6a5871cbd019a3e0f0b944a3" compoundref="json__value_8cpp" startline="1332" endline="1334">Json::Value::hasComment</references>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a49e775f9dd2ea653cbf73d1cece15a9e" compoundref="json__writer_8cpp" startline="730" endline="754">isMultilineArray</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_styled_stream_writer_1a0212b29c9d12055fd27ea8a4236c5b42" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>static String Json::StyledStreamWriter::normalizeEOL</definition>
+        <argsstring>(const String &amp;text)</argsstring>
+        <name>normalizeEOL</name>
+        <qualifiedname>Json::StyledStreamWriter::normalizeEOL</qualifiedname>
+        <param>
+          <type>const <ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="160" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::StyledStreamWriter</label>
+        <link refid="class_json_1_1_styled_stream_writer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>childValues_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>document_</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>indentString_</edgelabel>
+          <edgelabel>indentation_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>rightMargin_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>addChildValues_</edgelabel>
+          <edgelabel>indented_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>T</label>
+      </node>
+      <node id="12">
+        <label>bool</label>
+      </node>
+      <node id="8">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="10">
+        <label>std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</label>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>std::ios_base</label>
+      </node>
+      <node id="6">
+        <label>std::ostream</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="5" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; String &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; String &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>unsigned int</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/writer.h" line="140" column="1" bodyfile="include/json/writer.h" bodystart="140" bodyend="171"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_styled_stream_writer_1a4e4bb7fc223b2652b72b523b1ce414fa" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>addChildValues_</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a4e566b35970ba4cef9d43b5ae6eca9c1" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>ChildValues</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1aafd62e00a401df73fcacb2e410114b3d" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>childValues_</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a420de095d83150ced3c29651a226dbfe" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>document_</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1ad2892f57171919fa4f8a5ae5574755cf" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>hasCommentForValue</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1ab49409578422aa73b060e3492dd6c72a" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>indent</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a5ade2dfd46f6c95053ca6a821d74f28c" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>indentation_</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1aa12db1753619a9b48da41f3e45e3275d" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>indented_</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1ab29404730f68a0de1ad6b0f5a889d37f" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>indentString_</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a49e775f9dd2ea653cbf73d1cece15a9e" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>isMultilineArray</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a0212b29c9d12055fd27ea8a4236c5b42" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>normalizeEOL</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1af625db6781f60efa0ed4134ab401b0f1" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>pushValue</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a94299ec0a9bb925b2dbbab7c1f2b390a" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>rightMargin_</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1aba02f94aa7f50d9835abef1530d17a0c" prot="public" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>StyledStreamWriter</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a74d8fb9beecd29759d7b79f430386358" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>unindent</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1aaaeb88acc1bd7df1c805611afaf09728" prot="public" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>write</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a606f2ddd58093c9b019d452c1b6f09fe" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>writeArrayValue</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1ad2ca860e317ca91d6b2932535b4ce9c7" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>writeCommentAfterValueOnSameLine</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a79c3c2b320475035c47b2db484a3e434" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>writeCommentBeforeValue</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a5a52fa5b406f1580a61dde3b5638e76d" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>writeIndent</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>writeValue</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1a3f86f2560ef7244417edce1cc605a978" prot="private" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>writeWithIndent</name></member>
+      <member refid="class_json_1_1_styled_stream_writer_1ac98ea85e08d1c3cc5230787c5fea240e" prot="public" virt="non-virtual"><scope>Json::StyledStreamWriter</scope><name>~StyledStreamWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

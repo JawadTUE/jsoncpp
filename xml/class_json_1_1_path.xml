@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_path" kind="class" language="C++" prot="public">
+    <compoundname>Json::Path</compoundname>
+    <includes refid="value_8h" local="no">value.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_json_1_1_path_1a0b5c802337ca4afafb54688145b55dac" prot="private" static="no">
+        <type>std::vector&lt; const <ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref> * &gt;</type>
+        <definition>using Json::Path::InArgs =  std::vector&lt;const PathArgument*&gt;</definition>
+        <argsstring></argsstring>
+        <name>InArgs</name>
+        <qualifiedname>Json::Path::InArgs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="495" column="3" bodyfile="include/json/value.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_json_1_1_path_1a79c2e2f90ae47da38e2482dd2e103270" prot="private" static="no">
+        <type>std::vector&lt; <ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref> &gt;</type>
+        <definition>using Json::Path::Args =  std::vector&lt;PathArgument&gt;</definition>
+        <argsstring></argsstring>
+        <name>Args</name>
+        <qualifiedname>Json::Path::Args</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="496" column="3" bodyfile="include/json/value.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_1_1_path_1af33d0de7ee9f99d3e361bdf504dc2bc7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_path_1a79c2e2f90ae47da38e2482dd2e103270" kindref="member">Args</ref></type>
+        <definition>Args Json::Path::args_</definition>
+        <argsstring></argsstring>
+        <name>args_</name>
+        <qualifiedname>Json::Path::args_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="503" column="8" bodyfile="include/json/value.h" bodystart="503" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_path_1a6170f3446b83732bcfe404de267e9086" compoundref="json__value_8cpp" startline="1463" endline="1471">addPathInArg</referencedby>
+        <referencedby refid="class_json_1_1_path_1a858f9426f0f7bbe0450644d72b44e26b" compoundref="json__value_8cpp" startline="1514" endline="1528">make</referencedby>
+        <referencedby refid="class_json_1_1_path_1ad7450894ff67ea064ecfb8b1b604211a" compoundref="json__value_8cpp" startline="1432" endline="1461">makePath</referencedby>
+        <referencedby refid="class_json_1_1_path_1ad1abdc54d2e03fc0e9436c3b9fd55a33" compoundref="json__value_8cpp" startline="1475" endline="1494">resolve</referencedby>
+        <referencedby refid="class_json_1_1_path_1ab65ab001ccdbc6f8b5f123da58b92539" compoundref="json__value_8cpp" startline="1496" endline="1512">resolve</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_path_1a5911a84e7e8e4cc7e5ac61482bf8aac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::Path::Path</definition>
+        <argsstring>(const String &amp;path, const PathArgument &amp;a1=PathArgument(), const PathArgument &amp;a2=PathArgument(), const PathArgument &amp;a3=PathArgument(), const PathArgument &amp;a4=PathArgument(), const PathArgument &amp;a5=PathArgument())</argsstring>
+        <name>Path</name>
+        <qualifiedname>Json::Path::Path</qualifiedname>
+        <param>
+          <type>const <ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref> &amp;</type>
+          <declname>a1</declname>
+          <defval><ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref>()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref> &amp;</type>
+          <declname>a2</declname>
+          <defval><ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref>()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref> &amp;</type>
+          <declname>a3</declname>
+          <defval><ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref>()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref> &amp;</type>
+          <declname>a4</declname>
+          <defval><ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref>()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref> &amp;</type>
+          <declname>a5</declname>
+          <defval><ref refid="class_json_1_1_path_argument" kindref="compound">PathArgument</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="483" column="3" bodyfile="src/lib_json/json_value.cpp" bodystart="1419" bodyend="1430"/>
+        <references refid="class_json_1_1_path_1ad7450894ff67ea064ecfb8b1b604211a" compoundref="json__value_8cpp" startline="1432" endline="1461">makePath</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_path_1ad1abdc54d2e03fc0e9436c3b9fd55a33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+        <definition>const Value &amp; Json::Path::resolve</definition>
+        <argsstring>(const Value &amp;root) const</argsstring>
+        <name>resolve</name>
+        <qualifiedname>Json::Path::resolve</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="489" column="15" bodyfile="src/lib_json/json_value.cpp" bodystart="1475" bodyend="1494"/>
+        <references refid="class_json_1_1_path_1af33d0de7ee9f99d3e361bdf504dc2bc7" compoundref="value_8h" startline="503">args_</references>
+        <references refid="class_json_1_1_value_1a1627eb9d6568d6d0252fa8bb711c0a59" compoundref="json__value_8cpp" startline="1284" endline="1284">Json::Value::isArray</references>
+        <references refid="class_json_1_1_value_1a8cf96c0f2a552051fcfc78ffee60e037" compoundref="json__value_8cpp" startline="1286" endline="1286">Json::Value::isObject</references>
+        <references refid="class_json_1_1_value_1ac2928f174a6e081c1500c28c2d61ee93" compoundref="json__value_8cpp" startline="1002" endline="1002">Json::Value::isValidIndex</references>
+        <references refid="class_json_1_1_path_argument_1a2420bbad778573c147e578701b84d9b9ae5a976b898111903334cb131f5e03dc4" compoundref="value_8h" startline="475">Json::PathArgument::kindIndex</references>
+        <references refid="class_json_1_1_path_argument_1a2420bbad778573c147e578701b84d9b9a74f5968d06c01701b7a46092c33ba7d1" compoundref="value_8h" startline="475">Json::PathArgument::kindKey</references>
+        <references refid="class_json_1_1_value_1af2f124567acc35d021a424e53ebdfcab" compoundref="json__value_8cpp" startline="59" endline="62">Json::Value::nullSingleton</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_path_1ab65ab001ccdbc6f8b5f123da58b92539" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref></type>
+        <definition>Value Json::Path::resolve</definition>
+        <argsstring>(const Value &amp;root, const Value &amp;defaultValue) const</argsstring>
+        <name>resolve</name>
+        <qualifiedname>Json::Path::resolve</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="490" column="9" bodyfile="src/lib_json/json_value.cpp" bodystart="1496" bodyend="1512"/>
+        <references refid="class_json_1_1_path_1af33d0de7ee9f99d3e361bdf504dc2bc7" compoundref="value_8h" startline="503">args_</references>
+        <references refid="class_json_1_1_value_1a1627eb9d6568d6d0252fa8bb711c0a59" compoundref="json__value_8cpp" startline="1284" endline="1284">Json::Value::isArray</references>
+        <references refid="class_json_1_1_value_1a8cf96c0f2a552051fcfc78ffee60e037" compoundref="json__value_8cpp" startline="1286" endline="1286">Json::Value::isObject</references>
+        <references refid="class_json_1_1_value_1ac2928f174a6e081c1500c28c2d61ee93" compoundref="json__value_8cpp" startline="1002" endline="1002">Json::Value::isValidIndex</references>
+        <references refid="class_json_1_1_path_argument_1a2420bbad778573c147e578701b84d9b9ae5a976b898111903334cb131f5e03dc4" compoundref="value_8h" startline="475">Json::PathArgument::kindIndex</references>
+        <references refid="class_json_1_1_path_argument_1a2420bbad778573c147e578701b84d9b9a74f5968d06c01701b7a46092c33ba7d1" compoundref="value_8h" startline="475">Json::PathArgument::kindKey</references>
+        <references refid="class_json_1_1_value_1af2f124567acc35d021a424e53ebdfcab" compoundref="json__value_8cpp" startline="59" endline="62">Json::Value::nullSingleton</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_path_1a858f9426f0f7bbe0450644d72b44e26b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+        <definition>Value &amp; Json::Path::make</definition>
+        <argsstring>(Value &amp;root) const</argsstring>
+        <name>make</name>
+        <qualifiedname>Json::Path::make</qualifiedname>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="492" column="9" bodyfile="src/lib_json/json_value.cpp" bodystart="1514" bodyend="1528"/>
+        <references refid="class_json_1_1_path_1af33d0de7ee9f99d3e361bdf504dc2bc7" compoundref="value_8h" startline="503">args_</references>
+        <references refid="class_json_1_1_value_1a1627eb9d6568d6d0252fa8bb711c0a59" compoundref="json__value_8cpp" startline="1284" endline="1284">Json::Value::isArray</references>
+        <references refid="class_json_1_1_value_1a8cf96c0f2a552051fcfc78ffee60e037" compoundref="json__value_8cpp" startline="1286" endline="1286">Json::Value::isObject</references>
+        <references refid="class_json_1_1_path_argument_1a2420bbad778573c147e578701b84d9b9ae5a976b898111903334cb131f5e03dc4" compoundref="value_8h" startline="475">Json::PathArgument::kindIndex</references>
+        <references refid="class_json_1_1_path_argument_1a2420bbad778573c147e578701b84d9b9a74f5968d06c01701b7a46092c33ba7d1" compoundref="value_8h" startline="475">Json::PathArgument::kindKey</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_json_1_1_path_1ad7450894ff67ea064ecfb8b1b604211a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::Path::makePath</definition>
+        <argsstring>(const String &amp;path, const InArgs &amp;in)</argsstring>
+        <name>makePath</name>
+        <qualifiedname>Json::Path::makePath</qualifiedname>
+        <param>
+          <type>const <ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_path_1a0b5c802337ca4afafb54688145b55dac" kindref="member">InArgs</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="498" column="8" bodyfile="src/lib_json/json_value.cpp" bodystart="1432" bodyend="1461"/>
+        <references refid="class_json_1_1_path_1a6170f3446b83732bcfe404de267e9086" compoundref="json__value_8cpp" startline="1463" endline="1471">addPathInArg</references>
+        <references refid="class_json_1_1_path_1af33d0de7ee9f99d3e361bdf504dc2bc7" compoundref="value_8h" startline="503">args_</references>
+        <references refid="class_json_1_1_path_1a2d3a6ce050dd9d7ac789196f1d9d9187" compoundref="json__value_8cpp" startline="1473" endline="1473">invalidPath</references>
+        <references refid="class_json_1_1_path_argument_1a2420bbad778573c147e578701b84d9b9ae5a976b898111903334cb131f5e03dc4" compoundref="value_8h" startline="475">Json::PathArgument::kindIndex</references>
+        <references refid="class_json_1_1_path_argument_1a2420bbad778573c147e578701b84d9b9a74f5968d06c01701b7a46092c33ba7d1" compoundref="value_8h" startline="475">Json::PathArgument::kindKey</references>
+        <referencedby refid="class_json_1_1_path_1a5911a84e7e8e4cc7e5ac61482bf8aac6" compoundref="json__value_8cpp" startline="1419" endline="1430">Path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_path_1a6170f3446b83732bcfe404de267e9086" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::Path::addPathInArg</definition>
+        <argsstring>(const String &amp;path, const InArgs &amp;in, InArgs::const_iterator &amp;itInArg, PathArgument::Kind kind)</argsstring>
+        <name>addPathInArg</name>
+        <qualifiedname>Json::Path::addPathInArg</qualifiedname>
+        <param>
+          <type>const <ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_path_1a0b5c802337ca4afafb54688145b55dac" kindref="member">InArgs</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>InArgs::const_iterator &amp;</type>
+          <declname>itInArg</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_path_argument_1a2420bbad778573c147e578701b84d9b9" kindref="member">PathArgument::Kind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="499" column="8" bodyfile="src/lib_json/json_value.cpp" bodystart="1463" bodyend="1471"/>
+        <references refid="class_json_1_1_path_1af33d0de7ee9f99d3e361bdf504dc2bc7" compoundref="value_8h" startline="503">args_</references>
+        <referencedby refid="class_json_1_1_path_1ad7450894ff67ea064ecfb8b1b604211a" compoundref="json__value_8cpp" startline="1432" endline="1461">makePath</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_json_1_1_path_1a2d3a6ce050dd9d7ac789196f1d9d9187" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::Path::invalidPath</definition>
+        <argsstring>(const String &amp;path, int location)</argsstring>
+        <name>invalidPath</name>
+        <qualifiedname>Json::Path::invalidPath</qualifiedname>
+        <param>
+          <type>const <ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="501" column="15" bodyfile="src/lib_json/json_value.cpp" bodystart="1473" bodyend="1473"/>
+        <referencedby refid="class_json_1_1_path_1ad7450894ff67ea064ecfb8b1b604211a" compoundref="json__value_8cpp" startline="1432" endline="1461">makePath</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::Path</label>
+        <link refid="class_json_1_1_path"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>args_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Json::PathArgument</label>
+        <link refid="class_json_1_1_path_argument"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>key_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>index_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>kind_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Kind</label>
+      </node>
+      <node id="9">
+        <label>T</label>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</label>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="9" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; PathArgument &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="template-instance">
+          <edgelabel>&lt; PathArgument &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unsigned int</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/value.h" line="481" column="1" bodyfile="include/json/value.h" bodystart="481" bodyend="504"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_path_1a6170f3446b83732bcfe404de267e9086" prot="private" virt="non-virtual"><scope>Json::Path</scope><name>addPathInArg</name></member>
+      <member refid="class_json_1_1_path_1a79c2e2f90ae47da38e2482dd2e103270" prot="private" virt="non-virtual"><scope>Json::Path</scope><name>Args</name></member>
+      <member refid="class_json_1_1_path_1af33d0de7ee9f99d3e361bdf504dc2bc7" prot="private" virt="non-virtual"><scope>Json::Path</scope><name>args_</name></member>
+      <member refid="class_json_1_1_path_1a0b5c802337ca4afafb54688145b55dac" prot="private" virt="non-virtual"><scope>Json::Path</scope><name>InArgs</name></member>
+      <member refid="class_json_1_1_path_1a2d3a6ce050dd9d7ac789196f1d9d9187" prot="private" virt="non-virtual"><scope>Json::Path</scope><name>invalidPath</name></member>
+      <member refid="class_json_1_1_path_1a858f9426f0f7bbe0450644d72b44e26b" prot="public" virt="non-virtual"><scope>Json::Path</scope><name>make</name></member>
+      <member refid="class_json_1_1_path_1ad7450894ff67ea064ecfb8b1b604211a" prot="private" virt="non-virtual"><scope>Json::Path</scope><name>makePath</name></member>
+      <member refid="class_json_1_1_path_1a5911a84e7e8e4cc7e5ac61482bf8aac6" prot="public" virt="non-virtual"><scope>Json::Path</scope><name>Path</name></member>
+      <member refid="class_json_1_1_path_1ad1abdc54d2e03fc0e9436c3b9fd55a33" prot="public" virt="non-virtual"><scope>Json::Path</scope><name>resolve</name></member>
+      <member refid="class_json_1_1_path_1ab65ab001ccdbc6f8b5f123da58b92539" prot="public" virt="non-virtual"><scope>Json::Path</scope><name>resolve</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

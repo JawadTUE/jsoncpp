@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_char_reader_1_1_factory" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Json::CharReader::Factory</compoundname>
+    <derivedcompoundref refid="class_json_1_1_char_reader_builder" prot="public" virt="non-virtual">Json::CharReaderBuilder</derivedcompoundref>
+    <includes refid="reader_8h" local="no">reader.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_char_reader_1_1_factory_1a4b922356483f1da73308613ef0899b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Json::CharReader::Factory::~Factory</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Factory</name>
+        <qualifiedname>Json::CharReader::Factory::~Factory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="160" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_1_1_factory_1aa498627213eada8b64d84594c3badb35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_json_1_1_char_reader" kindref="compound">CharReader</ref> *</type>
+        <definition>virtual CharReader * Json::CharReader::Factory::newCharReader</definition>
+        <argsstring>() const =0</argsstring>
+        <name>newCharReader</name>
+        <qualifiedname>Json::CharReader::Factory::newCharReader</qualifiedname>
+        <reimplementedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae">newCharReader</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/reader.h" line="161" column="24"/>
+        <referencedby refid="namespace_json_1ad0e6a29ad2eac4ae58cd5b96d19bb01e" compoundref="json__reader_8cpp" startline="1874" endline="1883">Json::parseFromStream</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Json::CharReader::Factory</label>
+        <link refid="class_json_1_1_char_reader_1_1_factory"/>
+      </node>
+      <node id="2">
+        <label>Json::CharReaderBuilder</label>
+        <link refid="class_json_1_1_char_reader_builder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/json/reader.h" line="158" column="3" bodyfile="include/json/reader.h" bodystart="158" bodyend="162"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_char_reader_1_1_factory_1aa498627213eada8b64d84594c3badb35" prot="public" virt="pure-virtual"><scope>Json::CharReader::Factory</scope><name>newCharReader</name></member>
+      <member refid="class_json_1_1_char_reader_1_1_factory_1a4b922356483f1da73308613ef0899b3b" prot="public" virt="virtual"><scope>Json::CharReader::Factory</scope><name>~Factory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

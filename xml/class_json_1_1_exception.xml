@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_exception" kind="class" language="C++" prot="public">
+    <compoundname>Json::Exception</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+    <derivedcompoundref refid="class_json_1_1_logic_error" prot="public" virt="non-virtual">Json::LogicError</derivedcompoundref>
+    <derivedcompoundref refid="class_json_1_1_runtime_error" prot="public" virt="non-virtual">Json::RuntimeError</derivedcompoundref>
+    <includes refid="value_8h" local="no">value.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_json_1_1_exception_1af1db3a92df9a4ad4d7c23409ca13ae79" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+        <definition>String Json::Exception::msg_</definition>
+        <argsstring></argsstring>
+        <name>msg_</name>
+        <qualifiedname>Json::Exception::msg_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="56" column="10" bodyfile="include/json/value.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_exception_1abe49421de2628b432f66fde4ff60eff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::Exception::Exception</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>Exception</name>
+        <qualifiedname>Json::Exception::Exception</qualifiedname>
+        <param>
+          <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="51" column="3" bodyfile="src/lib_json/json_value.cpp" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_exception_1a4082191598f5df7bf0a62a6cadbb2db8" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Json::Exception::~Exception</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>~Exception</name>
+        <qualifiedname>Json::Exception::~Exception</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="52" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_exception_1a22a88bfb26db501923f322718d9d986b" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>char const *</type>
+        <definition>char const  * Json::Exception::what</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>what</name>
+        <qualifiedname>Json::Exception::what</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="53" column="14" bodyfile="src/lib_json/json_value.cpp" bodystart="165" bodyend="165"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Json::Exception</label>
+        <link refid="class_json_1_1_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Json::LogicError</label>
+        <link refid="class_json_1_1_logic_error"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Json::RuntimeError</label>
+        <link refid="class_json_1_1_runtime_error"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::Exception</label>
+        <link refid="class_json_1_1_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>msg_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</label>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/value.h" line="49" column="1" bodyfile="include/json/value.h" bodystart="49" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_exception_1abe49421de2628b432f66fde4ff60eff7" prot="public" virt="non-virtual"><scope>Json::Exception</scope><name>Exception</name></member>
+      <member refid="class_json_1_1_exception_1af1db3a92df9a4ad4d7c23409ca13ae79" prot="protected" virt="non-virtual"><scope>Json::Exception</scope><name>msg_</name></member>
+      <member refid="class_json_1_1_exception_1a22a88bfb26db501923f322718d9d986b" prot="public" virt="non-virtual"><scope>Json::Exception</scope><name>what</name></member>
+      <member refid="class_json_1_1_exception_1a4082191598f5df7bf0a62a6cadbb2db8" prot="public" virt="non-virtual"><scope>Json::Exception</scope><name>~Exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

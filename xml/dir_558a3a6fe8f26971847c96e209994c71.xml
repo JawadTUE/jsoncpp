@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_558a3a6fe8f26971847c96e209994c71" kind="dir">
+    <compoundname>src/lib_json</compoundname>
+    <innerfile refid="json__reader_8cpp">json_reader.cpp</innerfile>
+    <innerfile refid="json__tool_8h">json_tool.h</innerfile>
+    <innerfile refid="json__value_8cpp">json_value.cpp</innerfile>
+    <innerfile refid="json__valueiterator_8inl">json_valueiterator.inl</innerfile>
+    <innerfile refid="json__writer_8cpp">json_writer.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/lib_json/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="allocator_8h" kind="file" language="C++">
+    <compoundname>allocator.h</compoundname>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="config_8h" local="yes">include/json/config.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/json/allocator.h</label>
+        <link refid="allocator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>algorithm</label>
+      </node>
+      <node id="3">
+        <label>cstring</label>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/json/allocator.h</label>
+        <link refid="allocator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/json/assertions.h</label>
+        <link refid="assertions_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/json/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>include/json/forwards.h</label>
+        <link refid="forwards_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/json/json.h</label>
+        <link refid="json_8h"/>
+      </node>
+      <node id="7">
+        <label>include/json/json_features.h</label>
+        <link refid="json__features_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>include/json/reader.h</label>
+        <link refid="reader_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>include/json/value.h</label>
+        <link refid="value_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>include/json/writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/lib_json/json_reader.cpp</label>
+        <link refid="json__reader_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/lib_json/json_tool.h</label>
+        <link refid="json__tool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/lib_json/json_value.cpp</label>
+        <link refid="json__value_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/lib_json/json_writer.cpp</label>
+        <link refid="json__writer_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_json_1_1_secure_allocator" prot="public">Json::SecureAllocator</innerclass>
+    <innerclass refid="struct_json_1_1_secure_allocator_1_1rebind" prot="public">Json::SecureAllocator::rebind</innerclass>
+    <innernamespace refid="namespace_json">Json</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>JSON_ALLOCATOR_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_ALLOCATOR_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespace_json" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_json" kindref="compound">Json</ref><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="class_json_1_1_secure_allocator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="class_json_1_1_secure_allocator_1ae45a020fc6d6f3ae66394c81c4281ad8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_secure_allocator_1ae45a020fc6d6f3ae66394c81c4281ad8" kindref="member">value_type</ref><sp/>=<sp/>T;</highlight></codeline>
+<codeline lineno="15" refid="class_json_1_1_secure_allocator_1a442c09b3267622d23416d9072ea1afe9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_secure_allocator_1a442c09b3267622d23416d9072ea1afe9" kindref="member">pointer</ref><sp/>=<sp/>T*;</highlight></codeline>
+<codeline lineno="16" refid="class_json_1_1_secure_allocator_1a464b356817c78ea996cd3a7403f7e735" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_secure_allocator_1a464b356817c78ea996cd3a7403f7e735" kindref="member">const_pointer</ref><sp/>=<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*;</highlight></codeline>
+<codeline lineno="17" refid="class_json_1_1_secure_allocator_1a55b243c56812b3852b59c1a9b0a21c65" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_secure_allocator_1a55b243c56812b3852b59c1a9b0a21c65" kindref="member">reference</ref><sp/>=<sp/>T&amp;;</highlight></codeline>
+<codeline lineno="18" refid="class_json_1_1_secure_allocator_1a3f0327d609dcd1942c8c7fa4d4f227e5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_secure_allocator_1a3f0327d609dcd1942c8c7fa4d4f227e5" kindref="member">const_reference</ref><sp/>=<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;;</highlight></codeline>
+<codeline lineno="19" refid="class_json_1_1_secure_allocator_1a61c258f0ae80af6982fae200b55a4dc9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_secure_allocator_1a61c258f0ae80af6982fae200b55a4dc9" kindref="member">size_type</ref><sp/>=<sp/>std::size_t;</highlight></codeline>
+<codeline lineno="20" refid="class_json_1_1_secure_allocator_1a404f41a8e340a8af1b54138920a6ef33" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_secure_allocator_1a404f41a8e340a8af1b54138920a6ef33" kindref="member">difference_type</ref><sp/>=<sp/>std::ptrdiff_t;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_json_1_1_secure_allocator_1a9b7d7180b360ebd673bdcfab25c1d5a4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_secure_allocator_1a442c09b3267622d23416d9072ea1afe9" kindref="member">pointer</ref><sp/><ref refid="class_json_1_1_secure_allocator_1a9b7d7180b360ebd673bdcfab25c1d5a4" kindref="member">allocate</ref>(<ref refid="class_json_1_1_secure_allocator_1a61c258f0ae80af6982fae200b55a4dc9" kindref="member">size_type</ref><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="class_json_1_1_secure_allocator_1a442c09b3267622d23416d9072ea1afe9" kindref="member">pointer</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(::operator<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(n<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_json_1_1_secure_allocator_1a886d46522b21826939ef055f69deeb78" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_secure_allocator_1a886d46522b21826939ef055f69deeb78" kindref="member">deallocate</ref>(<ref refid="class_json_1_1_secure_allocator_1a442c09b3267622d23416d9072ea1afe9" kindref="member">pointer</ref><sp/>p,<sp/><ref refid="class_json_1_1_secure_allocator_1a61c258f0ae80af6982fae200b55a4dc9" kindref="member">size_type</ref><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HAVE_MEMSET_S)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>memset_s(p,<sp/>n<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T),<sp/>0,<sp/>n<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(_WIN32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>RtlSecureZeroMemory(p,<sp/>n<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fill_n(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="keyword">volatile<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(p),<sp/>n,<sp/>0);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>::operator<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(p);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_json_1_1_secure_allocator_1acd466192ba41ea5468bd2f45ae9de9fb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_secure_allocator_1acd466192ba41ea5468bd2f45ae9de9fb" kindref="member">construct</ref>(<ref refid="class_json_1_1_secure_allocator_1a442c09b3267622d23416d9072ea1afe9" kindref="member">pointer</ref><sp/>p,<sp/>Args&amp;&amp;...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>::new<sp/>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(p))<sp/>T(std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_json_1_1_secure_allocator_1a1ca352414d0ce358c0dca70fb26c674c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_secure_allocator_1a61c258f0ae80af6982fae200b55a4dc9" kindref="member">size_type</ref><sp/><ref refid="class_json_1_1_secure_allocator_1a1ca352414d0ce358c0dca70fb26c674c" kindref="member">max_size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size_t(-1)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T);<sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_json_1_1_secure_allocator_1a2f26b3dbf3cfffcc376844fb19733422" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_secure_allocator_1a442c09b3267622d23416d9072ea1afe9" kindref="member">pointer</ref><sp/><ref refid="class_json_1_1_secure_allocator_1a2f26b3dbf3cfffcc376844fb19733422" kindref="member">address</ref>(<ref refid="class_json_1_1_secure_allocator_1a55b243c56812b3852b59c1a9b0a21c65" kindref="member">reference</ref><sp/>x)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::addressof(x);<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_json_1_1_secure_allocator_1a228944048dd7266f219b52fd1958b4d5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_secure_allocator_1a464b356817c78ea996cd3a7403f7e735" kindref="member">const_pointer</ref><sp/><ref refid="class_json_1_1_secure_allocator_1a228944048dd7266f219b52fd1958b4d5" kindref="member">address</ref>(<ref refid="class_json_1_1_secure_allocator_1a3f0327d609dcd1942c8c7fa4d4f227e5" kindref="member">const_reference</ref><sp/>x)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::addressof(x);<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_json_1_1_secure_allocator_1a7316f4efeb3b992c69c94e345ac9f5cd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_secure_allocator_1a7316f4efeb3b992c69c94e345ac9f5cd" kindref="member">destroy</ref>(<ref refid="class_json_1_1_secure_allocator_1a442c09b3267622d23416d9072ea1afe9" kindref="member">pointer</ref><sp/>p)<sp/>{<sp/>p-&gt;~T();<sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_json_1_1_secure_allocator_1aac964c7467309331882c1ad541e4d8e4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_json_1_1_secure_allocator_1aac964c7467309331882c1ad541e4d8e4" kindref="member">SecureAllocator</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="51" refid="class_json_1_1_secure_allocator_1afefbe83997eb1da2089229771957e6bd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;<sp/><ref refid="class_json_1_1_secure_allocator_1afefbe83997eb1da2089229771957e6bd" kindref="member">SecureAllocator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator&lt;U&gt;</ref>&amp;)<sp/>{}</highlight></codeline>
+<codeline lineno="52" refid="struct_json_1_1_secure_allocator_1_1rebind" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_json_1_1_secure_allocator_1_1rebind" kindref="compound">rebind</ref><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="struct_json_1_1_secure_allocator_1_1rebind_1a010e346391d92ab9f8b0d2e807965615" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="class_json_1_1_secure_allocator" kindref="compound">other</ref><sp/>=<sp/><ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator&lt;U&gt;</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
+<codeline lineno="58" refid="namespace_json_1a85a761cd8643a538387c0fe37bb937e8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1a85a761cd8643a538387c0fe37bb937e8" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator&lt;T&gt;</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator&lt;U&gt;</ref>&amp;)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
+<codeline lineno="63" refid="namespace_json_1a86063654ac54c5e00f2f559f2c363b4e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_json_1a86063654ac54c5e00f2f559f2c363b4e" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator&lt;T&gt;</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator&lt;U&gt;</ref>&amp;)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/json/allocator.h"/>
+  </compounddef>
+</doxygen>

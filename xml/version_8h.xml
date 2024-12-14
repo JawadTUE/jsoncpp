@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="version_8h" kind="file" language="C++">
+    <compoundname>version.h</compoundname>
+    <includedby refid="config_8h" local="yes">include/json/config.h</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/json/assertions.h</label>
+        <link refid="assertions_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/json/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>include/json/forwards.h</label>
+        <link refid="forwards_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/json/json.h</label>
+        <link refid="json_8h"/>
+      </node>
+      <node id="7">
+        <label>include/json/json_features.h</label>
+        <link refid="json__features_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>include/json/reader.h</label>
+        <link refid="reader_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>include/json/value.h</label>
+        <link refid="value_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/json/version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>include/json/writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/lib_json/json_reader.cpp</label>
+        <link refid="json__reader_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/lib_json/json_tool.h</label>
+        <link refid="json__tool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/lib_json/json_value.cpp</label>
+        <link refid="json__value_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/lib_json/json_writer.cpp</label>
+        <link refid="json__writer_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="version_8h_1ac2869039a8826da9d06800ad2b39ed9c" prot="public" static="no">
+        <name>JSONCPP_VERSION_STRING</name>
+        <initializer>&quot;1.9.7&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/version.h" line="4" column="9" bodyfile="include/json/version.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a3a512184f0bbdd531fe1298f0a490ffe" prot="public" static="no">
+        <name>JSONCPP_VERSION_MAJOR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/version.h" line="5" column="9" bodyfile="include/json/version.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a8c16a078ac4151f4e9c07b04358b2550" prot="public" static="no">
+        <name>JSONCPP_VERSION_MINOR</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/version.h" line="6" column="9" bodyfile="include/json/version.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1aaecbbae4c271193dd5bf70aa0662e66b" prot="public" static="no">
+        <name>JSONCPP_VERSION_PATCH</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/version.h" line="7" column="9" bodyfile="include/json/version.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a72fa63858b73149d97ad8b3d059373ce" prot="public" static="no">
+        <name>JSONCPP_VERSION_QUALIFIER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/version.h" line="8" column="9" bodyfile="include/json/version.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a32ef47886b186f98d3f8225a513c3495" prot="public" static="no">
+        <name>JSONCPP_VERSION_HEXA</name>
+        <initializer>  ((<ref refid="version_8h_1a3a512184f0bbdd531fe1298f0a490ffe" kindref="member">JSONCPP_VERSION_MAJOR</ref> &lt;&lt; 24) | (<ref refid="version_8h_1a8c16a078ac4151f4e9c07b04358b2550" kindref="member">JSONCPP_VERSION_MINOR</ref> &lt;&lt; 16) |             \
+   (<ref refid="version_8h_1aaecbbae4c271193dd5bf70aa0662e66b" kindref="member">JSONCPP_VERSION_PATCH</ref> &lt;&lt; 8))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/version.h" line="9" column="9" bodyfile="include/json/version.h" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1aecf37024416e8917d695b69dea9b453b" prot="public" static="no">
+        <name>JSONCPP_USE_SECURE_MEMORY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/version.h" line="14" column="9" bodyfile="include/json/version.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>JSON_VERSION_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_VERSION_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="version_8h_1ac2869039a8826da9d06800ad2b39ed9c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_VERSION_STRING<sp/>&quot;1.9.7&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="version_8h_1a3a512184f0bbdd531fe1298f0a490ffe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_VERSION_MAJOR<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="version_8h_1a8c16a078ac4151f4e9c07b04358b2550" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_VERSION_MINOR<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="version_8h_1aaecbbae4c271193dd5bf70aa0662e66b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_VERSION_PATCH<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="version_8h_1a72fa63858b73149d97ad8b3d059373ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_VERSION_QUALIFIER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="version_8h_1a32ef47886b186f98d3f8225a513c3495" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_VERSION_HEXA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"><sp/><sp/>((JSONCPP_VERSION_MAJOR<sp/>&lt;&lt;<sp/>24)<sp/>|<sp/>(JSONCPP_VERSION_MINOR<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/>(JSONCPP_VERSION_PATCH<sp/>&lt;&lt;<sp/>8))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(JSONCPP_USE_SECURE_MEMORY)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="version_8h_1aecf37024416e8917d695b69dea9b453b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_USE_SECURE_MEMORY<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/json/version.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_value_const_iterator" kind="class" language="C++" prot="public">
+    <compoundname>Json::ValueConstIterator</compoundname>
+    <basecompoundref refid="class_json_1_1_value_iterator_base" prot="public" virt="non-virtual">Json::ValueIteratorBase</basecompoundref>
+    <includes refid="value_8h" local="no">value.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_json_1_1_value_const_iterator_1abdc8a5e5588a157b9755f0327d95cc2a" prot="public" static="no">
+        <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref></type>
+        <definition>using Json::ValueConstIterator::value_type =  const Value</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>Json::ValueConstIterator::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="560" column="3" bodyfile="include/json/value.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_json_1_1_value_const_iterator_1a4e04dea5719630f67806875296eb4751" prot="public" static="no">
+        <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+        <definition>using Json::ValueConstIterator::reference =  const Value&amp;</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <qualifiedname>Json::ValueConstIterator::reference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="562" column="3" bodyfile="include/json/value.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_json_1_1_value_const_iterator_1ae78a1f4d05351dec67165c7063462212" prot="public" static="no">
+        <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> *</type>
+        <definition>using Json::ValueConstIterator::pointer =  const Value*</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <qualifiedname>Json::ValueConstIterator::pointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="563" column="3" bodyfile="include/json/value.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_json_1_1_value_const_iterator_1a945f8f8528e4061d125dcc7ce0aa1ac8" prot="public" static="no">
+        <type><ref refid="class_json_1_1_value_const_iterator" kindref="compound">ValueConstIterator</ref></type>
+        <definition>using Json::ValueConstIterator::SelfType =  ValueConstIterator</definition>
+        <argsstring></argsstring>
+        <name>SelfType</name>
+        <qualifiedname>Json::ValueConstIterator::SelfType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="564" column="3" bodyfile="include/json/value.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_json_1_1_value_const_iterator_1aeceedf6e1a7d48a588516ce2b1983d6f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <qualifiedname>Json::ValueConstIterator::Value</qualifiedname>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="557" column="16" bodyfile="include/json/value.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_value_const_iterator_1a1b10a46f1606421b0663492a5f9a2aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::ValueConstIterator::ValueConstIterator</definition>
+        <argsstring>()</argsstring>
+        <name>ValueConstIterator</name>
+        <qualifiedname>Json::ValueConstIterator::ValueConstIterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="566" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_value_const_iterator_1a7ef3df204a9ae83a0d8a3cd128e05c70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::ValueConstIterator::ValueConstIterator</definition>
+        <argsstring>(ValueIterator const &amp;other)</argsstring>
+        <name>ValueConstIterator</name>
+        <qualifiedname>Json::ValueConstIterator::ValueConstIterator</qualifiedname>
+        <param>
+          <type><ref refid="class_json_1_1_value_iterator" kindref="compound">ValueIterator</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="567" column="3" bodyfile="src/lib_json/json_valueiterator.inl" bodystart="89" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_value_const_iterator_1ad1b1c11f8d7fb22d4d3c231915f2b15b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value_const_iterator_1a945f8f8528e4061d125dcc7ce0aa1ac8" kindref="member">SelfType</ref> &amp;</type>
+        <definition>ValueConstIterator &amp; Json::ValueConstIterator::operator=</definition>
+        <argsstring>(const ValueIteratorBase &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Json::ValueConstIterator::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_json_1_1_value_iterator_base" kindref="compound">ValueIteratorBase</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="573" column="12" bodyfile="src/lib_json/json_valueiterator.inl" bodystart="93" bodyend="96"/>
+        <references refid="class_json_1_1_value_iterator_base_1a496e6aba44808433ec5858c178be5719" compoundref="json__valueiterator_8inl" startline="37" endline="40">Json::ValueIteratorBase::copy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_value_const_iterator_1ab3f0c2edbfc8f7d60645f3d597d05e28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value_const_iterator_1a945f8f8528e4061d125dcc7ce0aa1ac8" kindref="member">SelfType</ref></type>
+        <definition>SelfType Json::ValueConstIterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <qualifiedname>Json::ValueConstIterator::operator++</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="575" column="12" bodyfile="include/json/value.h" bodystart="575" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_value_const_iterator_1a94935961e9331c6f7b907b05ec8df75e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value_const_iterator_1a945f8f8528e4061d125dcc7ce0aa1ac8" kindref="member">SelfType</ref></type>
+        <definition>SelfType Json::ValueConstIterator::operator--</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator--</name>
+        <qualifiedname>Json::ValueConstIterator::operator--</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="581" column="12" bodyfile="include/json/value.h" bodystart="581" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_value_const_iterator_1a3c56f4289c8ec7ce2ec74e001ed5b4bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value_const_iterator_1a945f8f8528e4061d125dcc7ce0aa1ac8" kindref="member">SelfType</ref> &amp;</type>
+        <definition>SelfType &amp; Json::ValueConstIterator::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <qualifiedname>Json::ValueConstIterator::operator--</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="587" column="12" bodyfile="include/json/value.h" bodystart="587" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_value_const_iterator_1a9f615167ffd2701ee4f4599273726c34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value_const_iterator_1a945f8f8528e4061d125dcc7ce0aa1ac8" kindref="member">SelfType</ref> &amp;</type>
+        <definition>SelfType &amp; Json::ValueConstIterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>Json::ValueConstIterator::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="592" column="12" bodyfile="include/json/value.h" bodystart="592" bodyend="595"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_value_const_iterator_1ae5612dad47a6387eef71d584fb741d0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value_const_iterator_1a4e04dea5719630f67806875296eb4751" kindref="member">reference</ref></type>
+        <definition>reference Json::ValueConstIterator::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>Json::ValueConstIterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="597" column="13" bodyfile="include/json/value.h" bodystart="597" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_value_const_iterator_1a3c608ae53c192ee846eb265bae1cfeec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value_const_iterator_1ae78a1f4d05351dec67165c7063462212" kindref="member">pointer</ref></type>
+        <definition>pointer Json::ValueConstIterator::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>Json::ValueConstIterator::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="599" column="11" bodyfile="include/json/value.h" bodystart="599" bodyend="599"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_json_1_1_value_const_iterator_1aa0a87edf5f1097f91dca5f2a389c4abd" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::ValueConstIterator::ValueConstIterator</definition>
+        <argsstring>(const Value::ObjectValues::iterator &amp;current)</argsstring>
+        <name>ValueConstIterator</name>
+        <qualifiedname>Json::ValueConstIterator::ValueConstIterator</qualifiedname>
+        <param>
+          <type>const Value::ObjectValues::iterator &amp;</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/value.h" line="570" column="12" bodyfile="src/lib_json/json_valueiterator.inl" bodystart="85" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Json::ValueConstIterator</label>
+        <link refid="class_json_1_1_value_const_iterator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Json::ValueIteratorBase</label>
+        <link refid="class_json_1_1_value_iterator_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::ValueConstIterator</label>
+        <link refid="class_json_1_1_value_const_iterator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Json::ValueIteratorBase</label>
+        <link refid="class_json_1_1_value_iterator_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>current_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>isNull_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iterator</label>
+      </node>
+      <node id="4">
+        <label>bool</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/value.h" line="556" column="1" bodyfile="include/json/value.h" bodystart="556" bodyend="600"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_value_iterator_base_1a9a6dad79cb2c13435fcbda7a88c8539e" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>__declspec</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1af11473c9e20d07782e42b52a2f9e4540" prot="protected" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>computeDistance</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a496e6aba44808433ec5858c178be5719" prot="protected" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>copy</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1ab3138ce8af8301cca3b041ea55cb922a" prot="private" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>current_</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1affc8cf5ff54a9f432cc693362c153fa6" prot="protected" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>decrement</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1ac75f6062c1ad2cd0d0243aeea2312d57" prot="protected" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>deref</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a38a04ec053dabf3d0f112c9dd97bdcbe" prot="protected" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>deref</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1afea6c61bcdf1ad448a5d64f2eede6f40" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>difference_type</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1afe58f9534e1fd2033419fd9fe244551e" prot="protected" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>increment</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a549c66a0bd20e9ae772175a5c0d2e88a" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>index</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a010b5ad3f3337ae3732e5d7e16ca5e25" prot="protected" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>isEqual</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a3e08b114a1aed9bde518c527f94a8c59" prot="private" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>isNull_</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a897d60682e16813474864bcd78d9b66c" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>iterator_category</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a3838ba39c43c518cf3ed4aa6ce78ccad" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>key</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a391c9cbd0edf9a447b37df00e8ce6059" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>memberName</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1ab68610aea87eba9b0d9b3829c7bfa33f" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>name</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1aa83bdcc8114b7d040eb8eb42eeed5f4a" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>operator!=</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1ae5612dad47a6387eef71d584fb741d0c" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>operator*</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1ab3f0c2edbfc8f7d60645f3d597d05e28" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>operator++</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1a9f615167ffd2701ee4f4599273726c34" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>operator++</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a98e254263fca5f1fc8fcac7bcb0260bf" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>operator-</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1a94935961e9331c6f7b907b05ec8df75e" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>operator--</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1a3c56f4289c8ec7ce2ec74e001ed5b4bd" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>operator--</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1a3c608ae53c192ee846eb265bae1cfeec" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>operator-&gt;</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1ad1b1c11f8d7fb22d4d3c231915f2b15b" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>operator=</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a1248d8016f88b51371a0fcbd355b3cfd" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>operator==</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1ae78a1f4d05351dec67165c7063462212" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>pointer</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1a4e04dea5719630f67806875296eb4751" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>reference</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1a945f8f8528e4061d125dcc7ce0aa1ac8" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>SelfType</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a3d5019805c499cbe864081536a1d59d6" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>size_t</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1aeceedf6e1a7d48a588516ce2b1983d6f" prot="private" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>Value</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1abdc8a5e5588a157b9755f0327d95cc2a" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>value_type</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1a1b10a46f1606421b0663492a5f9a2aad" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>ValueConstIterator</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1a7ef3df204a9ae83a0d8a3cd128e05c70" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>ValueConstIterator</name></member>
+      <member refid="class_json_1_1_value_const_iterator_1aa0a87edf5f1097f91dca5f2a389c4abd" prot="private" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>ValueConstIterator</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1af45b028d9ff9cbd2554a87878b42dd75" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>ValueIteratorBase</name></member>
+      <member refid="class_json_1_1_value_iterator_base_1a640e990e5f03a96fd650122a2906f59d" prot="public" virt="non-virtual"><scope>Json::ValueConstIterator</scope><name>ValueIteratorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

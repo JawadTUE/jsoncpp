@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_features" kind="class" language="C++" prot="public">
+    <compoundname>Json::Features</compoundname>
+    <includes refid="json__features_8h" local="no">json_features.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_json_1_1_features_1a33afd389719624b6bdb23950b3c346c9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::Features::allowComments_</definition>
+        <argsstring></argsstring>
+        <name>allowComments_</name>
+        <qualifiedname>Json::Features::allowComments_</qualifiedname>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/json_features.h" line="20" column="8" bodyfile="include/json/json_features.h" bodystart="20" bodyend="20"/>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="87" endline="122">Json::Reader::parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1aae203004ff13ddd04034042f88eb744e" compoundref="json__reader_8cpp" startline="195" endline="203">Json::Reader::readTokenSkippingComments</referencedby>
+        <referencedby refid="class_json_1_1_features_1ae23176c14b2e79e81fb61fb1a8ab58ee" compoundref="json__reader_8cpp" startline="56" endline="63">strictMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_features_1a1162c37a1458adc32582b585b552f9c3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::Features::strictRoot_</definition>
+        <argsstring></argsstring>
+        <name>strictRoot_</name>
+        <qualifiedname>Json::Features::strictRoot_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/json_features.h" line="22" column="8" bodyfile="include/json/json_features.h" bodystart="22" bodyend="22"/>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="87" endline="122">Json::Reader::parse</referencedby>
+        <referencedby refid="class_json_1_1_features_1ae23176c14b2e79e81fb61fb1a8ab58ee" compoundref="json__reader_8cpp" startline="56" endline="63">strictMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_features_1a5076aa72c05c7596ac339ede36c97a6a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::Features::allowDroppedNullPlaceholders_</definition>
+        <argsstring></argsstring>
+        <name>allowDroppedNullPlaceholders_</name>
+        <qualifiedname>Json::Features::allowDroppedNullPlaceholders_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/json_features.h" line="24" column="8" bodyfile="include/json/json_features.h" bodystart="24" bodyend="24"/>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="124" endline="193">Json::Reader::readValue</referencedby>
+        <referencedby refid="class_json_1_1_features_1ae23176c14b2e79e81fb61fb1a8ab58ee" compoundref="json__reader_8cpp" startline="56" endline="63">strictMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_features_1aff3cb16b79d15d3d761b11a0dd6d4d6b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::Features::allowNumericKeys_</definition>
+        <argsstring></argsstring>
+        <name>allowNumericKeys_</name>
+        <qualifiedname>Json::Features::allowNumericKeys_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/json_features.h" line="26" column="8" bodyfile="include/json/json_features.h" bodystart="26" bodyend="26"/>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="403" endline="448">Json::Reader::readObject</referencedby>
+        <referencedby refid="class_json_1_1_features_1ae23176c14b2e79e81fb61fb1a8ab58ee" compoundref="json__reader_8cpp" startline="56" endline="63">strictMode</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_json_1_1_features_1a63894da6e2c100b38741fa933f3d33ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_features" kindref="compound">Features</ref></type>
+        <definition>Features Json::Features::all</definition>
+        <argsstring>()</argsstring>
+        <name>all</name>
+        <qualifiedname>Json::Features::all</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/json_features.h" line="14" column="19" bodyfile="src/lib_json/json_reader.cpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_features_1ae23176c14b2e79e81fb61fb1a8ab58ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_features" kindref="compound">Features</ref></type>
+        <definition>Features Json::Features::strictMode</definition>
+        <argsstring>()</argsstring>
+        <name>strictMode</name>
+        <qualifiedname>Json::Features::strictMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/json_features.h" line="16" column="19" bodyfile="src/lib_json/json_reader.cpp" bodystart="56" bodyend="63"/>
+        <references refid="class_json_1_1_features_1a33afd389719624b6bdb23950b3c346c9" compoundref="json__features_8h" startline="20" endline="20">allowComments_</references>
+        <references refid="class_json_1_1_features_1a5076aa72c05c7596ac339ede36c97a6a" compoundref="json__features_8h" startline="24" endline="24">allowDroppedNullPlaceholders_</references>
+        <references refid="class_json_1_1_features_1aff3cb16b79d15d3d761b11a0dd6d4d6b" compoundref="json__features_8h" startline="26" endline="26">allowNumericKeys_</references>
+        <references refid="class_json_1_1_features_1a1162c37a1458adc32582b585b552f9c3" compoundref="json__features_8h" startline="22" endline="22">strictRoot_</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_features_1ad15a091cb61bb31323299a95970d2644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::Features::Features</definition>
+        <argsstring>()</argsstring>
+        <name>Features</name>
+        <qualifiedname>Json::Features::Features</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/json_features.h" line="18" column="3"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::Features</label>
+        <link refid="class_json_1_1_features"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>allowComments_</edgelabel>
+          <edgelabel>allowDroppedNullPlaceholders_</edgelabel>
+          <edgelabel>allowNumericKeys_</edgelabel>
+          <edgelabel>strictRoot_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>bool</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/json_features.h" line="12" column="1" bodyfile="include/json/json_features.h" bodystart="12" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_features_1a63894da6e2c100b38741fa933f3d33ae" prot="public" virt="non-virtual"><scope>Json::Features</scope><name>all</name></member>
+      <member refid="class_json_1_1_features_1a33afd389719624b6bdb23950b3c346c9" prot="public" virt="non-virtual"><scope>Json::Features</scope><name>allowComments_</name></member>
+      <member refid="class_json_1_1_features_1a5076aa72c05c7596ac339ede36c97a6a" prot="public" virt="non-virtual"><scope>Json::Features</scope><name>allowDroppedNullPlaceholders_</name></member>
+      <member refid="class_json_1_1_features_1aff3cb16b79d15d3d761b11a0dd6d4d6b" prot="public" virt="non-virtual"><scope>Json::Features</scope><name>allowNumericKeys_</name></member>
+      <member refid="class_json_1_1_features_1ad15a091cb61bb31323299a95970d2644" prot="public" virt="non-virtual"><scope>Json::Features</scope><name>Features</name></member>
+      <member refid="class_json_1_1_features_1ae23176c14b2e79e81fb61fb1a8ab58ee" prot="public" virt="non-virtual"><scope>Json::Features</scope><name>strictMode</name></member>
+      <member refid="class_json_1_1_features_1a1162c37a1458adc32582b585b552f9c3" prot="public" virt="non-virtual"><scope>Json::Features</scope><name>strictRoot_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

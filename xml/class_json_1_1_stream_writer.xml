@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_stream_writer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Json::StreamWriter</compoundname>
+    <derivedcompoundref refid="struct_json_1_1_built_styled_stream_writer" prot="public" virt="non-virtual">Json::BuiltStyledStreamWriter</derivedcompoundref>
+    <includes refid="writer_8h" local="no">writer.h</includes>
+    <innerclass refid="class_json_1_1_stream_writer_1_1_factory" prot="public">Json::StreamWriter::Factory</innerclass>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_json_1_1_stream_writer_1afcaf15b7e1c6c6b4b3d3847413588c8f" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref> *</type>
+        <definition>OStream* Json::StreamWriter::sout_</definition>
+        <argsstring></argsstring>
+        <name>sout_</name>
+        <qualifiedname>Json::StreamWriter::sout_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="25" column="11" bodyfile="include/json/writer.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1a73ce382a0bd5643a42754a2ba248285b" compoundref="json__writer_8cpp" startline="1017" endline="1022">Json::BuiltStyledStreamWriter::pushValue</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1ae50be640f3d53d885fa262d8d15e1ac7" compoundref="json__writer_8cpp" startline="865" endline="879">Json::BuiltStyledStreamWriter::write</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1acd20e9274bbcf7876ef3af2e7d23a31f" compoundref="json__writer_8cpp" startline="942" endline="989">Json::BuiltStyledStreamWriter::writeArrayValue</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1a89625b134fce0255263ca40e6125742b" compoundref="json__writer_8cpp" startline="1064" endline="1075">Json::BuiltStyledStreamWriter::writeCommentAfterValueOnSameLine</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1a32c4afca4e08fba79bb0a80a8010283a" compoundref="json__writer_8cpp" startline="1045" endline="1062">Json::BuiltStyledStreamWriter::writeCommentBeforeValue</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1a2b38a3714d415c4bd3b4812897130f3d" compoundref="json__writer_8cpp" startline="1024" endline="1029">Json::BuiltStyledStreamWriter::writeIndent</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1a7c9da861861e570a51b45f270c9ff150" compoundref="json__writer_8cpp" startline="880" endline="940">Json::BuiltStyledStreamWriter::writeValue</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1a8ef4e7333031fac938571e911341288e" compoundref="json__writer_8cpp" startline="1031" endline="1036">Json::BuiltStyledStreamWriter::writeWithIndent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_stream_writer_1a66e6f5113618ce6b04cac9b3c85a3707" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::StreamWriter::StreamWriter</definition>
+        <argsstring>()</argsstring>
+        <name>StreamWriter</name>
+        <qualifiedname>Json::StreamWriter::StreamWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="28" column="3" bodyfile="src/lib_json/json_writer.cpp" bodystart="1083" bodyend="1083"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_1a03f8fb6a873b6b50f05bc4556e043c3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Json::StreamWriter::~StreamWriter</definition>
+        <argsstring>()</argsstring>
+        <name>~StreamWriter</name>
+        <qualifiedname>Json::StreamWriter::~StreamWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="29" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_1abcb52fb89a6e2302a3e055c4463a273a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Json::StreamWriter::write</definition>
+        <argsstring>(Value const &amp;root, OStream *sout)=0</argsstring>
+        <name>write</name>
+        <qualifiedname>Json::StreamWriter::write</qualifiedname>
+        <reimplementedby refid="struct_json_1_1_built_styled_stream_writer_1ae50be640f3d53d885fa262d8d15e1ac7">write</reimplementedby>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> const &amp;</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref> *</type>
+          <declname>sout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="31" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Json::BuiltStyledStreamWriter</label>
+        <link refid="struct_json_1_1_built_styled_stream_writer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Json::StreamWriter</label>
+        <link refid="class_json_1_1_stream_writer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::StreamWriter</label>
+        <link refid="class_json_1_1_stream_writer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sout_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::ios_base</label>
+      </node>
+      <node id="2">
+        <label>std::ostream</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/json/writer.h" line="23" column="1" bodyfile="include/json/writer.h" bodystart="23" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_stream_writer_1afcaf15b7e1c6c6b4b3d3847413588c8f" prot="protected" virt="non-virtual"><scope>Json::StreamWriter</scope><name>sout_</name></member>
+      <member refid="class_json_1_1_stream_writer_1a66e6f5113618ce6b04cac9b3c85a3707" prot="public" virt="non-virtual"><scope>Json::StreamWriter</scope><name>StreamWriter</name></member>
+      <member refid="class_json_1_1_stream_writer_1abcb52fb89a6e2302a3e055c4463a273a" prot="public" virt="pure-virtual"><scope>Json::StreamWriter</scope><name>write</name></member>
+      <member refid="class_json_1_1_stream_writer_1a03f8fb6a873b6b50f05bc4556e043c3a" prot="public" virt="virtual"><scope>Json::StreamWriter</scope><name>~StreamWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

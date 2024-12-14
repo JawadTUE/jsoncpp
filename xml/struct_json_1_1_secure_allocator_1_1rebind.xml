@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="struct_json_1_1_secure_allocator_1_1rebind" kind="struct" language="C++" prot="public">
+    <compoundname>Json::SecureAllocator::rebind</compoundname>
+    <includes refid="allocator_8h" local="no">allocator.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename U</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="struct_json_1_1_secure_allocator_1_1rebind_1a010e346391d92ab9f8b0d2e807965615" prot="public" static="no">
+        <type><ref refid="class_json_1_1_secure_allocator" kindref="compound">SecureAllocator</ref>&lt; U &gt;</type>
+        <definition>using Json::SecureAllocator&lt; T &gt;::rebind&lt; U &gt;::other =  SecureAllocator&lt;U&gt;</definition>
+        <argsstring></argsstring>
+        <name>other</name>
+        <qualifiedname>Json::SecureAllocator::rebind::other</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/allocator.h" line="53" column="5" bodyfile="include/json/allocator.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/json/allocator.h" line="52" column="14" bodyfile="include/json/allocator.h" bodystart="52" bodyend="54"/>
+    <listofallmembers>
+      <member refid="struct_json_1_1_secure_allocator_1_1rebind_1a010e346391d92ab9f8b0d2e807965615" prot="public" virt="non-virtual"><scope>Json::SecureAllocator::rebind</scope><name>other</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

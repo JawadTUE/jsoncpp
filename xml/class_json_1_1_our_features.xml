@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_our_features" kind="class" language="C++" prot="public">
+    <compoundname>Json::OurFeatures</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_json_1_1_our_features_1ac71bb7ba7363d3b05ed76602b036ce33" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::OurFeatures::allowComments_</definition>
+        <argsstring></argsstring>
+        <name>allowComments_</name>
+        <qualifiedname>Json::OurFeatures::allowComments_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="800" column="8" bodyfile="src/lib_json/json_reader.cpp" bodystart="800" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1aba4f8749aab7f02ec17f107e392caf80" compoundref="json__reader_8cpp" startline="929" endline="970">Json::OurReader::parse</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1a7474d4556f5966306338b0188f6e5560" compoundref="json__reader_8cpp" startline="1061" endline="1069">Json::OurReader::readTokenSkippingComments</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_features_1a6354b6eed2e0cf4083a742f467f6c63b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::OurFeatures::allowTrailingCommas_</definition>
+        <argsstring></argsstring>
+        <name>allowTrailingCommas_</name>
+        <qualifiedname>Json::OurFeatures::allowTrailingCommas_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="801" column="8" bodyfile="src/lib_json/json_reader.cpp" bodystart="801" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1a0b9f58faf4212c6ecb5d8e2a1ac10257" compoundref="json__reader_8cpp" startline="1404" endline="1437">Json::OurReader::readArray</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1aea198f8101dba55099f4d8121a993530" compoundref="json__reader_8cpp" startline="1350" endline="1402">Json::OurReader::readObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_features_1a2095f66a776c0a4ae6cc931a0c94242e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::OurFeatures::strictRoot_</definition>
+        <argsstring></argsstring>
+        <name>strictRoot_</name>
+        <qualifiedname>Json::OurFeatures::strictRoot_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="802" column="8" bodyfile="src/lib_json/json_reader.cpp" bodystart="802" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1aba4f8749aab7f02ec17f107e392caf80" compoundref="json__reader_8cpp" startline="929" endline="970">Json::OurReader::parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_features_1a13963bc44bf948eec1968f7ff8e8f5f1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::OurFeatures::allowDroppedNullPlaceholders_</definition>
+        <argsstring></argsstring>
+        <name>allowDroppedNullPlaceholders_</name>
+        <qualifiedname>Json::OurFeatures::allowDroppedNullPlaceholders_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="803" column="8" bodyfile="src/lib_json/json_reader.cpp" bodystart="803" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1a0b9f58faf4212c6ecb5d8e2a1ac10257" compoundref="json__reader_8cpp" startline="1404" endline="1437">Json::OurReader::readArray</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1a1765d9670d191c89a57a22ea5591d35f" compoundref="json__reader_8cpp" startline="972" endline="1059">Json::OurReader::readValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_features_1af6973fc7e774ce2d634ba99442aeb91a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::OurFeatures::allowNumericKeys_</definition>
+        <argsstring></argsstring>
+        <name>allowNumericKeys_</name>
+        <qualifiedname>Json::OurFeatures::allowNumericKeys_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="804" column="8" bodyfile="src/lib_json/json_reader.cpp" bodystart="804" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1aea198f8101dba55099f4d8121a993530" compoundref="json__reader_8cpp" startline="1350" endline="1402">Json::OurReader::readObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_features_1abbd6c196d7a22e2a360a59887eda4610" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::OurFeatures::allowSingleQuotes_</definition>
+        <argsstring></argsstring>
+        <name>allowSingleQuotes_</name>
+        <qualifiedname>Json::OurFeatures::allowSingleQuotes_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="805" column="8" bodyfile="src/lib_json/json_reader.cpp" bodystart="805" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1a0d1e66da47fe2e85f5033c59326dfdc3" compoundref="json__reader_8cpp" startline="1071" endline="1179">Json::OurReader::readToken</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_features_1ae8ad25b90706c78f1a8fe929191ac61b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::OurFeatures::failIfExtra_</definition>
+        <argsstring></argsstring>
+        <name>failIfExtra_</name>
+        <qualifiedname>Json::OurFeatures::failIfExtra_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="806" column="8" bodyfile="src/lib_json/json_reader.cpp" bodystart="806" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1aba4f8749aab7f02ec17f107e392caf80" compoundref="json__reader_8cpp" startline="929" endline="970">Json::OurReader::parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_features_1a39b8e0b86b1c24a45e800c023bb715aa" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::OurFeatures::rejectDupKeys_</definition>
+        <argsstring></argsstring>
+        <name>rejectDupKeys_</name>
+        <qualifiedname>Json::OurFeatures::rejectDupKeys_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="807" column="8" bodyfile="src/lib_json/json_reader.cpp" bodystart="807" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1aea198f8101dba55099f4d8121a993530" compoundref="json__reader_8cpp" startline="1350" endline="1402">Json::OurReader::readObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_features_1af760f91cc2a7af37e44f78fb466061bb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::OurFeatures::allowSpecialFloats_</definition>
+        <argsstring></argsstring>
+        <name>allowSpecialFloats_</name>
+        <qualifiedname>Json::OurFeatures::allowSpecialFloats_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="808" column="8" bodyfile="src/lib_json/json_reader.cpp" bodystart="808" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1a0d1e66da47fe2e85f5033c59326dfdc3" compoundref="json__reader_8cpp" startline="1071" endline="1179">Json::OurReader::readToken</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_features_1ae1aa91efeb3b0734309697cca25c2a43" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::OurFeatures::skipBom_</definition>
+        <argsstring></argsstring>
+        <name>skipBom_</name>
+        <qualifiedname>Json::OurFeatures::skipBom_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="809" column="8" bodyfile="src/lib_json/json_reader.cpp" bodystart="809" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1aba4f8749aab7f02ec17f107e392caf80" compoundref="json__reader_8cpp" startline="929" endline="970">Json::OurReader::parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_features_1a98e3ce2d44ff586f31d61c017735a6ae" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Json::OurFeatures::stackLimit_</definition>
+        <argsstring></argsstring>
+        <name>stackLimit_</name>
+        <qualifiedname>Json::OurFeatures::stackLimit_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="810" column="10" bodyfile="src/lib_json/json_reader.cpp" bodystart="810" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1a1765d9670d191c89a57a22ea5591d35f" compoundref="json__reader_8cpp" startline="972" endline="1059">Json::OurReader::readValue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_json_1_1_our_features_1a0686e1406b6677f496529f9f3fe98d1e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_our_features" kindref="compound">OurFeatures</ref></type>
+        <definition>OurFeatures Json::OurFeatures::all</definition>
+        <argsstring>()</argsstring>
+        <name>all</name>
+        <qualifiedname>Json::OurFeatures::all</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/lib_json/json_reader.cpp" line="799" column="22" bodyfile="src/lib_json/json_reader.cpp" bodystart="813" bodyend="813"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1774" endline="1791">Json::CharReaderBuilder::newCharReader</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Json::OurFeatures</label>
+        <link refid="class_json_1_1_our_features"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>allowComments_</edgelabel>
+          <edgelabel>allowDroppedNullPlaceholders_</edgelabel>
+          <edgelabel>allowNumericKeys_</edgelabel>
+          <edgelabel>allowSingleQuotes_</edgelabel>
+          <edgelabel>allowSpecialFloats_</edgelabel>
+          <edgelabel>allowTrailingCommas_</edgelabel>
+          <edgelabel>failIfExtra_</edgelabel>
+          <edgelabel>rejectDupKeys_</edgelabel>
+          <edgelabel>skipBom_</edgelabel>
+          <edgelabel>strictRoot_</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>stackLimit_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>bool</label>
+      </node>
+      <node id="3">
+        <label>size_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/lib_json/json_reader.cpp" line="797" column="1" bodyfile="src/lib_json/json_reader.cpp" bodystart="797" bodyend="811"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_our_features_1a0686e1406b6677f496529f9f3fe98d1e" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>all</name></member>
+      <member refid="class_json_1_1_our_features_1ac71bb7ba7363d3b05ed76602b036ce33" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>allowComments_</name></member>
+      <member refid="class_json_1_1_our_features_1a13963bc44bf948eec1968f7ff8e8f5f1" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>allowDroppedNullPlaceholders_</name></member>
+      <member refid="class_json_1_1_our_features_1af6973fc7e774ce2d634ba99442aeb91a" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>allowNumericKeys_</name></member>
+      <member refid="class_json_1_1_our_features_1abbd6c196d7a22e2a360a59887eda4610" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>allowSingleQuotes_</name></member>
+      <member refid="class_json_1_1_our_features_1af760f91cc2a7af37e44f78fb466061bb" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>allowSpecialFloats_</name></member>
+      <member refid="class_json_1_1_our_features_1a6354b6eed2e0cf4083a742f467f6c63b" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>allowTrailingCommas_</name></member>
+      <member refid="class_json_1_1_our_features_1ae8ad25b90706c78f1a8fe929191ac61b" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>failIfExtra_</name></member>
+      <member refid="class_json_1_1_our_features_1a39b8e0b86b1c24a45e800c023bb715aa" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>rejectDupKeys_</name></member>
+      <member refid="class_json_1_1_our_features_1ae1aa91efeb3b0734309697cca25c2a43" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>skipBom_</name></member>
+      <member refid="class_json_1_1_our_features_1a98e3ce2d44ff586f31d61c017735a6ae" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>stackLimit_</name></member>
+      <member refid="class_json_1_1_our_features_1a2095f66a776c0a4ae6cc931a0c94242e" prot="public" virt="non-virtual"><scope>Json::OurFeatures</scope><name>strictRoot_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

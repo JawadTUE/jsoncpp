@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_json_1_1_stream_writer_1_1_factory" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Json::StreamWriter::Factory</compoundname>
+    <derivedcompoundref refid="class_json_1_1_stream_writer_builder" prot="public" virt="non-virtual">Json::StreamWriterBuilder</derivedcompoundref>
+    <includes refid="writer_8h" local="no">writer.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_stream_writer_1_1_factory_1ad334ad5e81e3b9b1768620a446366ff1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Json::StreamWriter::Factory::~Factory</definition>
+        <argsstring>()</argsstring>
+        <name>~Factory</name>
+        <qualifiedname>Json::StreamWriter::Factory::~Factory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="35" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_1_1_factory_1ad7e8432ba542dcb01fe9ee12dcd0e574" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref> *</type>
+        <definition>virtual StreamWriter * Json::StreamWriter::Factory::newStreamWriter</definition>
+        <argsstring>() const =0</argsstring>
+        <name>newStreamWriter</name>
+        <qualifiedname>Json::StreamWriter::Factory::newStreamWriter</qualifiedname>
+        <reimplementedby refid="class_json_1_1_stream_writer_builder_1a042d21b84d8c5bede52a764e2ada7d65">newStreamWriter</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/writer.h" line="37" column="26"/>
+        <referencedby refid="namespace_json_1a4cd945e3d7722c3fabc38e14efacb6f8" compoundref="json__writer_8cpp" startline="1168" endline="1173">Json::writeString</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Json::StreamWriter::Factory</label>
+        <link refid="class_json_1_1_stream_writer_1_1_factory"/>
+      </node>
+      <node id="2">
+        <label>Json::StreamWriterBuilder</label>
+        <link refid="class_json_1_1_stream_writer_builder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/json/writer.h" line="33" column="3" bodyfile="include/json/writer.h" bodystart="33" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_stream_writer_1_1_factory_1ad7e8432ba542dcb01fe9ee12dcd0e574" prot="public" virt="pure-virtual"><scope>Json::StreamWriter::Factory</scope><name>newStreamWriter</name></member>
+      <member refid="class_json_1_1_stream_writer_1_1_factory_1ad334ad5e81e3b9b1768620a446366ff1" prot="public" virt="virtual"><scope>Json::StreamWriter::Factory</scope><name>~Factory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

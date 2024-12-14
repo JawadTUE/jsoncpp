@@ -1,0 +1,496 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="config_8h" kind="file" language="C++">
+    <compoundname>config.h</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">istream</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">ostream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">type_traits</includes>
+    <includes refid="allocator_8h" local="yes">allocator.h</includes>
+    <includes refid="version_8h" local="yes">version.h</includes>
+    <includedby refid="assertions_8h" local="yes">include/json/assertions.h</includedby>
+    <includedby refid="forwards_8h" local="yes">include/json/forwards.h</includedby>
+    <includedby refid="json_8h" local="yes">include/json/json.h</includedby>
+    <includedby refid="json__tool_8h" local="no">src/lib_json/json_tool.h</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>allocator.h</label>
+        <link refid="allocator_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/json/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="11">
+        <label>algorithm</label>
+      </node>
+      <node id="2">
+        <label>cstddef</label>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="12">
+        <label>cstring</label>
+      </node>
+      <node id="4">
+        <label>istream</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+      <node id="6">
+        <label>ostream</label>
+      </node>
+      <node id="7">
+        <label>sstream</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/json/assertions.h</label>
+        <link refid="assertions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/json/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/json/forwards.h</label>
+        <link refid="forwards_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>include/json/json.h</label>
+        <link refid="json_8h"/>
+      </node>
+      <node id="6">
+        <label>include/json/json_features.h</label>
+        <link refid="json__features_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/json/reader.h</label>
+        <link refid="reader_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>include/json/value.h</label>
+        <link refid="value_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>include/json/writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/lib_json/json_reader.cpp</label>
+        <link refid="json__reader_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/lib_json/json_tool.h</label>
+        <link refid="json__tool_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/lib_json/json_value.cpp</label>
+        <link refid="json__value_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/lib_json/json_writer.cpp</label>
+        <link refid="json__writer_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_json">Json</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="config_8h_1a51968e67b1462ac893f87a0fc8b791cd" prot="public" static="no">
+        <name>JSON_USE_EXCEPTION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="13" column="9" bodyfile="include/json/config.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ad3fa34174c9067dca4ff88e75fe6f5c0" prot="public" static="no">
+        <name>JSON_USE_NULLREF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="17" column="9" bodyfile="include/json/config.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" prot="public" static="no">
+        <name>JSON_API</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="36" column="9" bodyfile="include/json/config.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a70aadb03056df6baa94058d2fb33046a" prot="public" static="no">
+        <name>jsoncpp_snprintf</name>
+        <initializer><ref refid="config_8h_1a4e2911948f9b7160734a224a6333d719" kindref="member">msvc_pre1900_c99_snprintf</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="47" column="9" bodyfile="include/json/config.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_our_reader_1ae6dbefb591a08cc93d43f410fc9054db" compoundref="json__reader_8cpp" startline="1705" endline="1711">Json::OurReader::getLocationLineAndColumn</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a293d496ba326700991c64013e9f0cf4a" compoundref="json__reader_8cpp" startline="724" endline="730">Json::Reader::getLocationLineAndColumn</referencedby>
+        <referencedby refid="namespace_json_1_1anonymous__namespace_02json__writer_8cpp_03_1a2b1704cd1d429b685e16fb5ac21f6810" compoundref="json__writer_8cpp" startline="120" endline="158">Json::anonymous_namespace{json_writer.cpp}::valueToString</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a824d6199c91488107e443226fa6022c5" prot="public" static="no">
+        <name>JSONCPP_OVERRIDE</name>
+        <initializer>override</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="52" column="9" bodyfile="include/json/config.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a6933a4321aa03c8a29016669073f1af6" prot="public" static="no">
+        <name>JSONCPP_DEPRECATED</name>
+        <param><defname>message</defname></param>
+        <initializer>__declspec(deprecated(message))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="66" column="9" bodyfile="include/json/config.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a210f7d060accd6a881cd070dc7a333a4" prot="public" static="no">
+        <name>JSON_HAS_INT64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="101" column="9" bodyfile="include/json/config.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="config_8h_1ab6e95760e8118fde575ebf7227d7428a" prot="public" static="no">
+        <type><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">Json::String</ref></type>
+        <definition>using JSONCPP_STRING =  Json::String</definition>
+        <argsstring></argsstring>
+        <name>JSONCPP_STRING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="119" column="1" bodyfile="include/json/config.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="config_8h_1a9fbaa2afa16c2335e4f8dbe5e269ce0b" prot="public" static="no">
+        <type><ref refid="namespace_json_1a6817cb1d877255197a60465b76999c95" kindref="member">Json::IStringStream</ref></type>
+        <definition>using JSONCPP_ISTRINGSTREAM =  Json::IStringStream</definition>
+        <argsstring></argsstring>
+        <name>JSONCPP_ISTRINGSTREAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="120" column="1" bodyfile="include/json/config.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="config_8h_1a37956168d339f2cc6ed9b9a29ad16ebe" prot="public" static="no">
+        <type><ref refid="namespace_json_1a030bde1f9b3527d1b0003fe787d20387" kindref="member">Json::OStringStream</ref></type>
+        <definition>using JSONCPP_OSTRINGSTREAM =  Json::OStringStream</definition>
+        <argsstring></argsstring>
+        <name>JSONCPP_OSTRINGSTREAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="121" column="1" bodyfile="include/json/config.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="config_8h_1ac2972f7be5297e918438b401cd2b9059" prot="public" static="no">
+        <type><ref refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" kindref="member">Json::IStream</ref></type>
+        <definition>using JSONCPP_ISTREAM =  Json::IStream</definition>
+        <argsstring></argsstring>
+        <name>JSONCPP_ISTREAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="122" column="1" bodyfile="include/json/config.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="config_8h_1a6b0cafb1bcec31bf31513ed4754b71b5" prot="public" static="no">
+        <type><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">Json::OStream</ref></type>
+        <definition>using JSONCPP_OSTREAM =  Json::OStream</definition>
+        <argsstring></argsstring>
+        <name>JSONCPP_OSTREAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="123" column="1" bodyfile="include/json/config.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="config_8h_1a4e2911948f9b7160734a224a6333d719" prot="public" static="no" extern="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int msvc_pre1900_c99_snprintf</definition>
+        <argsstring>(char *outBuf, size_t size, const char *format,...)</argsstring>
+        <name>msvc_pre1900_c99_snprintf</name>
+        <param>
+          <type>char *</type>
+          <declname>outBuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json/config.h" line="45" column="13" bodyfile="src/lib_json/json_value.cpp" bodystart="27" bodyend="34" declfile="include/json/config.h" declline="45" declcolumn="13"/>
+        <references refid="json__value_8cpp_1aad51855ca4a1d05ce254a57124fd53a9" compoundref="json__value_8cpp" startline="17" endline="25">msvc_pre1900_c99_vsnprintf</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>JSON_CONFIG_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_CONFIG_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;istream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>JSON_USE_EXCEPTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="config_8h_1a51968e67b1462ac893f87a0fc8b791cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_USE_EXCEPTION<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>JSON_USE_NULLREF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="config_8h_1ad3fa34174c9067dca4ff88e75fe6f5c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_USE_NULLREF<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(JSON_DLL_BUILD)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)<sp/>||<sp/>defined(__MINGW32__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_API<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_DISABLE_DLL_INTERFACE_WARNING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__GNUC__)<sp/>||<sp/>defined(__clang__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_API<sp/>__attribute__((visibility(&quot;default&quot;)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(JSON_DLL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)<sp/>||<sp/>defined(__MINGW32__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_API<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_DISABLE_DLL_INTERFACE_WARNING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(JSON_API)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)<sp/>&amp;&amp;<sp/>_MSC_VER<sp/>&lt;<sp/>1800</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;ERROR:<sp/><sp/>Visual<sp/>Studio<sp/>12<sp/>(2013)<sp/>with<sp/>_MSC_VER=1800<sp/>is<sp/>the<sp/>oldest<sp/>supported<sp/>compiler<sp/>with<sp/>sufficient<sp/>C++11<sp/>capabilities&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)<sp/>&amp;&amp;<sp/>_MSC_VER<sp/>&lt;<sp/>1900</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="config_8h_1a4e2911948f9b7160734a224a6333d719" kindref="member">msvc_pre1900_c99_snprintf</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>outBuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>format,<sp/>...);</highlight></codeline>
+<codeline lineno="47" refid="config_8h_1a70aadb03056df6baa94058d2fb33046a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>jsoncpp_snprintf<sp/>msvc_pre1900_c99_snprintf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>jsoncpp_snprintf<sp/>std::snprintf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="config_8h_1a824d6199c91488107e443226fa6022c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_OVERRIDE<sp/>override</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__clang__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__has_extension(attribute_deprecated_with_message)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_DEPRECATED(message)<sp/>__attribute__((deprecated(message)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__GNUC__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(__GNUC__<sp/>&gt;<sp/>4<sp/>||<sp/>(__GNUC__<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>__GNUC_MINOR__<sp/>&gt;=<sp/>5))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_DEPRECATED(message)<sp/>__attribute__((deprecated(message)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>(__GNUC__<sp/>&gt;<sp/>3<sp/>||<sp/>(__GNUC__<sp/>==<sp/>3<sp/>&amp;&amp;<sp/>__GNUC_MINOR__<sp/>&gt;=<sp/>1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_DEPRECATED(message)<sp/>__attribute__((__deprecated__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="config_8h_1a6933a4321aa03c8a29016669073f1af6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_DEPRECATED(message)<sp/>__declspec(deprecated(message))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(JSONCPP_DEPRECATED)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSONCPP_DEPRECATED(message)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__clang__)<sp/>||<sp/>(defined(__GNUC__)<sp/>&amp;&amp;<sp/>(__GNUC__<sp/>&gt;=<sp/>6))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_USE_INT64_DOUBLE_CONVERSION<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(JSON_IS_AMALGAMATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="allocator_8h" kindref="compound">allocator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="version_8h" kindref="compound">version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_json" kindref="compound">Json</ref><sp/>{</highlight></codeline>
+<codeline lineno="85" refid="namespace_json_1a9277f826baa1de2d303af893fa6f16ce" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a9277f826baa1de2d303af893fa6f16ce" kindref="member">Int</ref><sp/>=<sp/>int;</highlight></codeline>
+<codeline lineno="86" refid="namespace_json_1a74d106771a079ca397eaffbf93d445be" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a74d106771a079ca397eaffbf93d445be" kindref="member">UInt</ref><sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(JSON_NO_INT64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a4740dd208d3b4278c0ab4a3b73146b45" kindref="member">LargestInt</ref><sp/>=<sp/>int;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1acc8c7ef3383b2f4f33ff219810445bc6" kindref="member">LargestUInt</ref><sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>JSON_HAS_INT64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="namespace_json_1a2458aa292509f109ee2c56aa56fb140a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a2458aa292509f109ee2c56aa56fb140a" kindref="member">Int64</ref><sp/>=<sp/>__int64;</highlight></codeline>
+<codeline lineno="94" refid="namespace_json_1a14aa7299a0ff9d2ec4350dcb93acf7f4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a14aa7299a0ff9d2ec4350dcb93acf7f4" kindref="member">UInt64</ref><sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>__int64;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a2458aa292509f109ee2c56aa56fb140a" kindref="member">Int64</ref><sp/>=<sp/>int64_t;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a14aa7299a0ff9d2ec4350dcb93acf7f4" kindref="member">UInt64</ref><sp/>=<sp/>uint64_t;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="namespace_json_1a4740dd208d3b4278c0ab4a3b73146b45" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a4740dd208d3b4278c0ab4a3b73146b45" kindref="member">LargestInt</ref><sp/>=<sp/><ref refid="namespace_json_1a2458aa292509f109ee2c56aa56fb140a" kindref="member">Int64</ref>;</highlight></codeline>
+<codeline lineno="100" refid="namespace_json_1acc8c7ef3383b2f4f33ff219810445bc6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1acc8c7ef3383b2f4f33ff219810445bc6" kindref="member">LargestUInt</ref><sp/>=<sp/><ref refid="namespace_json_1a14aa7299a0ff9d2ec4350dcb93acf7f4" kindref="member">UInt64</ref>;</highlight></codeline>
+<codeline lineno="101" refid="config_8h_1a210f7d060accd6a881cd070dc7a333a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_HAS_INT64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="105" refid="namespace_json_1a8274527a365623cbf6cdf21f4789af66" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a8274527a365623cbf6cdf21f4789af66" kindref="member">Allocator</ref><sp/>=</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::conditional&lt;JSONCPP_USE_SECURE_MEMORY,<sp/>SecureAllocator&lt;T&gt;,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::allocator&lt;T&gt;&gt;::type;</highlight></codeline>
+<codeline lineno="108" refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">String</ref><sp/>=<sp/>std::basic_string&lt;char,<sp/>std::char_traits&lt;char&gt;,<sp/><ref refid="namespace_json_1a8274527a365623cbf6cdf21f4789af66" kindref="member">Allocator&lt;char&gt;</ref>&gt;;</highlight></codeline>
+<codeline lineno="109" refid="namespace_json_1a6817cb1d877255197a60465b76999c95" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a6817cb1d877255197a60465b76999c95" kindref="member">IStringStream</ref><sp/>=</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>std::basic_istringstream&lt;String::value_type,<sp/>String::traits_type,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String::allocator_type&gt;;</highlight></codeline>
+<codeline lineno="112" refid="namespace_json_1a030bde1f9b3527d1b0003fe787d20387" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a030bde1f9b3527d1b0003fe787d20387" kindref="member">OStringStream</ref><sp/>=</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>std::basic_ostringstream&lt;String::value_type,<sp/>String::traits_type,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String::allocator_type&gt;;</highlight></codeline>
+<codeline lineno="115" refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" kindref="member">IStream</ref><sp/>=<sp/>std::istream;</highlight></codeline>
+<codeline lineno="116" refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">OStream</ref><sp/>=<sp/>std::ostream;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Json</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="config_8h_1ab6e95760e8118fde575ebf7227d7428a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="config_8h_1ab6e95760e8118fde575ebf7227d7428a" kindref="member">JSONCPP_STRING</ref><sp/>=<sp/><ref refid="namespace_json_1ab8386dad87bef4a96620c2f5e860f112" kindref="member">Json::String</ref>;</highlight></codeline>
+<codeline lineno="120" refid="config_8h_1a9fbaa2afa16c2335e4f8dbe5e269ce0b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a9fbaa2afa16c2335e4f8dbe5e269ce0b" kindref="member">JSONCPP_ISTRINGSTREAM</ref><sp/>=<sp/><ref refid="namespace_json_1a6817cb1d877255197a60465b76999c95" kindref="member">Json::IStringStream</ref>;</highlight></codeline>
+<codeline lineno="121" refid="config_8h_1a37956168d339f2cc6ed9b9a29ad16ebe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a37956168d339f2cc6ed9b9a29ad16ebe" kindref="member">JSONCPP_OSTRINGSTREAM</ref><sp/>=<sp/><ref refid="namespace_json_1a030bde1f9b3527d1b0003fe787d20387" kindref="member">Json::OStringStream</ref>;</highlight></codeline>
+<codeline lineno="122" refid="config_8h_1ac2972f7be5297e918438b401cd2b9059" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="config_8h_1ac2972f7be5297e918438b401cd2b9059" kindref="member">JSONCPP_ISTREAM</ref><sp/>=<sp/><ref refid="namespace_json_1a9bb53fe0a41f9ce166481523884db0c8" kindref="member">Json::IStream</ref>;</highlight></codeline>
+<codeline lineno="123" refid="config_8h_1a6b0cafb1bcec31bf31513ed4754b71b5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a6b0cafb1bcec31bf31513ed4754b71b5" kindref="member">JSONCPP_OSTREAM</ref><sp/>=<sp/><ref refid="namespace_json_1ad122c08ce9dcdbcdb66882ba6e0f9fd0" kindref="member">Json::OStream</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/json/config.h"/>
+  </compounddef>
+</doxygen>
